@@ -1,0 +1,3 @@
+cd wordloop
+npm run lint
+npm run typecheck
