@@ -13,7 +13,9 @@ interface ProgressState {
   progress: ProgressMap
   status: LoadStatus
   loadError: string | null
-  /** Set when a save to the database fails; ratings are kept in memory until a retry succeeds. */
+  /** Words rated since their last successful save. They're sent again with every save until one succeeds. */
+  unsavedWordIds: string[]
+  /** Set when a save to the database fails; cleared once every rating is saved. */
   saveError: string | null
 
   loadForUser: (userId: string) => Promise<void>
@@ -28,8 +30,11 @@ const initialState = {
   progress: {},
   status: 'idle' as LoadStatus,
   loadError: null,
+  unsavedWordIds: [] as string[],
   saveError: null,
 }
+
+const errorMessage = (error: unknown) => (error instanceof Error ? error.message : String(error))
 
 /** The signed-in user's learning progress, saved in the database. */
 export const useProgressStore = create<ProgressState>()((set, get) => ({
@@ -53,33 +58,48 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
       if (get().userId === userId) set({ progress, status: 'ready' })
     } catch (error) {
       if (get().userId === userId) {
-        set({ status: 'error', loadError: error instanceof Error ? error.message : String(error) })
+        set({ status: 'error', loadError: errorMessage(error) })
       }
     }
   },
 
   rateWord: (wordId, rating, today) => {
-    const { userId, progress } = get()
+    const { userId, progress, unsavedWordIds } = get()
     if (!userId) return
 
     const card = scheduleReview(wordId, progress[wordId], rating, today)
-    set({ progress: { ...progress, [wordId]: card } })
-
-    saveProgress(userId, [card]).catch((error: unknown) => {
-      set({ saveError: error instanceof Error ? error.message : String(error) })
+    set({
+      progress: { ...progress, [wordId]: card },
+      unsavedWordIds: unsavedWordIds.includes(wordId)
+        ? unsavedWordIds
+        : [...unsavedWordIds, wordId],
     })
+
+    void get().retrySave()
   },
 
   retrySave: async () => {
-    const { userId, progress } = get()
-    if (!userId) return
+    const { userId, progress, unsavedWordIds } = get()
+    if (!userId || unsavedWordIds.length === 0) return
 
+    const cards = unsavedWordIds.map((id) => progress[id])
     try {
-      await saveProgress(userId, Object.values(progress))
-      set({ saveError: null })
+      await saveProgress(userId, cards)
     } catch (error) {
-      set({ saveError: error instanceof Error ? error.message : String(error) })
+      if (get().userId === userId) set({ saveError: errorMessage(error) })
+      return
     }
+
+    // A word rated again while this save was in flight still needs its newer card saved.
+    const current = get()
+    if (current.userId !== userId) return
+    const stillUnsaved = current.unsavedWordIds.filter(
+      (id) => !cards.includes(current.progress[id]),
+    )
+    set({
+      unsavedWordIds: stillUnsaved,
+      saveError: stillUnsaved.length === 0 ? null : current.saveError,
+    })
   },
 
   resetProgress: async () => {
@@ -87,7 +107,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
     if (!userId) return
 
     await deleteAllProgress(userId)
-    set({ progress: {}, saveError: null })
+    set({ progress: {}, unsavedWordIds: [], saveError: null })
   },
 
   clear: () => set(initialState),
