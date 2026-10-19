@@ -2,6 +2,8 @@
 
 WordLoop is a vocabulary learning app for the 1,000 most common English words. Each day you learn a few new words with flashcards. Words you've already learned come back for review at the right time, so they stay in your memory.
 
+WordLoop follows the **spaced repetition** method, like the [Anki](https://apps.ankiweb.net/) app.
+
 ## How it works
 
 ### Flashcards
