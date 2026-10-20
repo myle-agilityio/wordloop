@@ -1,6 +1,6 @@
-import { FIRST_INTERVAL_DAYS, INTERVAL_MULTIPLIER } from '@/constants/srs'
+import { FIRST_INTERVAL_DAYS, INTERVAL_MULTIPLIER } from '@/constants'
 import type { CardProgress, DateKey, Rating } from '@/types'
-import { addDays } from '@/utils/date'
+import { addDays } from '@/utils'
 
 /** Next gap in days, given the current gap (undefined for a new word) and the rating. */
 export function nextIntervalDays(currentInterval: number | undefined, rating: Rating): number {

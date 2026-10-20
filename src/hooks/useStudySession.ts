@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
-import { buildSessionQueue, getDailyPlan } from '@/lib/session'
-import { useProgressStore } from '@/stores/progressStore'
+import { buildSessionQueue, getDailyPlan } from '@/lib'
+import { useProgressStore } from '@/stores'
 import type { Rating, Word } from '@/types'
-import { todayKey } from '@/utils/date'
+import { todayKey } from '@/utils'
 
 export type RatingTally = Record<Rating, number>
 

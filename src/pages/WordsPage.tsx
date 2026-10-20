@@ -3,10 +3,10 @@ import { useDeferredValue, useMemo, useState } from 'react'
 import { Card } from '@/components/ui'
 import { WordFilters, type WordFilter } from '@/components/words/WordFilters'
 import { WordRow } from '@/components/words/WordRow'
-import { useWords } from '@/hooks/useWords'
-import { getWordStatus } from '@/lib/wordStatus'
-import { useProgressStore } from '@/stores/progressStore'
-import { todayKey } from '@/utils/date'
+import { useWords } from '@/hooks'
+import { getWordStatus } from '@/lib'
+import { useProgressStore } from '@/stores'
+import { todayKey } from '@/utils'
 
 export function WordsPage() {
   const words = useWords()

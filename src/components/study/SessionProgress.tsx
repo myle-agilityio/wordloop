@@ -2,7 +2,7 @@ import { X } from 'lucide-react'
 import { Link } from 'react-router'
 
 import { ProgressBar } from '@/components/ui'
-import { ROUTES } from '@/constants/routes'
+import { ROUTES } from '@/constants'
 
 interface SessionProgressProps {
   done: number

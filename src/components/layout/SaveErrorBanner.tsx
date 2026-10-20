@@ -1,7 +1,7 @@
 import { CloudOff } from 'lucide-react'
 
 import { Button } from '@/components/ui'
-import { useProgressStore } from '@/stores/progressStore'
+import { useProgressStore } from '@/stores'
 
 /** Warns when ratings couldn't be saved to the database, with a retry. */
 export function SaveErrorBanner() {

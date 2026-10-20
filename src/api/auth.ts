@@ -1,4 +1,4 @@
-import { neon } from '@/lib/neon'
+import { neon } from '@/lib'
 
 export type SignUpResult = 'signed-in' | 'verify-email'
 

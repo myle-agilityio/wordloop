@@ -2,11 +2,11 @@ import { LoaderCircle, Repeat2 } from 'lucide-react'
 import { useState, type FormEvent } from 'react'
 import { Navigate, useLocation, useNavigate } from 'react-router'
 
-import { signIn, signUp } from '@/api/auth'
+import { signIn, signUp } from '@/api'
 import { Button, Card, TextField } from '@/components/ui'
-import { ROUTES } from '@/constants/routes'
-import { useAuth } from '@/hooks/useAuth'
-import { cn } from '@/lib/cn'
+import { ROUTES } from '@/constants'
+import { useAuth } from '@/hooks'
+import { cn } from '@/lib'
 
 type Mode = 'sign-in' | 'sign-up'
 

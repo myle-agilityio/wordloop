@@ -1,9 +1,9 @@
 import { BookOpen, House, Layers, Repeat2 } from 'lucide-react'
 import { Link, NavLink } from 'react-router'
 
-import { ROUTES } from '@/constants/routes'
-import { useAuth } from '@/hooks/useAuth'
-import { cn } from '@/lib/cn'
+import { ROUTES } from '@/constants'
+import { useAuth } from '@/hooks'
+import { cn } from '@/lib'
 
 import { UserMenu } from './UserMenu'
 

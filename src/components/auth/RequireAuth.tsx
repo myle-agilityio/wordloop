@@ -4,9 +4,9 @@ import { Navigate, Outlet, useLocation } from 'react-router'
 
 import { PageLoader } from '@/components/layout/PageLoader'
 import { Button, Card } from '@/components/ui'
-import { ROUTES } from '@/constants/routes'
-import { useAuth } from '@/hooks/useAuth'
-import { useProgressStore } from '@/stores/progressStore'
+import { ROUTES } from '@/constants'
+import { useAuth } from '@/hooks'
+import { useProgressStore } from '@/stores'
 
 /** Shows its child routes only to signed-in users, after their progress has loaded. */
 export function RequireAuth() {

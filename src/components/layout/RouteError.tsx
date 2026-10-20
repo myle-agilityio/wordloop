@@ -2,8 +2,8 @@ import { TriangleAlert } from 'lucide-react'
 import { isRouteErrorResponse, Link, useRouteError } from 'react-router'
 
 import { buttonClasses, Card } from '@/components/ui'
-import { ROUTES } from '@/constants/routes'
-import { cn } from '@/lib/cn'
+import { ROUTES } from '@/constants'
+import { cn } from '@/lib'
 
 /** Shown when a page fails to render or load, e.g. the word list can't be fetched. */
 export function RouteError() {

@@ -1,4 +1,4 @@
-import { LEGACY_PROGRESS_STORAGE_KEY } from '@/constants/storage'
+import { LEGACY_PROGRESS_STORAGE_KEY } from '@/constants'
 import type { ProgressMap } from '@/types'
 
 /** Progress saved on this device before accounts existed, if any. */

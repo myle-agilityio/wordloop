@@ -1,9 +1,9 @@
 import { useMemo } from 'react'
 
-import { getDailyPlan } from '@/lib/session'
-import { useProgressStore } from '@/stores/progressStore'
+import { getDailyPlan } from '@/lib'
+import { useProgressStore } from '@/stores'
 import type { Word } from '@/types'
-import { todayKey } from '@/utils/date'
+import { todayKey } from '@/utils'
 
 /** Today's reviews and new words, recalculated whenever progress changes. */
 export function useDailyPlan(words: Word[]) {

@@ -3,10 +3,9 @@ import { BookOpenCheck, CalendarCheck, Sparkles } from 'lucide-react'
 import { StatCard } from '@/components/home/StatCard'
 import { TodayCard } from '@/components/home/TodayCard'
 import { Button, ProgressBar } from '@/components/ui'
-import { NEW_WORDS_PER_DAY } from '@/constants/srs'
-import { useDailyPlan } from '@/hooks/useDailyPlan'
-import { useWords } from '@/hooks/useWords'
-import { useProgressStore } from '@/stores/progressStore'
+import { NEW_WORDS_PER_DAY } from '@/constants'
+import { useDailyPlan, useWords } from '@/hooks'
+import { useProgressStore } from '@/stores'
 
 export function HomePage() {
   const words = useWords()

@@ -2,9 +2,8 @@ import { PartyPopper } from 'lucide-react'
 import { Link } from 'react-router'
 
 import { buttonClasses, Card } from '@/components/ui'
-import { RATING_OPTIONS } from '@/constants/ratings'
-import { ROUTES } from '@/constants/routes'
-import type { RatingTally } from '@/hooks/useStudySession'
+import { RATING_OPTIONS, ROUTES } from '@/constants'
+import type { RatingTally } from '@/hooks'
 import type { Rating } from '@/types'
 
 const tallyColors: Record<Rating, string> = {

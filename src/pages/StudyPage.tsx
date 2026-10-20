@@ -4,9 +4,7 @@ import { AllCaughtUp } from '@/components/study/AllCaughtUp'
 import { SessionProgress } from '@/components/study/SessionProgress'
 import { SessionSummary } from '@/components/study/SessionSummary'
 import { Button, Kbd } from '@/components/ui'
-import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
-import { useStudySession } from '@/hooks/useStudySession'
-import { useWords } from '@/hooks/useWords'
+import { useKeyboardShortcuts, useStudySession, useWords } from '@/hooks'
 
 export function StudyPage() {
   const words = useWords()

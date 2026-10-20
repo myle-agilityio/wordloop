@@ -1,6 +1,6 @@
 import type { BadgeTone } from '@/components/ui'
 import type { CardProgress, DateKey } from '@/types'
-import { formatDueLabel } from '@/utils/date'
+import { formatDueLabel } from '@/utils'
 
 export type WordStatusKind = 'not-started' | 'due' | 'scheduled'
 

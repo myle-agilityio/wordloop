@@ -2,8 +2,8 @@ import { CircleCheck } from 'lucide-react'
 import { Link } from 'react-router'
 
 import { buttonClasses, Card } from '@/components/ui'
-import { ROUTES } from '@/constants/routes'
-import { cn } from '@/lib/cn'
+import { ROUTES } from '@/constants'
+import { cn } from '@/lib'
 
 export function AllCaughtUp() {
   return (

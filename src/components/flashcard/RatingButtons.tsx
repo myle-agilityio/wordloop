@@ -1,6 +1,6 @@
 import { Kbd } from '@/components/ui'
-import { RATING_OPTIONS } from '@/constants/ratings'
-import { cn } from '@/lib/cn'
+import { RATING_OPTIONS } from '@/constants'
+import { cn } from '@/lib'
 import type { Rating } from '@/types'
 
 const ratingClasses: Record<Rating, string> = {

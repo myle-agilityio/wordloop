@@ -2,9 +2,8 @@ import { ArrowRight, CircleCheck } from 'lucide-react'
 import { Link } from 'react-router'
 
 import { buttonClasses, Card } from '@/components/ui'
-import { ROUTES } from '@/constants/routes'
-import { cn } from '@/lib/cn'
-import type { DailyPlan } from '@/lib/session'
+import { ROUTES } from '@/constants'
+import { cn, type DailyPlan } from '@/lib'
 
 const plural = (count: number, word: string) => `${count} ${count === 1 ? word : `${word}s`}`
 

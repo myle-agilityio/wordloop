@@ -1,9 +1,9 @@
 import { LogOut } from 'lucide-react'
 import { useNavigate } from 'react-router'
 
-import { signOut } from '@/api/auth'
-import { ROUTES } from '@/constants/routes'
-import { useProgressStore } from '@/stores/progressStore'
+import { signOut } from '@/api'
+import { ROUTES } from '@/constants'
+import { useProgressStore } from '@/stores'
 
 interface UserMenuProps {
   name: string

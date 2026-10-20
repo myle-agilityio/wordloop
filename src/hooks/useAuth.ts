@@ -1,4 +1,4 @@
-import { neon } from '@/lib/neon'
+import { neon } from '@/lib'
 
 /** The signed-in user, or null. `isPending` is true while the session is first checked. */
 export function useAuth() {

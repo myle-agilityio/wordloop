@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui'
-import type { WordStatus } from '@/lib/wordStatus'
+import type { WordStatus } from '@/lib'
 import type { Word } from '@/types'
 
 interface WordRowProps {

@@ -1,4 +1,4 @@
-import { NEW_WORDS_PER_DAY } from '@/constants/srs'
+import { NEW_WORDS_PER_DAY } from '@/constants'
 import type { DateKey, ProgressMap, Word } from '@/types'
 
 export type SessionCardKind = 'review' | 'new'

@@ -1,8 +1,7 @@
 import { RotateCcw } from 'lucide-react'
 
 import { Badge, Kbd } from '@/components/ui'
-import { cn } from '@/lib/cn'
-import type { SessionCardKind } from '@/lib/session'
+import { cn, type SessionCardKind } from '@/lib'
 import type { Word } from '@/types'
 
 interface FlashcardProps {

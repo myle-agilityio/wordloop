@@ -1,5 +1,4 @@
-import { neon } from '@/lib/neon'
-import { cardToRow, rowsToProgressMap, type UserProgressRow } from '@/lib/progressRow'
+import { cardToRow, neon, rowsToProgressMap, type UserProgressRow } from '@/lib'
 import type { CardProgress, ProgressMap } from '@/types'
 
 const TABLE = 'user_progress'

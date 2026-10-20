@@ -1,9 +1,9 @@
 import { create } from 'zustand'
 
-import { deleteAllProgress, fetchProgress, saveProgress } from '@/api/progress'
-import { scheduleReview } from '@/lib/scheduler'
+import { deleteAllProgress, fetchProgress, saveProgress } from '@/api'
+import { scheduleReview } from '@/lib'
 import type { DateKey, ProgressMap, Rating } from '@/types'
-import { clearLegacyProgress, readLegacyProgress } from '@/utils/legacyProgress'
+import { clearLegacyProgress, readLegacyProgress } from '@/utils'
 
 export type LoadStatus = 'idle' | 'loading' | 'ready' | 'error'
 

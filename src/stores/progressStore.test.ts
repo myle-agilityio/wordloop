@@ -1,12 +1,12 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
-vi.mock('@/api/progress', () => ({
+vi.mock('@/api', () => ({
   fetchProgress: vi.fn(async () => ({})),
   saveProgress: vi.fn(async () => undefined),
   deleteAllProgress: vi.fn(),
 }))
 
-import { saveProgress } from '@/api/progress'
+import { saveProgress } from '@/api'
 
 import { useProgressStore } from './progressStore'
 
