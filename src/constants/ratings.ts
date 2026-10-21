@@ -12,3 +12,10 @@ export const RATING_OPTIONS: RatingOption[] = [
   { value: 'medium', label: 'Medium', description: 'Got it, but had to think', shortcut: '2' },
   { value: 'easy', label: 'Easy', description: 'Knew it right away', shortcut: '3' },
 ]
+
+/** Not a rating: sends the word to the end of the session without scheduling it. */
+export const AGAIN_OPTION: Omit<RatingOption, 'value'> = {
+  label: 'Again',
+  description: 'Show it again later in this session',
+  shortcut: '4',
+}

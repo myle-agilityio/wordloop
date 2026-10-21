@@ -13,18 +13,20 @@ const tallyColors: Record<Rating, string> = {
 }
 
 interface SessionSummaryProps {
-  total: number
+  /** Words in the session, not counting repeats. */
+  wordCount: number
   tally: RatingTally
+  againCount: number
 }
 
-export function SessionSummary({ total, tally }: SessionSummaryProps) {
+export function SessionSummary({ wordCount, tally, againCount }: SessionSummaryProps) {
   return (
     <Card className="text-center">
       <PartyPopper className="mx-auto size-12 text-indigo-600" aria-hidden />
       <h1 className="mt-4 text-2xl font-bold">Session complete</h1>
       <p className="mt-2 text-slate-600">
-        You studied {total} {total === 1 ? 'word' : 'words'}. Hard words will come back soon, easy
-        ones much later.
+        You studied {wordCount} {wordCount === 1 ? 'word' : 'words'}. Hard words will come back
+        soon, easy ones much later.
       </p>
 
       <dl className="mx-auto mt-8 grid max-w-sm grid-cols-3 gap-3">
@@ -37,6 +39,12 @@ export function SessionSummary({ total, tally }: SessionSummaryProps) {
           </div>
         ))}
       </dl>
+
+      {againCount > 0 && (
+        <p className="mt-3 text-sm text-slate-500">
+          Again: <span className="font-semibold text-indigo-600 tabular-nums">{againCount}</span>
+        </p>
+      )}
 
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link to={ROUTES.home} className={buttonClasses('primary', 'md')}>

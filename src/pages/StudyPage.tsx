@@ -8,23 +8,39 @@ import { useKeyboardShortcuts, useStudySession, useWords } from '@/hooks'
 
 export function StudyPage() {
   const words = useWords()
-  const { current, index, total, isFlipped, isComplete, tally, flip, rate } = useStudySession(words)
+  const {
+    current,
+    index,
+    total,
+    wordCount,
+    isFlipped,
+    isComplete,
+    tally,
+    againCount,
+    flip,
+    rate,
+    again,
+  } = useStudySession(words)
 
   useKeyboardShortcuts({
     ' ': flip,
     '1': () => rate('hard'),
     '2': () => rate('medium'),
     '3': () => rate('easy'),
+    '4': again,
   })
 
   if (total === 0) return <AllCaughtUp />
-  if (isComplete || !current) return <SessionSummary total={total} tally={tally} />
+  if (isComplete || !current) {
+    return <SessionSummary wordCount={wordCount} tally={tally} againCount={againCount} />
+  }
 
   return (
     <div className="mx-auto flex max-w-xl flex-col gap-6">
       <SessionProgress done={index} total={total} />
 
-      <Flashcard key={current.word.id} {...current} isFlipped={isFlipped} onFlip={flip} />
+      {/* Keyed by position: the same word can come back right away after Again. */}
+      <Flashcard key={index} {...current} isFlipped={isFlipped} onFlip={flip} />
 
       <div aria-live="polite">
         {isFlipped ? (
@@ -32,7 +48,7 @@ export function StudyPage() {
             <p className="text-center text-sm font-medium text-slate-600">
               How well did you remember it?
             </p>
-            <RatingButtons onRate={rate} />
+            <RatingButtons onRate={rate} onAgain={again} />
           </div>
         ) : (
           <Button size="lg" className="w-full" onClick={flip}>

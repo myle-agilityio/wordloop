@@ -6,6 +6,8 @@ export type SessionCardKind = 'review' | 'new'
 export interface SessionCard {
   word: Word
   kind: SessionCardKind
+  /** Set when the card was sent to the end of the session with Again. */
+  isRepeat?: boolean
 }
 
 export interface DailyPlan {
@@ -37,4 +39,9 @@ export function buildSessionQueue(plan: DailyPlan): SessionCard[] {
     ...plan.reviews.map((word) => ({ word, kind: 'review' as const })),
     ...plan.newWords.map((word) => ({ word, kind: 'new' as const })),
   ]
+}
+
+/** Adds the card at `index` to the end of the queue as a repeat; the cards before it stay put. */
+export function sendCardAgain(queue: SessionCard[], index: number): SessionCard[] {
+  return [...queue, { ...queue[index], isRepeat: true }]
 }

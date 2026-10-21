@@ -7,6 +7,7 @@ import type { Word } from '@/types'
 interface FlashcardProps {
   word: Word
   kind: SessionCardKind
+  isRepeat?: boolean
   isFlipped: boolean
   onFlip: () => void
 }
@@ -16,9 +17,9 @@ const faceClasses =
 
 /**
  * A two-sided card: the word on the front, the meaning and examples on the back.
- * Render it with `key={word.id}` so a new card starts face up without animating.
+ * Render it with a key per queue position so a new card starts face up without animating.
  */
-export function Flashcard({ word, kind, isFlipped, onFlip }: FlashcardProps) {
+export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: FlashcardProps) {
   return (
     <button
       type="button"
@@ -34,9 +35,12 @@ export function Flashcard({ word, kind, isFlipped, onFlip }: FlashcardProps) {
       >
         {/* Front */}
         <span className={faceClasses} aria-hidden={isFlipped}>
-          <Badge tone={kind === 'new' ? 'indigo' : 'amber'} className="self-start">
-            {kind === 'new' ? 'New word' : 'Review'}
-          </Badge>
+          <span className="flex gap-2 self-start">
+            <Badge tone={kind === 'new' ? 'indigo' : 'amber'}>
+              {kind === 'new' ? 'New word' : 'Review'}
+            </Badge>
+            {isRepeat && <Badge tone="rose">Again</Badge>}
+          </span>
           <span className="flex flex-1 flex-col items-center justify-center gap-2 py-8">
             <span className="text-5xl font-bold tracking-tight text-slate-900">{word.word}</span>
             <span className="text-sm text-slate-500 italic">{word.partOfSpeech}</span>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { buildSessionQueue, getDailyPlan } from '@/lib'
+import { buildSessionQueue, getDailyPlan, sendCardAgain } from '@/lib'
 import { useProgressStore } from '@/stores'
 import type { Rating, Word } from '@/types'
 import { todayKey } from '@/utils'
@@ -10,8 +10,8 @@ export type RatingTally = Record<Rating, number>
 const EMPTY_TALLY: RatingTally = { hard: 0, medium: 0, easy: 0 }
 
 /**
- * Runs one study session. The card queue is fixed when the session starts,
- * so rating a card doesn't reshuffle the cards still to come.
+ * Runs one study session. The card queue is fixed when the session starts, so rating a card
+ * doesn't reshuffle the cards still to come; Again only adds a repeat to the end.
  */
 export function useStudySession(words: Word[]) {
   const rateWord = useProgressStore((state) => state.rateWord)
@@ -21,11 +21,13 @@ export function useStudySession(words: Word[]) {
     const plan = getDailyPlan(words, useProgressStore.getState().progress, today)
     return { today, queue: buildSessionQueue(plan) }
   })
+  const [queue, setQueue] = useState(session.queue)
   const [index, setIndex] = useState(0)
   const [isFlipped, setIsFlipped] = useState(false)
   const [tally, setTally] = useState<RatingTally>(EMPTY_TALLY)
+  const [againCount, setAgainCount] = useState(0)
 
-  const { queue, today } = session
+  const { today } = session
   const current = queue.at(index)
 
   const flip = () => setIsFlipped((flipped) => !flipped)
@@ -39,14 +41,27 @@ export function useStudySession(words: Word[]) {
     setIndex((i) => i + 1)
   }
 
+  // Not a rating: nothing is scheduled or saved until the word is rated.
+  const again = () => {
+    if (!current || !isFlipped) return
+
+    setQueue((prev) => sendCardAgain(prev, index))
+    setAgainCount((count) => count + 1)
+    setIsFlipped(false)
+    setIndex((i) => i + 1)
+  }
+
   return {
     current,
     index,
     total: queue.length,
+    wordCount: session.queue.length,
     isFlipped,
     isComplete: index >= queue.length,
     tally,
+    againCount,
     flip,
     rate,
+    again,
   }
 }

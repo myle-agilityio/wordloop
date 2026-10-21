@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 
 import type { CardProgress, ProgressMap, Word } from '@/types'
 
-import { buildSessionQueue, getDailyPlan } from './session'
+import { buildSessionQueue, getDailyPlan, type SessionCard, sendCardAgain } from './session'
 
 const makeWord = (rank: number): Word => ({
   id: `w${rank}`,
@@ -66,5 +66,49 @@ describe('buildSessionQueue', () => {
     })
 
     expect(queue.map((card) => card.kind)).toEqual(['review', 'new'])
+  })
+})
+
+describe('sendCardAgain', () => {
+  const queue: SessionCard[] = [
+    { word: words[0], kind: 'review' },
+    { word: words[1], kind: 'new' },
+  ]
+
+  it('adds the card to the end as a repeat and keeps the others in order', () => {
+    const next = sendCardAgain(queue, 0)
+
+    expect(next.map((card) => card.word.id)).toEqual(['w1', 'w2', 'w1'])
+    expect(next[2]).toEqual({ word: words[0], kind: 'review', isRepeat: true })
+  })
+
+  it('does not change the queue it is given', () => {
+    sendCardAgain(queue, 0)
+
+    expect(queue).toHaveLength(2)
+    expect(queue[0].isRepeat).toBeUndefined()
+  })
+
+  it('brings a word back until it is rated', () => {
+    let current = queue
+    let index = 0
+    const shown: SessionCard[] = []
+    // w1: Again, Again, then Easy. w2: Medium.
+    const actions = ['again', 'medium', 'again', 'easy'] as const
+
+    for (const action of actions) {
+      shown.push(current[index])
+      if (action === 'again') current = sendCardAgain(current, index)
+      index += 1
+      expect(index).toBeLessThanOrEqual(current.length)
+    }
+
+    expect(shown.map((card) => [card.word.id, card.isRepeat ?? false])).toEqual([
+      ['w1', false],
+      ['w2', false],
+      ['w1', true],
+      ['w1', true],
+    ])
+    expect(index).toBe(current.length) // session complete
   })
 })
