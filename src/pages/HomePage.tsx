@@ -1,15 +1,16 @@
-import { BookOpenCheck, CalendarCheck, Sparkles } from 'lucide-react'
+import { BookOpenCheck, CalendarCheck, Flame, Sparkles } from 'lucide-react'
 
 import { StatCard } from '@/components/home/StatCard'
 import { TodayCard } from '@/components/home/TodayCard'
 import { Button, ProgressBar } from '@/components/ui'
 import { NEW_WORDS_PER_DAY } from '@/constants'
-import { useDailyPlan, useWords } from '@/hooks'
+import { useDailyPlan, useStudyStreak, useWords } from '@/hooks'
 import { useProgressStore } from '@/stores'
 
 export function HomePage() {
   const words = useWords()
   const plan = useDailyPlan(words)
+  const streak = useStudyStreak()
   const progress = useProgressStore((state) => state.progress)
   const resetProgress = useProgressStore((state) => state.resetProgress)
 
@@ -35,7 +36,19 @@ export function HomePage() {
 
       <TodayCard plan={plan} />
 
-      <section aria-label="Your progress" className="grid gap-4 sm:grid-cols-3">
+      <section aria-label="Your progress" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <StatCard
+          icon={Flame}
+          label="Study streak"
+          value={`${streak.days} ${streak.days === 1 ? 'day' : 'days'}`}
+          hint={
+            streak.studiedToday
+              ? 'You studied today'
+              : streak.days > 0
+                ? 'Study today to keep it going'
+                : 'Study today to start a streak'
+          }
+        />
         <StatCard
           icon={BookOpenCheck}
           label="Words learned"

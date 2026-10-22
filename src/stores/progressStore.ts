@@ -1,6 +1,13 @@
 import { create } from 'zustand'
 
-import { deleteAllProgress, fetchProgress, saveProgress } from '@/api'
+import {
+  deleteAllProgress,
+  deleteAllStudyDays,
+  fetchProgress,
+  fetchStudyDays,
+  saveProgress,
+  saveStudyDays,
+} from '@/api'
 import { scheduleReview } from '@/lib'
 import type { DateKey, ProgressMap, Rating } from '@/types'
 import { clearLegacyProgress, readLegacyProgress } from '@/utils'
@@ -15,7 +22,11 @@ interface ProgressState {
   loadError: string | null
   /** Words rated since their last successful save. They're sent again with every save until one succeeds. */
   unsavedWordIds: string[]
-  /** Set when a save to the database fails; cleared once every rating is saved. */
+  /** Days the user studied, used for the streak. */
+  studyDays: DateKey[]
+  /** Study days not saved yet. Sent again with every save, like `unsavedWordIds`. */
+  unsavedStudyDays: DateKey[]
+  /** Set when a save to the database fails; cleared once every rating and study day is saved. */
   saveError: string | null
 
   loadForUser: (userId: string) => Promise<void>
@@ -31,6 +42,8 @@ const initialState = {
   status: 'idle' as LoadStatus,
   loadError: null,
   unsavedWordIds: [] as string[],
+  studyDays: [] as DateKey[],
+  unsavedStudyDays: [] as DateKey[],
   saveError: null,
 }
 
@@ -46,7 +59,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
 
     set({ ...initialState, userId, status: 'loading' })
     try {
-      const progress = await fetchProgress()
+      const [progress, studyDays] = await Promise.all([fetchProgress(), fetchStudyDays()])
 
       // Move progress studied on this device before accounts existed into the account.
       const legacy = readLegacyProgress()
@@ -55,7 +68,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
       clearLegacyProgress()
       for (const card of newFromDevice) progress[card.wordId] = card
 
-      if (get().userId === userId) set({ progress, status: 'ready' })
+      if (get().userId === userId) set({ progress, studyDays, status: 'ready' })
     } catch (error) {
       if (get().userId === userId) {
         set({ status: 'error', loadError: errorMessage(error) })
@@ -64,27 +77,33 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
   },
 
   rateWord: (wordId, rating, today) => {
-    const { userId, progress, unsavedWordIds } = get()
+    const { userId, progress, unsavedWordIds, studyDays, unsavedStudyDays } = get()
     if (!userId) return
 
     const card = scheduleReview(wordId, progress[wordId], rating, today)
+    const isNewStudyDay = !studyDays.includes(today)
     set({
       progress: { ...progress, [wordId]: card },
       unsavedWordIds: unsavedWordIds.includes(wordId)
         ? unsavedWordIds
         : [...unsavedWordIds, wordId],
+      ...(isNewStudyDay && {
+        studyDays: [...studyDays, today],
+        unsavedStudyDays: [...unsavedStudyDays, today],
+      }),
     })
 
     void get().retrySave()
   },
 
   retrySave: async () => {
-    const { userId, progress, unsavedWordIds } = get()
-    if (!userId || unsavedWordIds.length === 0) return
+    const { userId, progress, unsavedWordIds, unsavedStudyDays } = get()
+    if (!userId || unsavedWordIds.length + unsavedStudyDays.length === 0) return
 
     const cards = unsavedWordIds.map((id) => progress[id])
+    const days = unsavedStudyDays
     try {
-      await saveProgress(userId, cards)
+      await Promise.all([saveProgress(userId, cards), saveStudyDays(userId, days)])
     } catch (error) {
       if (get().userId === userId) set({ saveError: errorMessage(error) })
       return
@@ -96,9 +115,11 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
     const stillUnsaved = current.unsavedWordIds.filter(
       (id) => !cards.includes(current.progress[id]),
     )
+    const stillUnsavedDays = current.unsavedStudyDays.filter((day) => !days.includes(day))
     set({
       unsavedWordIds: stillUnsaved,
-      saveError: stillUnsaved.length === 0 ? null : current.saveError,
+      unsavedStudyDays: stillUnsavedDays,
+      saveError: stillUnsaved.length + stillUnsavedDays.length === 0 ? null : current.saveError,
     })
   },
 
@@ -106,8 +127,14 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
     const { userId } = get()
     if (!userId) return
 
-    await deleteAllProgress(userId)
-    set({ progress: {}, unsavedWordIds: [], saveError: null })
+    await Promise.all([deleteAllProgress(userId), deleteAllStudyDays(userId)])
+    set({
+      progress: {},
+      unsavedWordIds: [],
+      studyDays: [],
+      unsavedStudyDays: [],
+      saveError: null,
+    })
   },
 
   clear: () => set(initialState),

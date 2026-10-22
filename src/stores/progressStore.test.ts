@@ -4,9 +4,12 @@ vi.mock('@/api', () => ({
   fetchProgress: vi.fn(async () => ({})),
   saveProgress: vi.fn(async () => undefined),
   deleteAllProgress: vi.fn(),
+  fetchStudyDays: vi.fn(async () => []),
+  saveStudyDays: vi.fn(async () => undefined),
+  deleteAllStudyDays: vi.fn(),
 }))
 
-import { saveProgress } from '@/api'
+import { saveProgress, saveStudyDays } from '@/api'
 
 import { useProgressStore } from './progressStore'
 
@@ -23,6 +26,7 @@ describe('progressStore', () => {
     // loadForUser also calls saveProgress once, to move progress saved on the device before accounts existed.
     await useProgressStore.getState().loadForUser('user-1')
     save.mockClear()
+    vi.mocked(saveStudyDays).mockClear()
   })
 
   it('eventually saves a rating made while offline', async () => {
@@ -79,5 +83,33 @@ describe('progressStore', () => {
 
     expect(useProgressStore.getState().unsavedWordIds).toEqual(['time'])
     expect(useProgressStore.getState().saveError).toBe('Failed to fetch')
+  })
+
+  it('records the first rating of a day as a study day, once', async () => {
+    for (const [wordId, day] of [
+      ['time', '2026-10-15'],
+      ['person', '2026-10-15'],
+      ['year', '2026-10-16'],
+    ]) {
+      useProgressStore.getState().rateWord(wordId, 'easy', day)
+      await flush()
+    }
+
+    const savedDays = vi.mocked(saveStudyDays).mock.calls.flatMap(([, days]) => days)
+    expect(savedDays).toEqual(['2026-10-15', '2026-10-16'])
+    expect(useProgressStore.getState().studyDays).toEqual(['2026-10-15', '2026-10-16'])
+    expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
+  })
+
+  it('keeps a study day unsaved until a save succeeds', async () => {
+    vi.mocked(saveStudyDays).mockRejectedValueOnce(new Error('Failed to fetch'))
+    useProgressStore.getState().rateWord('time', 'easy', '2026-10-15')
+    await flush()
+    expect(useProgressStore.getState().unsavedStudyDays).toEqual(['2026-10-15'])
+
+    await useProgressStore.getState().retrySave()
+
+    expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
+    expect(useProgressStore.getState().saveError).toBeNull()
   })
 })
