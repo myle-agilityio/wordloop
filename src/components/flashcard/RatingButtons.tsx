@@ -17,26 +17,37 @@ const ratingClasses: Record<Rating, string> = {
 const againClasses = 'hover:bg-indigo-50 hover:ring-indigo-200 [&_strong]:text-indigo-600'
 
 interface RatingButtonsProps {
+  /** When the word would be due next for each rating, e.g. "tomorrow". */
+  nextDue: Record<Rating, string>
   onRate: (rating: Rating) => void
   onAgain: () => void
 }
 
-export function RatingButtons({ onRate, onAgain }: RatingButtonsProps) {
+export function RatingButtons({ nextDue, onRate, onAgain }: RatingButtonsProps) {
   const options = [
     ...RATING_OPTIONS.map((option) => ({
       ...option,
       key: option.value,
+      dueLabel: nextDue[option.value],
       onClick: () => onRate(option.value),
       className: ratingClasses[option.value],
     })),
-    { ...AGAIN_OPTION, key: 'again', onClick: onAgain, className: againClasses },
+    // Again isn't scheduled; the word comes back before the session ends.
+    {
+      ...AGAIN_OPTION,
+      key: 'again',
+      dueLabel: 'this session',
+      onClick: onAgain,
+      className: againClasses,
+    },
   ]
 
   return (
     <div role="group" aria-label="How well did you remember?" className="grid grid-cols-4 gap-3">
-      {options.map(({ key, label, description, shortcut, onClick, className }) => (
+      {options.map(({ key, label, dueLabel, description, shortcut, onClick, className }) => (
         <button key={key} type="button" onClick={onClick} className={cn(buttonClasses, className)}>
           <strong className="text-base font-semibold">{label}</strong>
+          <span className="text-xs font-medium text-slate-600">Due {dueLabel}</span>
           <span className="hidden text-center text-xs text-slate-500 sm:block">{description}</span>
           <span className="mt-auto hidden pt-1 sm:block">
             <Kbd>{shortcut}</Kbd>

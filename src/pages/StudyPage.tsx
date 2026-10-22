@@ -17,6 +17,7 @@ export function StudyPage() {
     isComplete,
     tally,
     againCount,
+    nextDue,
     flip,
     rate,
     again,
@@ -48,7 +49,7 @@ export function StudyPage() {
             <p className="text-center text-sm font-medium text-slate-600">
               How well did you remember it?
             </p>
-            <RatingButtons onRate={rate} onAgain={again} />
+            <RatingButtons nextDue={nextDue} onRate={rate} onAgain={again} />
           </div>
         ) : (
           <Button size="lg" className="w-full" onClick={flip}>

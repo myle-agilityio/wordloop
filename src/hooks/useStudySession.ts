@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
-import { buildSessionQueue, getDailyPlan, sendCardAgain } from '@/lib'
+import { buildSessionQueue, getDailyPlan, previewDueOn, sendCardAgain } from '@/lib'
 import { useProgressStore } from '@/stores'
 import type { Rating, Word } from '@/types'
-import { todayKey } from '@/utils'
+import { formatDueLabel, todayKey } from '@/utils'
 
 export type RatingTally = Record<Rating, number>
 
@@ -15,6 +15,7 @@ const EMPTY_TALLY: RatingTally = { hard: 0, medium: 0, easy: 0 }
  */
 export function useStudySession(words: Word[]) {
   const rateWord = useProgressStore((state) => state.rateWord)
+  const progress = useProgressStore((state) => state.progress)
 
   const [session] = useState(() => {
     const today = todayKey()
@@ -29,6 +30,14 @@ export function useStudySession(words: Word[]) {
 
   const { today } = session
   const current = queue.at(index)
+
+  // Labels for what each rating would do to the current word, shown before it's rated.
+  const dueOn = previewDueOn(current ? progress[current.word.id] : undefined, today)
+  const nextDue: Record<Rating, string> = {
+    hard: formatDueLabel(dueOn.hard, today),
+    medium: formatDueLabel(dueOn.medium, today),
+    easy: formatDueLabel(dueOn.easy, today),
+  }
 
   const flip = () => setIsFlipped((flipped) => !flipped)
 
@@ -60,6 +69,7 @@ export function useStudySession(words: Word[]) {
     isComplete: index >= queue.length,
     tally,
     againCount,
+    nextDue,
     flip,
     rate,
     again,

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 
 import type { CardProgress } from '@/types'
 
-import { nextIntervalDays, scheduleReview } from './scheduler'
+import { nextIntervalDays, previewDueOn, scheduleReview } from './scheduler'
 
 describe('nextIntervalDays', () => {
   it('uses the first interval for a new word', () => {
@@ -23,6 +23,48 @@ describe('nextIntervalDays', () => {
 
   it('resets the gap when the word is hard', () => {
     expect(nextIntervalDays(30, 'hard')).toBe(1)
+  })
+})
+
+describe('previewDueOn', () => {
+  it('previews the first interval for a new word', () => {
+    expect(previewDueOn(undefined, '2026-10-15')).toEqual({
+      hard: '2026-10-16',
+      medium: '2026-10-18',
+      easy: '2026-10-22',
+    })
+  })
+
+  it('previews from the current interval for a word already learned', () => {
+    const previous: CardProgress = {
+      wordId: 'time',
+      learnedOn: '2026-10-01',
+      dueOn: '2026-10-08',
+      intervalDays: 10,
+      reviewCount: 2,
+      lastRating: 'medium',
+    }
+
+    expect(previewDueOn(previous, '2026-10-08')).toEqual({
+      hard: '2026-10-09',
+      medium: '2026-10-23',
+      easy: '2026-11-02',
+    })
+  })
+
+  it('matches the due date that rating actually sets', () => {
+    const previous: CardProgress = {
+      wordId: 'time',
+      learnedOn: '2026-10-01',
+      dueOn: '2026-10-08',
+      intervalDays: 10,
+      reviewCount: 2,
+      lastRating: 'medium',
+    }
+    const preview = previewDueOn(previous, '2026-10-08')
+
+    expect(scheduleReview('time', previous, 'medium', '2026-10-08').dueOn).toBe(preview.medium)
+    expect(scheduleReview('time', previous, 'easy', '2026-10-08').dueOn).toBe(preview.easy)
   })
 })
 

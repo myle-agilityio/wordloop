@@ -11,6 +11,15 @@ export function nextIntervalDays(currentInterval: number | undefined, rating: Ra
   return Math.max(firstInterval, grown)
 }
 
+/** The day the word would be due next for each rating, shown before the user picks one. */
+export function previewDueOn(
+  previous: CardProgress | undefined,
+  today: DateKey,
+): Record<Rating, DateKey> {
+  const dueOn = (rating: Rating) => addDays(today, nextIntervalDays(previous?.intervalDays, rating))
+  return { hard: dueOn('hard'), medium: dueOn('medium'), easy: dueOn('easy') }
+}
+
 /** Applies a rating to a word and returns its updated progress. */
 export function scheduleReview(
   wordId: string,
