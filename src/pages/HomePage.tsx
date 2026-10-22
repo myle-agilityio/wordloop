@@ -45,7 +45,7 @@ export function HomePage() {
             streak.studiedToday
               ? 'You studied today'
               : streak.days > 0
-                ? 'Study today to keep it going'
+                ? 'Study today to keep your streak'
                 : 'Study today to start a streak'
           }
         />
