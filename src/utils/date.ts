@@ -22,6 +22,11 @@ export function addDays(key: DateKey, days: number): DateKey {
   return toDateKey(date)
 }
 
+/** Short weekday name for a day key, e.g. "Mon". */
+export function formatWeekday(key: DateKey): string {
+  return fromDateKey(key).toLocaleDateString('en-US', { weekday: 'short' })
+}
+
 /** Whole days from `from` to `to`. Negative when `to` is earlier. */
 export function daysBetween(from: DateKey, to: DateKey): number {
   const msPerDay = 24 * 60 * 60 * 1000
