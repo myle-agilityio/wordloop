@@ -23,6 +23,7 @@ export function WordsPage() {
       .map((word) => ({ word, status: getWordStatus(progress[word.id], today) }))
       .filter(({ status }) => {
         if (filter === 'learning') return status.kind !== 'not-started'
+        if (filter === 'due') return status.kind === 'due'
         if (filter === 'not-started') return status.kind === 'not-started'
         return true
       })
@@ -58,7 +59,9 @@ export function WordsPage() {
             ))}
           </ul>
         ) : (
-          <p className="px-5 py-12 text-center text-sm text-slate-500">No words match.</p>
+          <p className="px-5 py-12 text-center text-sm text-slate-500">
+            {filter === 'due' ? 'Nothing due today.' : 'No words match.'}
+          </p>
         )}
       </Card>
     </div>

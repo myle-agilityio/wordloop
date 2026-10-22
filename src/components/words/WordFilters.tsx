@@ -2,11 +2,12 @@ import { Search } from 'lucide-react'
 
 import { cn } from '@/lib'
 
-export type WordFilter = 'all' | 'learning' | 'not-started'
+export type WordFilter = 'all' | 'learning' | 'due' | 'not-started'
 
 const FILTERS: { value: WordFilter; label: string }[] = [
   { value: 'all', label: 'All' },
   { value: 'learning', label: 'Learning' },
+  { value: 'due', label: 'Due today' },
   { value: 'not-started', label: 'Not started' },
 ]
 
