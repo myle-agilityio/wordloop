@@ -9,7 +9,7 @@ vi.mock('@/api', () => ({
   deleteAllStudyDays: vi.fn(),
 }))
 
-import { saveProgress, saveStudyDays } from '@/api'
+import { deleteAllStudyDays, saveProgress, saveStudyDays } from '@/api'
 
 import { useProgressStore } from './progressStore'
 
@@ -111,5 +111,16 @@ describe('progressStore', () => {
 
     expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
     expect(useProgressStore.getState().saveError).toBeNull()
+  })
+
+  it('resetProgress clears the study days too', async () => {
+    useProgressStore.getState().rateWord('time', 'easy', '2026-10-15')
+    await flush()
+
+    await useProgressStore.getState().resetProgress()
+
+    expect(deleteAllStudyDays).toHaveBeenCalledWith('user-1')
+    expect(useProgressStore.getState().studyDays).toEqual([])
+    expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
   })
 })
