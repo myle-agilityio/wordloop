@@ -38,7 +38,7 @@ export function RatingButtons({ onRate, onAgain }: RatingButtonsProps) {
         <button key={key} type="button" onClick={onClick} className={cn(buttonClasses, className)}>
           <strong className="text-base font-semibold">{label}</strong>
           <span className="hidden text-center text-xs text-slate-500 sm:block">{description}</span>
-          <span className="mt-1 hidden sm:block">
+          <span className="mt-auto hidden pt-1 sm:block">
             <Kbd>{shortcut}</Kbd>
           </span>
         </button>
