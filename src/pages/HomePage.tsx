@@ -1,11 +1,15 @@
 import { BookOpenCheck, CalendarCheck, Flame, Sparkles } from 'lucide-react'
+import { useMemo } from 'react'
 
+import { ReviewForecastCard } from '@/components/home/ReviewForecastCard'
 import { StatCard } from '@/components/home/StatCard'
 import { TodayCard } from '@/components/home/TodayCard'
 import { Button, ProgressBar } from '@/components/ui'
 import { NEW_WORDS_PER_DAY } from '@/constants'
 import { useDailyPlan, useStudyStreak, useWords } from '@/hooks'
+import { reviewForecast } from '@/lib'
 import { useProgressStore } from '@/stores'
+import { todayKey } from '@/utils'
 
 export function HomePage() {
   const words = useWords()
@@ -13,6 +17,9 @@ export function HomePage() {
   const streak = useStudyStreak()
   const progress = useProgressStore((state) => state.progress)
   const resetProgress = useProgressStore((state) => state.resetProgress)
+
+  const today = todayKey()
+  const forecast = useMemo(() => reviewForecast(progress, today), [progress, today])
 
   const learnedCount = Object.keys(progress).length
 
@@ -73,6 +80,8 @@ export function HomePage() {
           hint="Words to review today"
         />
       </section>
+
+      {learnedCount > 0 && <ReviewForecastCard forecast={forecast} />}
 
       {learnedCount > 0 && (
         <div className="flex justify-end">
