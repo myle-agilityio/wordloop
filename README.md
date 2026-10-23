@@ -40,12 +40,19 @@ WordLoop includes **1,000 common English words**. Each word has a meaning and ex
 
 ## Status
 
-Early planning. These details are not decided yet:
+First working version: a web app you can use today. Done so far:
 
-- Platform (web, mobile or desktop)
-- Exact review gaps for each rating
-- Meaning language (English definitions or translations)
-- Where progress is saved (on the device or in a synced account)
+- **Accounts**: sign up and sign in with email and password. Progress is saved per account.
+- **Study**: 5 new words a day plus the reviews that are due, rated Easy, Medium or Hard. **Again** sends a card to the end of the session without scheduling it. Each rating button shows when the word will come back. Keyboard shortcuts 1–4.
+- **Home**: today's plan, stats, a study streak and a 7-day review forecast.
+- **Words**: the full word list with each word's status, and a **Due today** filter.
+
+Still to do:
+
+- Add the remaining 950 words (50 of 1,000 so far).
+- Decide whether to add translations next to the English definitions.
+
+The choices made for this version are listed under [Choices made for this first version](#choices-made-for-this-first-version).
 
 ## Project structure
 
@@ -73,7 +80,7 @@ db/migrations/          # SQL to run once in the Neon SQL Editor
 ### First-time setup
 
 1. Copy `.env.example` to `.env` and fill in the Neon Auth URL and Data API URL from the Neon console.
-2. In the Neon console, open the SQL Editor and run [`db/migrations/001_user_progress.sql`](db/migrations/001_user_progress.sql). It creates the `user_progress` table and the rule that each user can only see their own rows.
+2. In the Neon console, open the SQL Editor and run [`db/migrations/001_user_progress.sql`](db/migrations/001_user_progress.sql). It creates the `user_progress` table and the rule that each user can only see their own rows. Then run [`db/migrations/002_study_days.sql`](db/migrations/002_study_days.sql), which adds the `study_days` table used for the streak.
 3. In the Neon console, open **Data API** and click **Refresh schema cache**. Do this after every change to the database tables.
 
 ### Scripts
@@ -90,11 +97,11 @@ npm run build
 
 ### Choices made for this first version
 
-These answer the open questions under [Status](#status) for now and are easy to change:
+These answer the early open questions for now and are easy to change:
 
 - **Platform**: web.
 - **Review gaps** (`src/constants/srs.ts`): the first review comes after 1 day (Hard), 3 days (Medium) or 7 days (Easy). After that, Medium multiplies the gap by 1.5 and Easy by 2.5. Hard resets it to 1 day.
 - **Meanings**: English definitions.
 - **Accounts**: sign up and sign in with email and password through Neon Auth.
-- **Progress**: saved per account in the `user_progress` table, through the Neon Data API. Row-level security limits each user to their own rows. Progress saved on a device by the earlier version moves into the account at the first sign-in.
+- **Progress**: saved per account in the `user_progress` and `study_days` tables, through the Neon Data API. Row-level security limits each user to their own rows. Progress saved on a device by the earlier version moves into the account at the first sign-in.
 - **Word list**: 50 of the 1,000 words so far. Add the rest to `public/data/words.json` in the same format.
