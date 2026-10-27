@@ -49,7 +49,7 @@ First working version: a web app you can use today. Done so far:
 
 Still to do:
 
-- Add the remaining 950 words (50 of 1,000 so far).
+- Add the remaining 940 words (60 of 1,000 so far).
 - Decide whether to add translations next to the English definitions.
 
 The choices made for this version are listed under [Choices made for this first version](#choices-made-for-this-first-version).
@@ -104,4 +104,4 @@ These answer the early open questions for now and are easy to change:
 - **Meanings**: English definitions.
 - **Accounts**: sign up and sign in with email and password through Neon Auth.
 - **Progress**: saved per account in the `user_progress` and `study_days` tables, through the Neon Data API. Row-level security limits each user to their own rows. Progress saved on a device by the earlier version moves into the account at the first sign-in.
-- **Word list**: 50 of the 1,000 words so far. Add the rest to `public/data/words.json` in the same format.
+- **Word list**: 60 of the 1,000 words so far. Add the rest to `public/data/words.json` in the same format.
