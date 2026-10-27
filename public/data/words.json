@@ -401,5 +401,85 @@
     "partOfSpeech": "adverb",
     "meaning": "Many times; frequently.",
     "examples": ["We often go to the beach in summer.", "How often do you exercise?"]
+  },
+  {
+    "id": "never",
+    "rank": 51,
+    "word": "never",
+    "partOfSpeech": "adverb",
+    "meaning": "At no time; not ever.",
+    "examples": ["I never drink coffee at night.", "She has never been to Japan."]
+  },
+  {
+    "id": "house",
+    "rank": 52,
+    "word": "house",
+    "partOfSpeech": "noun",
+    "meaning": "A building where people live, usually one family.",
+    "examples": ["They live in a big house near the park.", "Come to my house after school."]
+  },
+  {
+    "id": "friend",
+    "rank": 53,
+    "word": "friend",
+    "partOfSpeech": "noun",
+    "meaning": "A person you know well and like.",
+    "examples": ["He is my best friend.", "I met a friend for lunch."]
+  },
+  {
+    "id": "school",
+    "rank": 54,
+    "word": "school",
+    "partOfSpeech": "noun",
+    "meaning": "A place where children go to learn.",
+    "examples": ["My daughter walks to school.", "What did you learn at school today?"]
+  },
+  {
+    "id": "family",
+    "rank": 55,
+    "word": "family",
+    "partOfSpeech": "noun",
+    "meaning": "A group of people who are related, such as parents and children.",
+    "examples": ["I have a big family.", "We spend Sundays with my family."]
+  },
+  {
+    "id": "help",
+    "rank": 56,
+    "word": "help",
+    "partOfSpeech": "verb",
+    "meaning": "To make it easier for someone to do something.",
+    "examples": ["Can you help me with this box?", "She helped her brother with his homework."]
+  },
+  {
+    "id": "start",
+    "rank": 57,
+    "word": "start",
+    "partOfSpeech": "verb",
+    "meaning": "To begin doing something.",
+    "examples": ["The film starts at eight.", "I started learning English last year."]
+  },
+  {
+    "id": "play",
+    "rank": 58,
+    "word": "play",
+    "partOfSpeech": "verb",
+    "meaning": "To take part in a game or sport; to make music with an instrument.",
+    "examples": ["The children play football after school.", "He plays the guitar very well."]
+  },
+  {
+    "id": "easy",
+    "rank": 59,
+    "word": "easy",
+    "partOfSpeech": "adjective",
+    "meaning": "Not difficult; simple to do or understand.",
+    "examples": ["The test was easy.", "This recipe is quick and easy."]
+  },
+  {
+    "id": "together",
+    "rank": 60,
+    "word": "together",
+    "partOfSpeech": "adverb",
+    "meaning": "With each other; in one place or group.",
+    "examples": ["We work together in the same office.", "Let's have dinner together."]
   }
 ]
