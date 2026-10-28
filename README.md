@@ -4,6 +4,8 @@ WordLoop is a vocabulary learning app for the 1,000 most common English words. E
 
 WordLoop follows the **spaced repetition** method, like the [Anki](https://apps.ankiweb.net/) app.
 
+**Live app:** https://myle-wordloop.vercel.app/
+
 ## How it works
 
 ### Flashcards
