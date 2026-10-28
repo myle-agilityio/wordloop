@@ -1,22 +1,40 @@
-import { FIRST_INTERVAL_DAYS, INTERVAL_MULTIPLIER } from '@/constants'
-import type { CardProgress, DateKey, Rating } from '@/types'
+import type { CardProgress, DateKey, Rating, StudySettings } from '@/types'
 import { addDays } from '@/utils'
 
-/** Next gap in days, given the current gap (undefined for a new word) and the rating. */
-export function nextIntervalDays(currentInterval: number | undefined, rating: Rating): number {
-  const firstInterval = FIRST_INTERVAL_DAYS[rating]
-  if (currentInterval === undefined || rating === 'hard') return firstInterval
+/** Next gap in days, given the current gap (undefined for a new word), the rating and the user's settings. */
+export function nextIntervalDays(
+  currentInterval: number | undefined,
+  rating: Rating,
+  settings: StudySettings,
+): number {
+  const firstInterval = settings.firstIntervalDays[rating]
+  if (currentInterval === undefined || rating === 'hard') {
+    return Math.min(firstInterval, settings.maxIntervalDays)
+  }
 
-  const grown = Math.round(currentInterval * INTERVAL_MULTIPLIER[rating])
-  return Math.max(firstInterval, grown)
+  const grown = Math.round(currentInterval * settings.intervalMultiplier[rating])
+  return Math.min(Math.max(firstInterval, grown), settings.maxIntervalDays)
+}
+
+/** The gaps a new word gets if it is rated the same way every time, for previewing settings. */
+export function intervalSequence(rating: Rating, settings: StudySettings, count = 5): number[] {
+  const sequence: number[] = []
+  let interval: number | undefined
+  for (let i = 0; i < count; i += 1) {
+    interval = nextIntervalDays(interval, rating, settings)
+    sequence.push(interval)
+  }
+  return sequence
 }
 
 /** The day the word would be due next for each rating, shown before the user picks one. */
 export function previewDueOn(
   previous: CardProgress | undefined,
   today: DateKey,
+  settings: StudySettings,
 ): Record<Rating, DateKey> {
-  const dueOn = (rating: Rating) => addDays(today, nextIntervalDays(previous?.intervalDays, rating))
+  const dueOn = (rating: Rating) =>
+    addDays(today, nextIntervalDays(previous?.intervalDays, rating, settings))
   return { hard: dueOn('hard'), medium: dueOn('medium'), easy: dueOn('easy') }
 }
 
@@ -26,8 +44,9 @@ export function scheduleReview(
   previous: CardProgress | undefined,
   rating: Rating,
   today: DateKey,
+  settings: StudySettings,
 ): CardProgress {
-  const intervalDays = nextIntervalDays(previous?.intervalDays, rating)
+  const intervalDays = nextIntervalDays(previous?.intervalDays, rating, settings)
 
   return {
     wordId,

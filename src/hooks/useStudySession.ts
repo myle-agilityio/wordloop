@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { buildSessionQueue, getDailyPlan, previewDueOn, sendCardAgain } from '@/lib'
-import { useProgressStore } from '@/stores'
+import { useProgressStore, useSettingsStore } from '@/stores'
 import type { Rating, Word } from '@/types'
 import { formatDueLabel, todayKey } from '@/utils'
 
@@ -16,10 +16,12 @@ const EMPTY_TALLY: RatingTally = { hard: 0, medium: 0, easy: 0 }
 export function useStudySession(words: Word[]) {
   const rateWord = useProgressStore((state) => state.rateWord)
   const progress = useProgressStore((state) => state.progress)
+  const settings = useSettingsStore((state) => state.settings)
 
   const [session] = useState(() => {
     const today = todayKey()
-    const plan = getDailyPlan(words, useProgressStore.getState().progress, today)
+    const { newWordsPerDay } = useSettingsStore.getState().settings
+    const plan = getDailyPlan(words, useProgressStore.getState().progress, today, newWordsPerDay)
     return { today, queue: buildSessionQueue(plan) }
   })
   const [queue, setQueue] = useState(session.queue)
@@ -32,7 +34,7 @@ export function useStudySession(words: Word[]) {
   const current = queue.at(index)
 
   // Labels for what each rating would do to the current word, shown before it's rated.
-  const dueOn = previewDueOn(current ? progress[current.word.id] : undefined, today)
+  const dueOn = previewDueOn(current ? progress[current.word.id] : undefined, today, settings)
   const nextDue: Record<Rating, string> = {
     hard: formatDueLabel(dueOn.hard, today),
     medium: formatDueLabel(dueOn.medium, today),

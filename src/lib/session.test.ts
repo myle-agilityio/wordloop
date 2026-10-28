@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
+import { DEFAULT_SETTINGS } from '@/constants'
 import type { CardProgress, ProgressMap, Word } from '@/types'
 
 import { buildSessionQueue, getDailyPlan, type SessionCard, sendCardAgain } from './session'
@@ -28,10 +29,15 @@ const today = '2026-10-15'
 
 describe('getDailyPlan', () => {
   it('offers the 5 most common words to a new user', () => {
-    const plan = getDailyPlan(words, {}, today)
+    const plan = getDailyPlan(words, {}, today, DEFAULT_SETTINGS.newWordsPerDay)
 
     expect(plan.reviews).toEqual([])
     expect(plan.newWords.map((w) => w.id)).toEqual(['w1', 'w2', 'w3', 'w4', 'w5'])
+  })
+
+  it('follows the new words per day setting', () => {
+    expect(getDailyPlan(words, {}, today, 8).newWords).toHaveLength(8)
+    expect(getDailyPlan(words, {}, today, 0).newWords).toEqual([])
   })
 
   it('only offers the new words left for today', () => {
@@ -39,7 +45,7 @@ describe('getDailyPlan', () => {
       w1: makeProgress('w1', { learnedOn: today, dueOn: '2026-10-16' }),
       w2: makeProgress('w2', { learnedOn: today, dueOn: '2026-10-16' }),
     }
-    const plan = getDailyPlan(words, progress, today)
+    const plan = getDailyPlan(words, progress, today, DEFAULT_SETTINGS.newWordsPerDay)
 
     expect(plan.newLearnedToday).toBe(2)
     expect(plan.newWords.map((w) => w.id)).toEqual(['w3', 'w4', 'w5'])
@@ -51,7 +57,7 @@ describe('getDailyPlan', () => {
       w2: makeProgress('w2', { dueOn: '2026-10-10' }),
       w3: makeProgress('w3', { dueOn: '2026-10-16' }),
     }
-    const plan = getDailyPlan(words, progress, today)
+    const plan = getDailyPlan(words, progress, today, DEFAULT_SETTINGS.newWordsPerDay)
 
     expect(plan.reviews.map((w) => w.id)).toEqual(['w2', 'w1'])
   })

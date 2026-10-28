@@ -27,7 +27,7 @@ After flipping a card, rate how well you remembered the word:
 
 ### Daily learning
 
-- You learn **5 new words per day**.
+- You learn **5 new words per day** by default; change it on the Settings page.
 - Words you've learned come back for review. Your rating decides when (spaced repetition):
   - **Hard** words come back soon.
   - **Medium** words come back after a while.
@@ -43,7 +43,7 @@ WordLoop includes **1,000 common English words**. Each word has a meaning and ex
 First working version: a web app you can use today. Done so far:
 
 - **Accounts**: sign up and sign in with email and password. Progress is saved per account.
-- **Study**: 5 new words a day plus the reviews that are due, rated Easy, Medium or Hard. **Again** sends a card to the end of the session without scheduling it. Each rating button shows when the word will come back. Keyboard shortcuts 1–4.
+- **Study**: new words for the day (5 by default) plus the reviews that are due, rated Easy, Medium or Hard. **Again** sends a card to the end of the session without scheduling it. Each rating button shows when the word will come back. Keyboard shortcuts 1–4.
 - **Home**: today's plan, stats, a study streak and a 7-day review forecast.
 - **Words**: the full word list with each word's status, and a **Due today** filter.
 
@@ -62,13 +62,13 @@ All WordLoop code lives in this `wordloop/` folder. The first version is a web a
 src/
 ├── api/         # Word list, sign-in and progress requests
 ├── app/         # App root
-├── components/  # UI, grouped by feature (ui, layout, auth, flashcard, study, home, words)
-├── constants/   # Routes, ratings, spaced-repetition settings
+├── components/  # UI, grouped by feature (ui, layout, auth, flashcard, study, home, words, settings)
+├── constants/   # Routes, ratings, default review settings and their limits
 ├── hooks/       # React hooks (auth, words, daily plan, study session, shortcuts)
-├── lib/         # Neon client and pure logic: review scheduler, daily plan, word status
+├── lib/         # Neon client and pure logic: review scheduler, daily plan, word status, settings validation
 ├── pages/       # One component per route
 ├── router/      # Route config
-├── stores/      # Progress state (zustand), saved to the database
+├── stores/      # Progress and settings state (zustand), saved to the database
 ├── types/       # Shared TypeScript types
 └── utils/       # Date helpers
 public/data/words.json  # Word list
@@ -80,7 +80,7 @@ db/migrations/          # SQL to run once in the Neon SQL Editor
 ### First-time setup
 
 1. Copy `.env.example` to `.env` and fill in the Neon Auth URL and Data API URL from the Neon console.
-2. In the Neon console, open the SQL Editor and run [`db/migrations/001_user_progress.sql`](db/migrations/001_user_progress.sql). It creates the `user_progress` table and the rule that each user can only see their own rows. Then run [`db/migrations/002_study_days.sql`](db/migrations/002_study_days.sql), which adds the `study_days` table used for the streak.
+2. In the Neon console, open the SQL Editor and run [`db/migrations/001_user_progress.sql`](db/migrations/001_user_progress.sql). It creates the `user_progress` table and the rule that each user can only see their own rows. Then run [`db/migrations/002_study_days.sql`](db/migrations/002_study_days.sql), which adds the `study_days` table used for the streak, and [`db/migrations/003_user_settings.sql`](db/migrations/003_user_settings.sql), which adds the `user_settings` table for each user's review settings.
 3. In the Neon console, open **Data API** and click **Refresh schema cache**. Do this after every change to the database tables.
 
 ### Scripts
@@ -100,8 +100,8 @@ npm run build
 These answer the early open questions for now and are easy to change:
 
 - **Platform**: web.
-- **Review gaps** (`src/constants/srs.ts`): the first review comes after 1 day (Hard), 3 days (Medium) or 7 days (Easy). After that, Medium multiplies the gap by 1.5 and Easy by 2.5. Hard resets it to 1 day.
+- **Review gaps**: each user sets them on the Settings page, like Anki's deck options. The defaults (`src/constants/srs.ts`): 5 new words a day; the first review comes after 1 day (Hard), 3 days (Medium) or 7 days (Easy); after that, Medium multiplies the gap by 1.5 and Easy by 2.5, up to 365 days. Hard resets it to its first interval. New settings apply from the next rating; words already scheduled keep their dates.
 - **Meanings**: English definitions.
 - **Accounts**: sign up and sign in with email and password through Neon Auth.
-- **Progress**: saved per account in the `user_progress` and `study_days` tables, through the Neon Data API. Row-level security limits each user to their own rows. Progress saved on a device by the earlier version moves into the account at the first sign-in.
+- **Progress and settings**: saved per account in the `user_progress`, `study_days` and `user_settings` tables, through the Neon Data API. Row-level security limits each user to their own rows. Progress saved on a device by the earlier version moves into the account at the first sign-in.
 - **Word list**: 60 of the 1,000 words so far. Add the rest to `public/data/words.json` in the same format.
