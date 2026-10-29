@@ -6,6 +6,7 @@ import { NotFound, RouteError } from '@/components/layout/RouteError'
 import { ROUTES } from '@/constants'
 import { HomePage } from '@/pages/HomePage'
 import { LoginPage } from '@/pages/LoginPage'
+import { SettingsPage } from '@/pages/SettingsPage'
 import { StudyPage } from '@/pages/StudyPage'
 import { WordsPage } from '@/pages/WordsPage'
 
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
           { path: ROUTES.home, Component: HomePage },
           { path: ROUTES.study, Component: StudyPage },
           { path: ROUTES.words, Component: WordsPage },
+          { path: ROUTES.settings, Component: SettingsPage },
         ],
       },
       { path: '*', Component: NotFound },

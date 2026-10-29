@@ -12,6 +12,7 @@ vi.mock('@/api', () => ({
 import { deleteAllStudyDays, saveProgress, saveStudyDays } from '@/api'
 
 import { useProgressStore } from './progressStore'
+import { useSettingsStore } from './settingsStore'
 
 const flush = () => new Promise((resolve) => setTimeout(resolve, 0))
 
@@ -122,5 +123,20 @@ describe('progressStore', () => {
     expect(deleteAllStudyDays).toHaveBeenCalledWith('user-1')
     expect(useProgressStore.getState().studyDays).toEqual([])
     expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
+  })
+
+  it('schedules ratings with the user’s settings', () => {
+    useSettingsStore.setState({
+      settings: {
+        newWordsPerDay: 5,
+        firstIntervalDays: { hard: 2, medium: 4, easy: 10 },
+        intervalMultiplier: { medium: 1.5, easy: 2.5 },
+        maxIntervalDays: 365,
+      },
+    })
+    useProgressStore.getState().rateWord('time', 'easy', '2026-10-15')
+
+    expect(useProgressStore.getState().progress.time.dueOn).toBe('2026-10-25')
+    useSettingsStore.getState().clear()
   })
 })

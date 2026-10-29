@@ -1,4 +1,3 @@
-import { NEW_WORDS_PER_DAY } from '@/constants'
 import type { DateKey, ProgressMap, Word } from '@/types'
 
 export type SessionCardKind = 'review' | 'new'
@@ -17,8 +16,13 @@ export interface DailyPlan {
   newLearnedToday: number
 }
 
-/** Works out what the user should study today: due reviews, then up to 5 new words. */
-export function getDailyPlan(words: Word[], progress: ProgressMap, today: DateKey): DailyPlan {
+/** Works out what the user should study today: due reviews, then up to `newWordsPerDay` new words. */
+export function getDailyPlan(
+  words: Word[],
+  progress: ProgressMap,
+  today: DateKey,
+  newWordsPerDay: number,
+): DailyPlan {
   const byRank = [...words].sort((a, b) => a.rank - b.rank)
   const studied = byRank.filter((word) => progress[word.id])
 
@@ -27,7 +31,7 @@ export function getDailyPlan(words: Word[], progress: ProgressMap, today: DateKe
     .sort((a, b) => progress[a.id].dueOn.localeCompare(progress[b.id].dueOn))
 
   const newLearnedToday = studied.filter((word) => progress[word.id].learnedOn === today).length
-  const remainingNew = Math.max(0, NEW_WORDS_PER_DAY - newLearnedToday)
+  const remainingNew = Math.max(0, newWordsPerDay - newLearnedToday)
   const newWords = byRank.filter((word) => !progress[word.id]).slice(0, remainingNew)
 
   return { reviews, newWords, newLearnedToday }

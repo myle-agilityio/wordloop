@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router'
 
 import { signOut } from '@/api'
 import { ROUTES } from '@/constants'
-import { useProgressStore } from '@/stores'
+import { useProgressStore, useSettingsStore } from '@/stores'
 
 interface UserMenuProps {
   name: string
@@ -13,10 +13,12 @@ interface UserMenuProps {
 export function UserMenu({ name, email }: UserMenuProps) {
   const navigate = useNavigate()
   const clearProgress = useProgressStore((state) => state.clear)
+  const clearSettings = useSettingsStore((state) => state.clear)
 
   const handleSignOut = async () => {
     await signOut()
     clearProgress()
+    clearSettings()
     navigate(ROUTES.login, { replace: true })
   }
 

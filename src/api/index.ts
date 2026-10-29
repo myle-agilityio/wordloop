@@ -1,4 +1,5 @@
 export * from './auth'
 export * from './progress'
+export * from './settings'
 export * from './studyDays'
 export * from './words'

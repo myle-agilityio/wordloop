@@ -1,4 +1,4 @@
-import { BookOpen, House, Layers, Repeat2 } from 'lucide-react'
+import { BookOpen, House, Layers, Repeat2, Settings } from 'lucide-react'
 import { Link, NavLink } from 'react-router'
 
 import { ROUTES } from '@/constants'
@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { to: ROUTES.home, label: 'Today', icon: House },
   { to: ROUTES.study, label: 'Study', icon: Layers },
   { to: ROUTES.words, label: 'Words', icon: BookOpen },
+  { to: ROUTES.settings, label: 'Settings', icon: Settings },
 ]
 
 export function Header() {
