@@ -3,7 +3,7 @@ import { useState, type FormEvent } from 'react'
 import { Navigate, useLocation, useNavigate } from 'react-router'
 
 import { signIn, signUp } from '@/api'
-import { Button, Card, TextField } from '@/components/ui'
+import { Button, Card, PasswordField, TextField } from '@/components/ui'
 import { ROUTES } from '@/constants'
 import { useAuth } from '@/hooks'
 import { cn } from '@/lib'
@@ -105,10 +105,9 @@ export function LoginPage() {
             <TextField label="Name" name="name" autoComplete="name" required maxLength={80} />
           )}
           <TextField label="Email" name="email" type="email" autoComplete="email" required />
-          <TextField
+          <PasswordField
             label="Password"
             name="password"
-            type="password"
             autoComplete={isSignUp ? 'new-password' : 'current-password'}
             required
             minLength={isSignUp ? MIN_PASSWORD_LENGTH : undefined}
