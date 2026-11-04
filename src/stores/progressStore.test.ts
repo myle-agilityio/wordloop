@@ -10,6 +10,7 @@ vi.mock('@/api', () => ({
 }))
 
 import { deleteAllStudyDays, saveProgress, saveStudyDays } from '@/api'
+import { getStudyStreak, speak, stopSpeaking } from '@/lib'
 
 import { useProgressStore } from './progressStore'
 import { useSettingsStore } from './settingsStore'
@@ -123,6 +124,44 @@ describe('progressStore', () => {
     expect(deleteAllStudyDays).toHaveBeenCalledWith('user-1')
     expect(useProgressStore.getState().studyDays).toEqual([])
     expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
+  })
+
+  it('tapping a speaker leaves progress, due dates, stats and the streak unchanged', async () => {
+    const synth = {
+      getVoices: () => [{ lang: 'en-US', localService: true } as SpeechSynthesisVoice],
+      speak: vi.fn(),
+      cancel: vi.fn(),
+    }
+    vi.stubGlobal('speechSynthesis', synth)
+    vi.stubGlobal('SpeechSynthesisUtterance', class {})
+
+    const day = '2026-10-15'
+    useProgressStore.getState().rateWord('time', 'easy', day)
+    await flush()
+    save.mockClear()
+    vi.mocked(saveStudyDays).mockClear()
+
+    const before = useProgressStore.getState()
+    const progressBefore = structuredClone(before.progress)
+    const studyDaysBefore = [...before.studyDays]
+    const streakBefore = getStudyStreak(before.studyDays, day)
+
+    speak('time')
+    speak('time')
+    stopSpeaking()
+    await flush()
+
+    const after = useProgressStore.getState()
+    expect(synth.speak).toHaveBeenCalledTimes(2)
+    expect(after.progress).toBe(before.progress)
+    expect(after.progress).toEqual(progressBefore)
+    expect(after.studyDays).toEqual(studyDaysBefore)
+    expect(after.unsavedWordIds).toEqual(before.unsavedWordIds)
+    expect(getStudyStreak(after.studyDays, day)).toEqual(streakBefore)
+    expect(save).not.toHaveBeenCalled()
+    expect(saveStudyDays).not.toHaveBeenCalled()
+
+    vi.unstubAllGlobals()
   })
 
   it('schedules ratings with the user’s settings', () => {
