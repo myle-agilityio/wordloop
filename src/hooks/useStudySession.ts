@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { buildSessionQueue, getDailyPlan, previewDueOn, sendCardAgain } from '@/lib'
+import { buildSessionQueue, getDailyPlan, previewDueOn, sendCardAgain, stopSpeaking } from '@/lib'
 import { useProgressStore, useSettingsStore } from '@/stores'
 import type { Rating, Word } from '@/types'
 import { formatDueLabel, todayKey } from '@/utils'
@@ -41,11 +41,18 @@ export function useStudySession(words: Word[]) {
     easy: formatDueLabel(dueOn.easy, today),
   }
 
-  const flip = () => setIsFlipped((flipped) => !flipped)
+  // Stop speech when the learner leaves Study, by link or browser Back.
+  useEffect(() => stopSpeaking, [])
+
+  const flip = () => {
+    stopSpeaking()
+    setIsFlipped((flipped) => !flipped)
+  }
 
   const rate = (rating: Rating) => {
     if (!current || !isFlipped) return
 
+    stopSpeaking()
     rateWord(current.word.id, rating, today)
     setTally((prev) => ({ ...prev, [rating]: prev[rating] + 1 }))
     setIsFlipped(false)
@@ -56,6 +63,7 @@ export function useStudySession(words: Word[]) {
   const again = () => {
     if (!current || !isFlipped) return
 
+    stopSpeaking()
     setQueue((prev) => sendCardAgain(prev, index))
     setAgainCount((count) => count + 1)
     setIsFlipped(false)
