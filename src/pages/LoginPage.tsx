@@ -3,6 +3,7 @@ import { useState, type FormEvent } from 'react'
 import { Navigate, useLocation, useNavigate } from 'react-router'
 
 import { signIn, signUp } from '@/api'
+import { PasswordNotice } from '@/components/auth/PasswordNotice'
 import { Button, Card, PasswordField, TextField } from '@/components/ui'
 import { ROUTES } from '@/constants'
 import { useAuth } from '@/hooks'
@@ -113,6 +114,7 @@ export function LoginPage() {
             minLength={isSignUp ? MIN_PASSWORD_LENGTH : undefined}
             hint={isSignUp ? `At least ${MIN_PASSWORD_LENGTH} characters.` : undefined}
           />
+          {isSignUp && <PasswordNotice />}
 
           {error && (
             <p role="alert" className="rounded-xl bg-rose-50 px-3 py-2 text-sm text-rose-700">
@@ -130,6 +132,7 @@ export function LoginPage() {
 
           <Button type="submit" size="lg" disabled={isSubmitting} className="mt-2">
             {isSubmitting && <LoaderCircle className="size-4 animate-spin" aria-hidden />}
+            {isSubmitting && false}
             {isSignUp ? 'Create account' : 'Sign in'}
           </Button>
         </form>
