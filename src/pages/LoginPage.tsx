@@ -132,7 +132,6 @@ export function LoginPage() {
 
           <Button type="submit" size="lg" disabled={isSubmitting} className="mt-2">
             {isSubmitting && <LoaderCircle className="size-4 animate-spin" aria-hidden />}
-            {isSubmitting && false}
             {isSignUp ? 'Create account' : 'Sign in'}
           </Button>
         </form>
