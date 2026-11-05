@@ -49,7 +49,7 @@ export function RatingButtons({ nextDue, onRate, onAgain }: RatingButtonsProps) 
           <strong className="text-base font-semibold">{label}</strong>
           <span className="text-xs font-medium text-slate-600">Due {dueLabel}</span>
           <span className="hidden text-center text-xs text-slate-500 sm:block">{description}</span>
-          <span className="mt-auto hidden pt-1 sm:block">
+          <span className="mt-auto hidden pt-1 pointer-fine:block">
             <Kbd>{shortcut}</Kbd>
           </span>
         </button>

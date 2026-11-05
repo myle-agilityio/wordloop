@@ -56,12 +56,15 @@ export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: Flashcard
             <span className="text-sm text-slate-500 italic">{word.partOfSpeech}</span>
           </span>
           <span className="flex items-center justify-center gap-2 text-xs text-slate-400">
-            Tap the card or press <Kbd>Space</Kbd> to see the meaning
-            {canSpeak && (
-              <>
-                · <Kbd>P</Kbd> to hear it
-              </>
-            )}
+            <span className="pointer-fine:hidden">Tap the card to see the meaning</span>
+            <span className="hidden pointer-fine:contents">
+              Tap the card or press <Kbd>Space</Kbd> to see the meaning
+              {canSpeak && (
+                <>
+                  · <Kbd>P</Kbd> to hear it
+                </>
+              )}
+            </span>
           </span>
         </span>
 
