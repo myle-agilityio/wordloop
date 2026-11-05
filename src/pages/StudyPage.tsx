@@ -62,9 +62,7 @@ export function StudyPage() {
         ) : (
           <Button size="lg" className="w-full" onClick={flip}>
             Show meaning
-            <span className="hidden sm:inline">
-              <Kbd>Space</Kbd>
-            </span>
+            <Kbd>Space</Kbd>
           </Button>
         )}
       </div>
