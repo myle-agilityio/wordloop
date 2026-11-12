@@ -1,4 +1,4 @@
-/** The app version, e.g. "0.1.0". */
+/** The app version, e.g. "1.0.0". */
 export const APP_VERSION = __APP_VERSION__
 
 /** The GitHub release page for this version. */
