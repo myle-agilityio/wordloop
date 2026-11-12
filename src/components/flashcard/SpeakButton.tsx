@@ -1,5 +1,5 @@
 import { Volume2 } from 'lucide-react'
-import type { KeyboardEvent, MouseEvent } from 'react'
+import type { MouseEvent } from 'react'
 
 import { useCanSpeak } from '@/hooks'
 import { speak } from '@/lib'
@@ -19,16 +19,10 @@ export function SpeakButton({ text, label }: SpeakButtonProps) {
     speak(text)
   }
 
-  // Keep Space and Enter away from the page's Space-to-flip shortcut, so the button plays instead
-  const handleKeyDown = (event: KeyboardEvent) => {
-    if (event.key === ' ' || event.key === 'Enter') event.stopPropagation()
-  }
-
   return (
     <button
       type="button"
       onClick={handleClick}
-      onKeyDown={handleKeyDown}
       aria-label={label}
       className="pointer-events-auto flex size-11 shrink-0 items-center justify-center rounded-lg text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700 focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
     >
