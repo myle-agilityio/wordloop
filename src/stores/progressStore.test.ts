@@ -1,4 +1,7 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it, onTestFinished, vi } from 'vitest'
+
+// The @/lib barrel loads the Neon client, which needs .env; CI has none and these tests never reach Neon.
+vi.mock('@/lib/neon', () => ({ neon: {} }))
 
 vi.mock('@/api', () => ({
   fetchProgress: vi.fn(async () => ({})),
@@ -126,7 +129,7 @@ describe('progressStore', () => {
     expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
   })
 
-  it('tapping a speaker leaves progress, due dates, stats and the streak unchanged', async () => {
+  it('TC14: tapping a speaker leaves progress, due dates, stats and the streak unchanged', async () => {
     const synth = {
       getVoices: () => [{ lang: 'en-US', localService: true } as SpeechSynthesisVoice],
       speak: vi.fn(),
@@ -134,6 +137,10 @@ describe('progressStore', () => {
     }
     vi.stubGlobal('speechSynthesis', synth)
     vi.stubGlobal('SpeechSynthesisUtterance', class {})
+    // Runs even when an assertion fails, so the fake voice never leaks into later tests
+    onTestFinished(() => {
+      vi.unstubAllGlobals()
+    })
 
     const day = '2026-10-15'
     useProgressStore.getState().rateWord('time', 'easy', day)
@@ -160,8 +167,6 @@ describe('progressStore', () => {
     expect(getStudyStreak(after.studyDays, day)).toEqual(streakBefore)
     expect(save).not.toHaveBeenCalled()
     expect(saveStudyDays).not.toHaveBeenCalled()
-
-    vi.unstubAllGlobals()
   })
 
   it('schedules ratings with the user’s settings', () => {
