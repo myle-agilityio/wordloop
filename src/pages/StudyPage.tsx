@@ -4,7 +4,8 @@ import { AllCaughtUp } from '@/components/study/AllCaughtUp'
 import { SessionProgress } from '@/components/study/SessionProgress'
 import { SessionSummary } from '@/components/study/SessionSummary'
 import { Button, Kbd } from '@/components/ui'
-import { useKeyboardShortcuts, useStudySession, useWords } from '@/hooks'
+import { useCanSpeak, useKeyboardShortcuts, useStudySession, useWords } from '@/hooks'
+import { speak } from '@/lib'
 
 export function StudyPage() {
   const words = useWords()
@@ -22,6 +23,11 @@ export function StudyPage() {
     rate,
     again,
   } = useStudySession(words)
+  const canSpeak = useCanSpeak()
+
+  const playWord = () => {
+    if (current) speak(current.word.word)
+  }
 
   useKeyboardShortcuts({
     ' ': flip,
@@ -29,6 +35,8 @@ export function StudyPage() {
     '2': () => rate('medium'),
     '3': () => rate('easy'),
     '4': again,
+    // event.key is "P" with Shift or Caps Lock; leave P unbound when there is no voice
+    ...(canSpeak ? { p: playWord, P: playWord } : {}),
   })
 
   if (total === 0) return <AllCaughtUp />
@@ -54,9 +62,7 @@ export function StudyPage() {
         ) : (
           <Button size="lg" className="w-full" onClick={flip}>
             Show meaning
-            <span className="hidden sm:inline">
-              <Kbd>Space</Kbd>
-            </span>
+            <Kbd>Space</Kbd>
           </Button>
         )}
       </div>

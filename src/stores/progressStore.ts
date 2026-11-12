@@ -12,6 +12,8 @@ import { scheduleReview } from '@/lib'
 import type { DateKey, ProgressMap, Rating } from '@/types'
 import { clearLegacyProgress, readLegacyProgress } from '@/utils'
 
+import { useSettingsStore } from './settingsStore'
+
 export type LoadStatus = 'idle' | 'loading' | 'ready' | 'error'
 
 interface ProgressState {
@@ -80,7 +82,8 @@ export const useProgressStore = create<ProgressState>()((set, get) => ({
     const { userId, progress, unsavedWordIds, studyDays, unsavedStudyDays } = get()
     if (!userId) return
 
-    const card = scheduleReview(wordId, progress[wordId], rating, today)
+    const { settings } = useSettingsStore.getState()
+    const card = scheduleReview(wordId, progress[wordId], rating, today, settings)
     const isNewStudyDay = !studyDays.includes(today)
     set({
       progress: { ...progress, [wordId]: card },

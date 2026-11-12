@@ -1,8 +1,11 @@
 import { RotateCcw } from 'lucide-react'
 
 import { Badge, Kbd } from '@/components/ui'
+import { useCanSpeak } from '@/hooks'
 import { cn, type SessionCardKind } from '@/lib'
 import type { Word } from '@/types'
+
+import { SpeakButton } from './SpeakButton'
 
 interface FlashcardProps {
   word: Word
@@ -20,21 +23,25 @@ const faceClasses =
  * Render it with a key per queue position so a new card starts face up without animating.
  */
 export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: FlashcardProps) {
+  const canSpeak = useCanSpeak()
+
   return (
-    <button
-      type="button"
-      onClick={onFlip}
-      aria-label={isFlipped ? `Hide meaning of ${word.word}` : `Show meaning of ${word.word}`}
-      className="block w-full rounded-3xl text-left perspective-distant focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-600"
-    >
-      <span
+    <div className="relative w-full text-left perspective-distant">
+      {/* The flip button covers the whole card; the faces sit on top but let clicks through, except the speakers */}
+      <button
+        type="button"
+        onClick={onFlip}
+        aria-label={isFlipped ? `Hide meaning of ${word.word}` : `Show meaning of ${word.word}`}
+        className="absolute inset-0 rounded-3xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-600"
+      />
+      <div
         className={cn(
-          'grid min-h-80 transition-transform duration-500 transform-3d motion-reduce:transition-none',
+          'pointer-events-none relative grid min-h-80 transition-transform duration-500 transform-3d motion-reduce:transition-none',
           isFlipped && 'rotate-y-180',
         )}
       >
         {/* Front */}
-        <span className={faceClasses} aria-hidden={isFlipped}>
+        <span className={faceClasses} aria-hidden={isFlipped} inert={isFlipped}>
           <span className="flex gap-2 self-start">
             <Badge tone={kind === 'new' ? 'indigo' : 'amber'}>
               {kind === 'new' ? 'New word' : 'Review'}
@@ -42,16 +49,31 @@ export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: Flashcard
             {isRepeat && <Badge tone="rose">Again</Badge>}
           </span>
           <span className="flex flex-1 flex-col items-center justify-center gap-2 py-8">
-            <span className="text-5xl font-bold tracking-tight text-slate-900">{word.word}</span>
+            <span className="flex items-center gap-2">
+              <span className="text-5xl font-bold tracking-tight text-slate-900">{word.word}</span>
+              <SpeakButton text={word.word} label={`Play pronunciation of ${word.word}`} />
+            </span>
             <span className="text-sm text-slate-500 italic">{word.partOfSpeech}</span>
           </span>
           <span className="flex items-center justify-center gap-2 text-xs text-slate-400">
-            Tap the card or press <Kbd>Space</Kbd> to see the meaning
+            <span className="pointer-fine:hidden">Tap the card to see the meaning</span>
+            <span className="hidden pointer-fine:contents">
+              Tap the card or press <Kbd>Space</Kbd> to see the meaning
+              {canSpeak && (
+                <>
+                  · <Kbd>P</Kbd> to hear it
+                </>
+              )}
+            </span>
           </span>
         </span>
 
         {/* Back */}
-        <span className={cn(faceClasses, 'rotate-y-180')} aria-hidden={!isFlipped}>
+        <span
+          className={cn(faceClasses, 'rotate-y-180')}
+          aria-hidden={!isFlipped}
+          inert={!isFlipped}
+        >
           <span className="flex items-baseline justify-between gap-4">
             <span>
               <span className="text-2xl font-bold text-slate-900">{word.word}</span>{' '}
@@ -65,16 +87,16 @@ export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: Flashcard
           </span>
           <span className="mt-2 flex flex-col gap-2">
             {word.examples.map((example) => (
-              <span
-                key={example}
-                className="block border-l-2 border-indigo-200 pl-3 text-slate-600 italic"
-              >
-                {example}
+              <span key={example} className="flex items-center gap-2">
+                <span className="flex-1 border-l-2 border-indigo-200 pl-3 text-slate-600 italic">
+                  {example}
+                </span>
+                <SpeakButton text={example} label={`Play example: ${example}`} />
               </span>
             ))}
           </span>
         </span>
-      </span>
-    </button>
+      </div>
+    </div>
   )
 }

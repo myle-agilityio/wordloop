@@ -1,4 +1,5 @@
 export * from './useAuth'
+export * from './useCanSpeak'
 export * from './useDailyPlan'
 export * from './useKeyboardShortcuts'
 export * from './useStudySession'

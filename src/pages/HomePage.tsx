@@ -5,10 +5,9 @@ import { ReviewForecastCard } from '@/components/home/ReviewForecastCard'
 import { StatCard } from '@/components/home/StatCard'
 import { TodayCard } from '@/components/home/TodayCard'
 import { Button, ProgressBar } from '@/components/ui'
-import { NEW_WORDS_PER_DAY } from '@/constants'
 import { useDailyPlan, useStudyStreak, useWords } from '@/hooks'
 import { reviewForecast } from '@/lib'
-import { useProgressStore } from '@/stores'
+import { useProgressStore, useSettingsStore } from '@/stores'
 import { todayKey } from '@/utils'
 
 export function HomePage() {
@@ -17,6 +16,7 @@ export function HomePage() {
   const streak = useStudyStreak()
   const progress = useProgressStore((state) => state.progress)
   const resetProgress = useProgressStore((state) => state.resetProgress)
+  const newWordsPerDay = useSettingsStore((state) => state.settings.newWordsPerDay)
 
   const today = todayKey()
   const forecast = useMemo(() => reviewForecast(progress, today), [progress, today])
@@ -37,7 +37,9 @@ export function HomePage() {
       <header>
         <h1 className="text-3xl font-bold tracking-tight">Today</h1>
         <p className="mt-1 text-slate-600">
-          Learn {NEW_WORDS_PER_DAY} new words a day and review the ones you&apos;ve learned.
+          {newWordsPerDay > 0
+            ? `Learn ${newWordsPerDay} new ${newWordsPerDay === 1 ? 'word' : 'words'} a day and review the ones you've learned.`
+            : "Review the words you've learned. New words are turned off in Settings."}
         </p>
       </header>
 
@@ -70,7 +72,7 @@ export function HomePage() {
         <StatCard
           icon={Sparkles}
           label="New today"
-          value={`${plan.newLearnedToday} / ${NEW_WORDS_PER_DAY}`}
+          value={`${plan.newLearnedToday} / ${newWordsPerDay}`}
           hint="New words learned today"
         />
         <StatCard

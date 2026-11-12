@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import { Outlet } from 'react-router'
 
+import { Footer } from './Footer'
 import { Header } from './Header'
 import { PageLoader } from './PageLoader'
 import { SaveErrorBanner } from './SaveErrorBanner'
@@ -15,6 +16,7 @@ export function AppLayout() {
           <Outlet />
         </Suspense>
       </main>
+      <Footer />
     </div>
   )
 }

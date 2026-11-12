@@ -1,4 +1,7 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it, onTestFinished, vi } from 'vitest'
+
+// The @/lib barrel loads the Neon client, which needs .env; CI has none and these tests never reach Neon.
+vi.mock('@/lib/neon', () => ({ neon: {} }))
 
 vi.mock('@/api', () => ({
   fetchProgress: vi.fn(async () => ({})),
@@ -10,8 +13,10 @@ vi.mock('@/api', () => ({
 }))
 
 import { deleteAllStudyDays, saveProgress, saveStudyDays } from '@/api'
+import { getStudyStreak, speak, stopSpeaking } from '@/lib'
 
 import { useProgressStore } from './progressStore'
+import { useSettingsStore } from './settingsStore'
 
 const flush = () => new Promise((resolve) => setTimeout(resolve, 0))
 
@@ -122,5 +127,60 @@ describe('progressStore', () => {
     expect(deleteAllStudyDays).toHaveBeenCalledWith('user-1')
     expect(useProgressStore.getState().studyDays).toEqual([])
     expect(useProgressStore.getState().unsavedStudyDays).toEqual([])
+  })
+
+  it('TC14: tapping a speaker leaves progress, due dates, stats and the streak unchanged', async () => {
+    const synth = {
+      getVoices: () => [{ lang: 'en-US', localService: true } as SpeechSynthesisVoice],
+      speak: vi.fn(),
+      cancel: vi.fn(),
+    }
+    vi.stubGlobal('speechSynthesis', synth)
+    vi.stubGlobal('SpeechSynthesisUtterance', class {})
+    // Runs even when an assertion fails, so the fake voice never leaks into later tests
+    onTestFinished(() => {
+      vi.unstubAllGlobals()
+    })
+
+    const day = '2026-10-15'
+    useProgressStore.getState().rateWord('time', 'easy', day)
+    await flush()
+    save.mockClear()
+    vi.mocked(saveStudyDays).mockClear()
+
+    const before = useProgressStore.getState()
+    const progressBefore = structuredClone(before.progress)
+    const studyDaysBefore = [...before.studyDays]
+    const streakBefore = getStudyStreak(before.studyDays, day)
+
+    speak('time')
+    speak('time')
+    stopSpeaking()
+    await flush()
+
+    const after = useProgressStore.getState()
+    expect(synth.speak).toHaveBeenCalledTimes(2)
+    expect(after.progress).toBe(before.progress)
+    expect(after.progress).toEqual(progressBefore)
+    expect(after.studyDays).toEqual(studyDaysBefore)
+    expect(after.unsavedWordIds).toEqual(before.unsavedWordIds)
+    expect(getStudyStreak(after.studyDays, day)).toEqual(streakBefore)
+    expect(save).not.toHaveBeenCalled()
+    expect(saveStudyDays).not.toHaveBeenCalled()
+  })
+
+  it('schedules ratings with the user’s settings', () => {
+    useSettingsStore.setState({
+      settings: {
+        newWordsPerDay: 5,
+        firstIntervalDays: { hard: 2, medium: 4, easy: 10 },
+        intervalMultiplier: { medium: 1.5, easy: 2.5 },
+        maxIntervalDays: 365,
+      },
+    })
+    useProgressStore.getState().rateWord('time', 'easy', '2026-10-15')
+
+    expect(useProgressStore.getState().progress.time.dueOn).toBe('2026-10-25')
+    useSettingsStore.getState().clear()
   })
 })

@@ -1,16 +1,16 @@
-import type { Rating } from '@/types'
+import type { StudySettings } from '@/types'
 
-export const NEW_WORDS_PER_DAY = 5
-
-/** Gap in days before the first review, based on the first rating. */
-export const FIRST_INTERVAL_DAYS: Record<Rating, number> = {
-  hard: 1,
-  medium: 3,
-  easy: 7,
+/** Settings for a user who hasn't changed any, and while theirs are loading. */
+export const DEFAULT_SETTINGS: StudySettings = {
+  newWordsPerDay: 5,
+  firstIntervalDays: { hard: 1, medium: 3, easy: 7 },
+  intervalMultiplier: { medium: 1.5, easy: 2.5 },
+  maxIntervalDays: 365,
 }
 
-/** How much the gap grows on later reviews. Hard resets the gap to its first interval. */
-export const INTERVAL_MULTIPLIER: Record<Exclude<Rating, 'hard'>, number> = {
-  medium: 1.5,
-  easy: 2.5,
-}
+/** Bounds for each setting. The database checks the same bounds. */
+export const SETTINGS_LIMITS = {
+  newWordsPerDay: { min: 0, max: 100 },
+  intervalDays: { min: 1, max: 36500 },
+  multiplier: { min: 1, max: 10 },
+} as const
