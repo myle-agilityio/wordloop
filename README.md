@@ -6,6 +6,8 @@ WordLoop follows the **spaced repetition** method, like the [Anki](https://apps.
 
 **Live app:** https://myle-wordloop.vercel.app/
 
+**Overview page:** https://claude.ai/artifact/6YzmAi7DjrFC2gXKigYBVN
+
 ## How it works
 
 ### Flashcards
