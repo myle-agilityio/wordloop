@@ -15,11 +15,11 @@ export function RouteError() {
       : 'Something went wrong.'
 
   return (
-    <div className="flex min-h-dvh items-center justify-center bg-slate-50 p-4">
+    <div className="flex min-h-dvh items-center justify-center bg-slate-50 p-4 dark:bg-slate-950">
       <Card className="max-w-md text-center">
         <TriangleAlert className="mx-auto size-10 text-amber-500" aria-hidden />
         <h1 className="mt-4 text-lg font-semibold">Something went wrong</h1>
-        <p className="mt-2 text-sm text-slate-600">{message}</p>
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{message}</p>
         <a href={ROUTES.home} className={cn(buttonClasses('primary', 'md'), 'mt-6')}>
           Reload WordLoop
         </a>
@@ -32,7 +32,9 @@ export function NotFound() {
   return (
     <Card className="text-center">
       <h1 className="text-lg font-semibold">Page not found</h1>
-      <p className="mt-2 text-sm text-slate-600">We couldn&apos;t find that page.</p>
+      <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+        We couldn&apos;t find that page.
+      </p>
       <Link to={ROUTES.home} className={cn(buttonClasses('secondary', 'md'), 'mt-6')}>
         Back to today
       </Link>

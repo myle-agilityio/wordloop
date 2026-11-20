@@ -12,7 +12,7 @@ export function SettingsSection({ title, description, children }: SettingsSectio
   return (
     <Card>
       <h2 className="text-lg font-semibold">{title}</h2>
-      <p className="mt-1 text-sm text-slate-600">{description}</p>
+      <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{description}</p>
       <div className="mt-5">{children}</div>
     </Card>
   )

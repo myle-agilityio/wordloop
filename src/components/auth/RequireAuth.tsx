@@ -45,7 +45,9 @@ export function RequireAuth() {
         <h1 className="mt-4 text-lg font-semibold">
           Couldn&apos;t load your {status === 'error' ? 'progress' : 'settings'}
         </h1>
-        <p className="mt-2 text-sm text-slate-600">{loadError ?? settingsLoadError}</p>
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+          {loadError ?? settingsLoadError}
+        </p>
         <Button className="mt-6" onClick={() => load(userId)}>
           Try again
         </Button>

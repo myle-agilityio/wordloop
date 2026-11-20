@@ -32,11 +32,15 @@ export function WordFilters({ query, onQueryChange, filter, onFilterChange }: Wo
           value={query}
           onChange={(event) => onQueryChange(event.target.value)}
           placeholder="Search words or meanings"
-          className="h-10 w-full rounded-xl bg-white pr-3 pl-9 text-sm shadow-sm ring-1 ring-slate-200 placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-600 focus:outline-none"
+          className="h-10 w-full rounded-xl bg-white pr-3 pl-9 text-sm shadow-sm ring-1 ring-slate-200 placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-600 focus:outline-none dark:bg-slate-950 dark:ring-slate-700 dark:placeholder:text-slate-500"
         />
       </label>
 
-      <div role="radiogroup" aria-label="Filter words" className="flex rounded-xl bg-slate-100 p-1">
+      <div
+        role="radiogroup"
+        aria-label="Filter words"
+        className="flex rounded-xl bg-slate-100 p-1 dark:bg-slate-800"
+      >
         {FILTERS.map(({ value, label }) => (
           <button
             key={value}
@@ -47,8 +51,8 @@ export function WordFilters({ query, onQueryChange, filter, onFilterChange }: Wo
             className={cn(
               'rounded-lg px-3 py-1.5 text-sm font-medium transition-colors',
               filter === value
-                ? 'bg-white text-slate-900 shadow-sm'
-                : 'text-slate-500 hover:text-slate-700',
+                ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-700 dark:text-slate-100'
+                : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200',
             )}
           >
             {label}

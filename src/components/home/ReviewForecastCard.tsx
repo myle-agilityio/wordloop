@@ -8,7 +8,7 @@ export function ReviewForecastCard({ forecast }: { forecast: ForecastDay[] }) {
 
   return (
     <Card className="p-5">
-      <h2 className="text-sm font-medium text-slate-500">Reviews this week</h2>
+      <h2 className="text-sm font-medium text-slate-500 dark:text-slate-400">Reviews this week</h2>
       <ol className="mt-4 flex gap-2">
         {forecast.map((day) => (
           <ForecastBar key={day.date} day={day} max={max} />

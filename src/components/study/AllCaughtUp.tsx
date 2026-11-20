@@ -10,7 +10,7 @@ export function AllCaughtUp() {
     <Card className="text-center">
       <CircleCheck className="mx-auto size-12 text-emerald-500" aria-hidden />
       <h1 className="mt-4 text-2xl font-bold">All caught up</h1>
-      <p className="mt-2 text-slate-600">
+      <p className="mt-2 text-slate-600 dark:text-slate-400">
         No reviews are due and you&apos;ve learned today&apos;s new words. Come back tomorrow.
       </p>
       <Link to={ROUTES.home} className={cn(buttonClasses('secondary', 'md'), 'mt-8')}>
