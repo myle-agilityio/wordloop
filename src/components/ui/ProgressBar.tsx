@@ -17,10 +17,13 @@ export function ProgressBar({ value, max, label, className }: ProgressBarProps) 
       aria-valuemin={0}
       aria-valuemax={max}
       aria-valuenow={value}
-      className={cn('h-2 w-full overflow-hidden rounded-full bg-slate-100', className)}
+      className={cn(
+        'h-2 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800',
+        className,
+      )}
     >
       <div
-        className="h-full rounded-full bg-indigo-600 transition-[width] duration-300"
+        className="h-full rounded-full bg-indigo-600 transition-[width] duration-300 dark:bg-indigo-500"
         style={{ width: `${percent}%` }}
       />
     </div>

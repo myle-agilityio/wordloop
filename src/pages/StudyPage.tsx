@@ -54,7 +54,7 @@ export function StudyPage() {
       <div aria-live="polite">
         {isFlipped ? (
           <div className="flex flex-col gap-3">
-            <p className="text-center text-sm font-medium text-slate-600">
+            <p className="text-center text-sm font-medium text-slate-600 dark:text-slate-400">
               How well did you remember it?
             </p>
             <RatingButtons nextDue={nextDue} onRate={rate} onAgain={again} />

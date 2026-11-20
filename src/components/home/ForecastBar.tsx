@@ -16,11 +16,13 @@ export function ForecastBar({ day, max }: ForecastBarProps) {
       className="flex flex-1 flex-col items-center gap-1"
       aria-label={`${weekday}: ${day.count} ${day.count === 1 ? 'review' : 'reviews'}`}
     >
-      <span className="text-xs font-medium text-slate-700 tabular-nums">{day.count}</span>
-      <div className="flex h-20 w-full items-end rounded-md bg-slate-100">
+      <span className="text-xs font-medium text-slate-700 tabular-nums dark:text-slate-300">
+        {day.count}
+      </span>
+      <div className="flex h-20 w-full items-end rounded-md bg-slate-100 dark:bg-slate-800">
         <div className="w-full rounded-md bg-indigo-500" style={{ height: `${height}%` }} />
       </div>
-      <span className="text-xs text-slate-500">{weekday}</span>
+      <span className="text-xs text-slate-500 dark:text-slate-400">{weekday}</span>
     </li>
   )
 }

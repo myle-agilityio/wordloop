@@ -59,7 +59,7 @@ export function SettingsPage() {
     <form className="flex flex-col gap-6" onSubmit={handleSubmit} noValidate>
       <header>
         <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
-        <p className="mt-1 text-slate-600">
+        <p className="mt-1 text-slate-600 dark:text-slate-400">
           Choose how many new words you learn and how often words come back. Changes apply from your
           next rating; words already scheduled keep their dates.
         </p>
@@ -162,8 +162,12 @@ export function SettingsPage() {
 
       <div className="flex flex-wrap items-center justify-end gap-3">
         <p role="status" className="mr-auto text-sm">
-          {saveState.kind === 'saved' && <span className="text-emerald-700">Settings saved.</span>}
-          {saveState.kind === 'error' && <span className="text-rose-600">{saveState.message}</span>}
+          {saveState.kind === 'saved' && (
+            <span className="text-emerald-700 dark:text-emerald-400">Settings saved.</span>
+          )}
+          {saveState.kind === 'error' && (
+            <span className="text-rose-600 dark:text-rose-400">{saveState.message}</span>
+          )}
         </p>
         <Button
           variant="secondary"

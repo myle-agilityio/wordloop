@@ -7,7 +7,7 @@ export function Footer() {
         href={RELEASE_NOTES_URL}
         target="_blank"
         rel="noreferrer"
-        className="rounded hover:text-slate-600 hover:underline focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
+        className="rounded hover:text-slate-600 hover:underline focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none dark:hover:text-slate-300"
       >
         WordLoop v{APP_VERSION}
       </a>

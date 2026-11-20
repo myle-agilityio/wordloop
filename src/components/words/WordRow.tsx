@@ -14,11 +14,11 @@ export function WordRow({ word, status }: WordRowProps) {
         {word.rank}
       </span>
       <div className="min-w-0 flex-1">
-        <p className="font-semibold text-slate-900">
+        <p className="font-semibold text-slate-900 dark:text-slate-100">
           {word.word}{' '}
           <span className="text-sm font-normal text-slate-400 italic">{word.partOfSpeech}</span>
         </p>
-        <p className="truncate text-sm text-slate-500">{word.meaning}</p>
+        <p className="truncate text-sm text-slate-500 dark:text-slate-400">{word.meaning}</p>
       </div>
       <Badge tone={status.tone} className="shrink-0">
         {status.label}
