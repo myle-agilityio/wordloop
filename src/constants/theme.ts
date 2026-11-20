@@ -5,7 +5,7 @@ export interface ThemeOption {
   label: string
 }
 
-/** The theme choices, in the order the header toggle cycles through them. */
+/** The theme choices, in the order the header theme menu lists them. */
 export const THEME_OPTIONS: ThemeOption[] = [
   { value: 'light', label: 'Light' },
   { value: 'dark', label: 'Dark' },

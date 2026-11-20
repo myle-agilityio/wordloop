@@ -4,12 +4,6 @@ import type { ResolvedTheme, Theme } from '@/types'
 export const isTheme = (value: unknown): value is Theme =>
   THEME_OPTIONS.some((option) => option.value === value)
 
-/** The choice after this one in the header toggle's cycle. */
-export function nextTheme(theme: Theme): Theme {
-  const index = THEME_OPTIONS.findIndex((option) => option.value === theme)
-  return THEME_OPTIONS[(index + 1) % THEME_OPTIONS.length].value
-}
-
 export function resolveTheme(theme: Theme, prefersDark: boolean): ResolvedTheme {
   if (theme === 'system') return prefersDark ? 'dark' : 'light'
   return theme

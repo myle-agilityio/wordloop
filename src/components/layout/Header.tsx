@@ -5,7 +5,7 @@ import { ROUTES } from '@/constants'
 import { useAuth } from '@/hooks'
 import { cn } from '@/lib'
 
-import { ThemeToggle } from './ThemeToggle'
+import { ThemeMenu } from './ThemeMenu'
 import { UserMenu } from './UserMenu'
 
 const NAV_ITEMS = [
@@ -29,7 +29,7 @@ export function Header() {
           <span className="flex size-8 items-center justify-center rounded-lg bg-indigo-600 text-white">
             <Repeat2 className="size-5" aria-hidden />
           </span>
-          {/* Signed in, phones need the room for the nav and the theme toggle */}
+          {/* Signed in, phones need the room for the nav and the theme menu */}
           <span className={cn(user && 'hidden sm:inline')}>WordLoop</span>
         </Link>
 
@@ -60,7 +60,7 @@ export function Header() {
               </ul>
             </nav>
           )}
-          <ThemeToggle />
+          <ThemeMenu />
           {user && <UserMenu name={user.name} email={user.email} />}
         </div>
       </div>

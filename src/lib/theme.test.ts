@@ -6,7 +6,6 @@ import {
   applyTheme,
   getPrefersDark,
   isTheme,
-  nextTheme,
   readStoredTheme,
   resolveTheme,
   storeTheme,
@@ -46,14 +45,6 @@ describe('isTheme', () => {
     expect(['light', 'dark', 'system'].every(isTheme)).toBe(true)
     expect(isTheme('blue')).toBe(false)
     expect(isTheme(null)).toBe(false)
-  })
-})
-
-describe('nextTheme', () => {
-  it('cycles Light → Dark → System → Light', () => {
-    expect(nextTheme('light')).toBe('dark')
-    expect(nextTheme('dark')).toBe('system')
-    expect(nextTheme('system')).toBe('light')
   })
 })
 
