@@ -36,7 +36,7 @@ export function HomePage() {
     <div className="flex flex-col gap-6">
       <header>
         <h1 className="text-3xl font-bold tracking-tight">Today</h1>
-        <p className="mt-1 text-slate-600">
+        <p className="mt-1 text-slate-600 dark:text-slate-400">
           {newWordsPerDay > 0
             ? `Learn ${newWordsPerDay} new ${newWordsPerDay === 1 ? 'word' : 'words'} a day and review the ones you've learned.`
             : "Review the words you've learned. New words are turned off in Settings."}

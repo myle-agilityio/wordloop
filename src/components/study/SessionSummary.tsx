@@ -7,9 +7,9 @@ import type { RatingTally } from '@/hooks'
 import type { Rating } from '@/types'
 
 const tallyColors: Record<Rating, string> = {
-  hard: 'text-rose-600',
-  medium: 'text-amber-600',
-  easy: 'text-emerald-600',
+  hard: 'text-rose-600 dark:text-rose-400',
+  medium: 'text-amber-600 dark:text-amber-400',
+  easy: 'text-emerald-600 dark:text-emerald-400',
 }
 
 interface SessionSummaryProps {
@@ -22,17 +22,17 @@ interface SessionSummaryProps {
 export function SessionSummary({ wordCount, tally, againCount }: SessionSummaryProps) {
   return (
     <Card className="text-center">
-      <PartyPopper className="mx-auto size-12 text-indigo-600" aria-hidden />
+      <PartyPopper className="mx-auto size-12 text-indigo-600 dark:text-indigo-400" aria-hidden />
       <h1 className="mt-4 text-2xl font-bold">Session complete</h1>
-      <p className="mt-2 text-slate-600">
+      <p className="mt-2 text-slate-600 dark:text-slate-400">
         You studied {wordCount} {wordCount === 1 ? 'word' : 'words'}. Hard words will come back
         soon, easy ones much later.
       </p>
 
       <dl className="mx-auto mt-8 grid max-w-sm grid-cols-3 gap-3">
         {RATING_OPTIONS.map(({ value, label }) => (
-          <div key={value} className="rounded-xl bg-slate-50 p-3">
-            <dt className="text-xs font-medium text-slate-500">{label}</dt>
+          <div key={value} className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">{label}</dt>
             <dd className={`mt-1 text-2xl font-bold tabular-nums ${tallyColors[value]}`}>
               {tally[value]}
             </dd>
@@ -41,8 +41,11 @@ export function SessionSummary({ wordCount, tally, againCount }: SessionSummaryP
       </dl>
 
       {againCount > 0 && (
-        <p className="mt-3 text-sm text-slate-500">
-          Again: <span className="font-semibold text-indigo-600 tabular-nums">{againCount}</span>
+        <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
+          Again:{' '}
+          <span className="font-semibold text-indigo-600 tabular-nums dark:text-indigo-400">
+            {againCount}
+          </span>
         </p>
       )}
 

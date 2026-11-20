@@ -18,7 +18,7 @@ export function TodayCard({ plan }: { plan: DailyPlan }) {
         <CircleCheck className="size-10 shrink-0 text-emerald-500" aria-hidden />
         <div>
           <h2 className="font-semibold">You&apos;re done for today</h2>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-600 dark:text-slate-400">
             Nice work. New words and reviews will be ready tomorrow.
           </p>
         </div>
@@ -42,7 +42,10 @@ export function TodayCard({ plan }: { plan: DailyPlan }) {
       </p>
       <Link
         to={ROUTES.study}
-        className={cn(buttonClasses('secondary', 'lg'), 'mt-6 text-indigo-700 ring-0')}
+        className={cn(
+          buttonClasses('secondary', 'lg'),
+          'mt-6 text-indigo-700 ring-0 dark:bg-white dark:text-indigo-700 dark:hover:bg-indigo-50',
+        )}
       >
         Start studying
         <ArrowRight className="size-4" aria-hidden />

@@ -71,7 +71,7 @@ export function LoginPage() {
         <h1 className="mt-4 text-2xl font-bold tracking-tight">
           {isSignUp ? 'Create your account' : 'Welcome back'}
         </h1>
-        <p className="mt-1 text-sm text-slate-600">
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
           {isSignUp ? 'Your progress is saved to your account.' : 'Sign in to continue learning.'}
         </p>
       </div>
@@ -80,7 +80,7 @@ export function LoginPage() {
         <div
           role="tablist"
           aria-label="Sign in or sign up"
-          className="mb-6 flex rounded-xl bg-slate-100 p-1"
+          className="mb-6 flex rounded-xl bg-slate-100 p-1 dark:bg-slate-800"
         >
           {(['sign-in', 'sign-up'] as const).map((value) => (
             <button
@@ -92,8 +92,8 @@ export function LoginPage() {
               className={cn(
                 'flex-1 rounded-lg py-1.5 text-sm font-medium transition-colors',
                 mode === value
-                  ? 'bg-white text-slate-900 shadow-sm'
-                  : 'text-slate-500 hover:text-slate-700',
+                  ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-700 dark:text-slate-100'
+                  : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200',
               )}
             >
               {value === 'sign-in' ? 'Sign in' : 'Sign up'}
@@ -117,14 +117,17 @@ export function LoginPage() {
           {isSignUp && <PasswordNotice />}
 
           {error && (
-            <p role="alert" className="rounded-xl bg-rose-50 px-3 py-2 text-sm text-rose-700">
+            <p
+              role="alert"
+              className="rounded-xl bg-rose-50 px-3 py-2 text-sm text-rose-700 dark:bg-rose-500/10 dark:text-rose-300"
+            >
               {error}
             </p>
           )}
           {notice && (
             <p
               role="status"
-              className="rounded-xl bg-emerald-50 px-3 py-2 text-sm text-emerald-700"
+              className="rounded-xl bg-emerald-50 px-3 py-2 text-sm text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300"
             >
               {notice}
             </p>

@@ -16,7 +16,7 @@ interface FlashcardProps {
 }
 
 const faceClasses =
-  'col-start-1 row-start-1 flex flex-col rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200/70 backface-hidden'
+  'col-start-1 row-start-1 flex flex-col rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200/70 backface-hidden dark:bg-slate-900 dark:ring-slate-800'
 
 /**
  * A two-sided card: the word on the front, the meaning and examples on the back.
@@ -50,10 +50,14 @@ export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: Flashcard
           </span>
           <span className="flex flex-1 flex-col items-center justify-center gap-2 py-8">
             <span className="flex items-center gap-2">
-              <span className="text-5xl font-bold tracking-tight text-slate-900">{word.word}</span>
+              <span className="text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+                {word.word}
+              </span>
               <SpeakButton text={word.word} label={`Play pronunciation of ${word.word}`} />
             </span>
-            <span className="text-sm text-slate-500 italic">{word.partOfSpeech}</span>
+            <span className="text-sm text-slate-500 italic dark:text-slate-400">
+              {word.partOfSpeech}
+            </span>
           </span>
           <span className="flex items-center justify-center gap-2 text-xs text-slate-400">
             <span className="pointer-fine:hidden">Tap the card to see the meaning</span>
@@ -76,19 +80,25 @@ export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: Flashcard
         >
           <span className="flex items-baseline justify-between gap-4">
             <span>
-              <span className="text-2xl font-bold text-slate-900">{word.word}</span>{' '}
-              <span className="text-sm text-slate-500 italic">{word.partOfSpeech}</span>
+              <span className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+                {word.word}
+              </span>{' '}
+              <span className="text-sm text-slate-500 italic dark:text-slate-400">
+                {word.partOfSpeech}
+              </span>
             </span>
-            <RotateCcw className="size-4 shrink-0 text-slate-300" aria-hidden />
+            <RotateCcw className="size-4 shrink-0 text-slate-300 dark:text-slate-600" aria-hidden />
           </span>
-          <span className="mt-4 block text-lg text-slate-800">{word.meaning}</span>
+          <span className="mt-4 block text-lg text-slate-800 dark:text-slate-200">
+            {word.meaning}
+          </span>
           <span className="mt-6 block text-xs font-semibold tracking-wide text-slate-400 uppercase">
             Examples
           </span>
           <span className="mt-2 flex flex-col gap-2">
             {word.examples.map((example) => (
               <span key={example} className="flex items-center gap-2">
-                <span className="flex-1 border-l-2 border-indigo-200 pl-3 text-slate-600 italic">
+                <span className="flex-1 border-l-2 border-indigo-200 pl-3 text-slate-600 italic dark:border-indigo-500/50 dark:text-slate-300">
                   {example}
                 </span>
                 <SpeakButton text={example} label={`Play example: ${example}`} />

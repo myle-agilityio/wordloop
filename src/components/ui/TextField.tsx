@@ -27,7 +27,7 @@ export function TextField({
 
   return (
     <div className="flex flex-col gap-1.5">
-      <label htmlFor={inputId} className="text-sm font-medium text-slate-700">
+      <label htmlFor={inputId} className="text-sm font-medium text-slate-700 dark:text-slate-300">
         {label}
       </label>
       <div className="relative">
@@ -37,8 +37,10 @@ export function TextField({
           aria-invalid={error ? true : undefined}
           className={cn(
             'h-11 w-full rounded-xl bg-white px-3 text-sm shadow-sm ring-1 ring-slate-200 placeholder:text-slate-400',
+            'dark:bg-slate-950 dark:ring-slate-700 dark:placeholder:text-slate-500',
             'focus:ring-2 focus:ring-indigo-600 focus:outline-none',
-            error && 'ring-rose-300 focus:ring-rose-600',
+            error &&
+              'ring-rose-300 focus:ring-rose-600 dark:ring-rose-500/60 dark:focus:ring-rose-500',
             trailing && 'pr-11',
             className,
           )}
@@ -49,7 +51,13 @@ export function TextField({
         )}
       </div>
       {message && (
-        <p id={hintId} className={cn('text-xs', error ? 'text-rose-600' : 'text-slate-500')}>
+        <p
+          id={hintId}
+          className={cn(
+            'text-xs',
+            error ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500 dark:text-slate-400',
+          )}
+        >
           {message}
         </p>
       )}

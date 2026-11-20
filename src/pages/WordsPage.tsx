@@ -39,7 +39,7 @@ export function WordsPage() {
     <div className="flex flex-col gap-6">
       <header>
         <h1 className="text-3xl font-bold tracking-tight">Word list</h1>
-        <p className="mt-1 text-slate-600">
+        <p className="mt-1 text-slate-600 dark:text-slate-400">
           {words.length} common English words, introduced from most to least common.
         </p>
       </header>
@@ -53,13 +53,13 @@ export function WordsPage() {
 
       <Card className="overflow-hidden p-0">
         {rows.length > 0 ? (
-          <ul className="divide-y divide-slate-100">
+          <ul className="divide-y divide-slate-100 dark:divide-slate-800">
             {rows.map(({ word, status }) => (
               <WordRow key={word.id} word={word} status={status} />
             ))}
           </ul>
         ) : (
-          <p className="px-5 py-12 text-center text-sm text-slate-500">
+          <p className="px-5 py-12 text-center text-sm text-slate-500 dark:text-slate-400">
             {filter === 'due' ? 'Nothing due today.' : 'No words match.'}
           </p>
         )}
