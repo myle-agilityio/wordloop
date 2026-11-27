@@ -8776,5 +8776,374 @@
     "partOfSpeech": "noun",
     "meaning": "A set of questions you ask many people to find out what they think or do.",
     "examples": ["We did a survey of 1,000 students.", "Please fill in our short survey."]
+  },
+  {
+    "id": "majority",
+    "rank": 961,
+    "word": "majority",
+    "ipa": "/məˈdʒɔrəti/",
+    "partOfSpeech": "noun",
+    "meaning": "Most of the people or things in a group.",
+    "examples": ["The majority of students passed the exam.", "She won by a large majority."]
+  },
+  {
+    "id": "stick",
+    "rank": 962,
+    "word": "stick",
+    "ipa": "/stɪk/",
+    "partOfSpeech": "verb",
+    "meaning": "To fix something to something else with glue or tape; to push something pointed into something.",
+    "examples": ["Stick a stamp on the letter.", "The pages are stuck together."]
+  },
+  {
+    "id": "request",
+    "rank": 963,
+    "word": "request",
+    "ipa": "/rɪˈkwɛst/",
+    "partOfSpeech": "noun",
+    "meaning": "Asking for something politely or officially.",
+    "examples": ["I made a request for more time.", "They played my song request on the radio."]
+  },
+  {
+    "id": "rich",
+    "rank": 964,
+    "word": "rich",
+    "ipa": "/rɪtʃ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Having a lot of money; containing a lot of something.",
+    "examples": ["He is a very rich man.", "Oranges are rich in vitamin C."]
+  },
+  {
+    "id": "wind",
+    "rank": 965,
+    "word": "wind",
+    "ipa": "/wɪnd/",
+    "partOfSpeech": "noun",
+    "meaning": "Air that moves quickly outside.",
+    "examples": ["The wind is very strong today.", "The wind blew my hat off."]
+  },
+  {
+    "id": "none",
+    "rank": 966,
+    "word": "none",
+    "ipa": "/nʌn/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Not one; not any.",
+    "examples": ["None of my friends came.", "I wanted some cake, but there was none left."]
+  },
+  {
+    "id": "exchange",
+    "rank": 967,
+    "word": "exchange",
+    "ipa": "/ɪksˈtʃeɪndʒ/",
+    "partOfSpeech": "verb",
+    "meaning": "To give something and get something else back.",
+    "examples": ["We exchanged phone numbers.", "Can I exchange this shirt for a bigger size?"]
+  },
+  {
+    "id": "budget",
+    "rank": 968,
+    "word": "budget",
+    "ipa": "/ˈbʌdʒɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "A plan of how much money you can spend.",
+    "examples": ["We are on a tight budget.", "The project is over budget."]
+  },
+  {
+    "id": "famous",
+    "rank": 969,
+    "word": "famous",
+    "ipa": "/ˈfeɪməs/",
+    "partOfSpeech": "adjective",
+    "meaning": "Known by many people.",
+    "examples": ["She is a famous singer.", "Paris is famous for its food."]
+  },
+  {
+    "id": "blood",
+    "rank": 970,
+    "word": "blood",
+    "ipa": "/blʌd/",
+    "partOfSpeech": "noun",
+    "meaning": "The red liquid that moves around your body.",
+    "examples": ["He lost a lot of blood in the accident.", "The nurse took some blood for a test."]
+  },
+  {
+    "id": "appropriate",
+    "rank": 971,
+    "word": "appropriate",
+    "ipa": "/əˈproʊpriət/",
+    "partOfSpeech": "adjective",
+    "meaning": "Right or suitable for a situation.",
+    "examples": [
+      "Jeans are not appropriate for the interview.",
+      "Is this film appropriate for children?"
+    ]
+  },
+  {
+    "id": "block",
+    "rank": 972,
+    "word": "block",
+    "ipa": "/blɑk/",
+    "partOfSpeech": "noun",
+    "meaning": "A solid piece of something with flat sides; a large building with many apartments or offices.",
+    "examples": ["The kids built a tower with wooden blocks.", "We live in a block of flats."]
+  },
+  {
+    "id": "warm",
+    "rank": 973,
+    "word": "warm",
+    "ipa": "/wɔrm/",
+    "partOfSpeech": "adjective",
+    "meaning": "A little hot, in a pleasant way.",
+    "examples": ["It is warm and sunny today.", "Wear a warm coat."]
+  },
+  {
+    "id": "count",
+    "rank": 974,
+    "word": "count",
+    "ipa": "/kaʊnt/",
+    "partOfSpeech": "verb",
+    "meaning": "To say numbers in order; to find the total number of something.",
+    "examples": ["Can you count to ten in English?", "I counted the money twice."]
+  },
+  {
+    "id": "scene",
+    "rank": 975,
+    "word": "scene",
+    "ipa": "/sin/",
+    "partOfSpeech": "noun",
+    "meaning": "A part of a play or film; the place where something happens.",
+    "examples": [
+      "The last scene of the film made me cry.",
+      "The police arrived at the scene of the accident."
+    ]
+  },
+  {
+    "id": "writer",
+    "rank": 976,
+    "word": "writer",
+    "ipa": "/ˈraɪtɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who writes books, stories or articles, often as a job.",
+    "examples": ["She is a writer of children's books.", "He wants to be a writer."]
+  },
+  {
+    "id": "content",
+    "rank": 977,
+    "word": "content",
+    "ipa": "/ˈkɑntɛnt/",
+    "partOfSpeech": "noun",
+    "meaning": "The things inside something; the ideas or information in a book, film or website.",
+    "examples": ["He emptied the contents of his bag.", "The website has a lot of useful content."]
+  },
+  {
+    "id": "prevent",
+    "rank": 978,
+    "word": "prevent",
+    "ipa": "/prɪˈvɛnt/",
+    "partOfSpeech": "verb",
+    "meaning": "To stop something from happening.",
+    "examples": ["Wash your hands to prevent illness.", "The rain prevented us from going out."]
+  },
+  {
+    "id": "safe",
+    "rank": 979,
+    "word": "safe",
+    "ipa": "/seɪf/",
+    "partOfSpeech": "adjective",
+    "meaning": "Not in danger; not likely to cause harm.",
+    "examples": ["Is it safe to swim here?", "Keep your passport in a safe place."]
+  },
+  {
+    "id": "invite",
+    "rank": 980,
+    "word": "invite",
+    "ipa": "/ɪnˈvaɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "To ask someone to come to an event or to your home.",
+    "examples": ["We invited twenty people to the party.", "She invited me for dinner."]
+  },
+  {
+    "id": "mix",
+    "rank": 981,
+    "word": "mix",
+    "ipa": "/mɪks/",
+    "partOfSpeech": "verb",
+    "meaning": "To put different things together and combine them.",
+    "examples": ["Mix the flour and the eggs.", "Oil and water do not mix."]
+  },
+  {
+    "id": "element",
+    "rank": 982,
+    "word": "element",
+    "ipa": "/ˈɛləmənt/",
+    "partOfSpeech": "noun",
+    "meaning": "One part of something; a basic chemical substance like gold or oxygen.",
+    "examples": ["Trust is an important element of friendship.", "Water is made of two elements."]
+  },
+  {
+    "id": "effective",
+    "rank": 983,
+    "word": "effective",
+    "ipa": "/ɪˈfɛktɪv/",
+    "partOfSpeech": "adjective",
+    "meaning": "Working well and giving the result you want.",
+    "examples": ["This medicine is very effective.", "What is the most effective way to learn?"]
+  },
+  {
+    "id": "correct",
+    "rank": 984,
+    "word": "correct",
+    "ipa": "/kəˈrɛkt/",
+    "partOfSpeech": "adjective",
+    "meaning": "Right; with no mistakes.",
+    "examples": ["Your answer is correct.", "Is this the correct address?"]
+  },
+  {
+    "id": "medical",
+    "rank": 985,
+    "word": "medical",
+    "ipa": "/ˈmɛdɪkəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "About medicine and treating illness.",
+    "examples": ["She needs medical help.", "He is a medical student."]
+  },
+  {
+    "id": "admit",
+    "rank": 986,
+    "word": "admit",
+    "ipa": "/ədˈmɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "To agree that something bad is true; to allow someone to enter a place.",
+    "examples": ["He admitted that he was wrong.", "She was admitted to the hospital last night."]
+  },
+  {
+    "id": "beat",
+    "rank": 987,
+    "word": "beat",
+    "ipa": "/bit/",
+    "partOfSpeech": "verb",
+    "meaning": "To win against someone in a game; to hit something again and again.",
+    "examples": ["We beat the other team 3–1.", "Beat the eggs with a fork."]
+  },
+  {
+    "id": "telephone",
+    "rank": 988,
+    "word": "telephone",
+    "ipa": "/ˈtɛləfoʊn/",
+    "partOfSpeech": "noun",
+    "meaning": "A phone.",
+    "examples": ["The telephone is ringing.", "Can I use your telephone?"]
+  },
+  {
+    "id": "copy",
+    "rank": 989,
+    "word": "copy",
+    "ipa": "/ˈkɑpi/",
+    "partOfSpeech": "noun",
+    "meaning": "Something made to look exactly like something else; one book or newspaper of many.",
+    "examples": ["Please make a copy of this letter.", "I bought a copy of her new book."]
+  },
+  {
+    "id": "committee",
+    "rank": 990,
+    "word": "committee",
+    "ipa": "/kəˈmɪti/",
+    "partOfSpeech": "noun",
+    "meaning": "A small group of people chosen to make decisions for a larger group.",
+    "examples": ["She is on the school committee.", "The committee meets once a month."]
+  },
+  {
+    "id": "aware",
+    "rank": 991,
+    "word": "aware",
+    "ipa": "/əˈwɛr/",
+    "partOfSpeech": "adjective",
+    "meaning": "Knowing that something exists or is happening.",
+    "examples": ["Are you aware of the risks?", "I was not aware that you were here."]
+  },
+  {
+    "id": "advice",
+    "rank": 992,
+    "word": "advice",
+    "ipa": "/ədˈvaɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "An opinion that you give someone about what they should do.",
+    "examples": ["Can I ask your advice?", "My teacher gave me good advice."]
+  },
+  {
+    "id": "handle",
+    "rank": 993,
+    "word": "handle",
+    "ipa": "/ˈhændəl/",
+    "partOfSpeech": "verb",
+    "meaning": "To deal with a situation or problem; to touch or hold something.",
+    "examples": ["She handled the problem well.", "Please handle the glasses with care."]
+  },
+  {
+    "id": "glass",
+    "rank": 994,
+    "word": "glass",
+    "ipa": "/ɡlæs/",
+    "partOfSpeech": "noun",
+    "meaning": "A hard clear material used for windows; a cup made of this material.",
+    "examples": ["The table is made of glass.", "Can I have a glass of water?"]
+  },
+  {
+    "id": "trial",
+    "rank": 995,
+    "word": "trial",
+    "ipa": "/ˈtraɪəl/",
+    "partOfSpeech": "noun",
+    "meaning": "The process in a court of law to decide if someone is guilty; a test of how well something works.",
+    "examples": ["The trial lasted two weeks.", "Try the app free for a 30-day trial."]
+  },
+  {
+    "id": "stress",
+    "rank": 996,
+    "word": "stress",
+    "ipa": "/strɛs/",
+    "partOfSpeech": "noun",
+    "meaning": "A feeling of worry caused by problems or too much work.",
+    "examples": ["I am under a lot of stress at work.", "Exercise helps reduce stress."]
+  },
+  {
+    "id": "radio",
+    "rank": 997,
+    "word": "radio",
+    "ipa": "/ˈreɪdioʊ/",
+    "partOfSpeech": "noun",
+    "meaning": "A device that receives sounds sent through the air; the programs you listen to.",
+    "examples": ["I listen to the radio in the car.", "I heard the news on the radio."]
+  },
+  {
+    "id": "administration",
+    "rank": 998,
+    "word": "administration",
+    "ipa": "/ədˌmɪnɪˈstreɪʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "The work of managing a company or organization; the government in power.",
+    "examples": [
+      "She works in hospital administration.",
+      "The new administration made many changes."
+    ]
+  },
+  {
+    "id": "complex",
+    "rank": 999,
+    "word": "complex",
+    "ipa": "/kəmˈplɛks/",
+    "partOfSpeech": "adjective",
+    "meaning": "Having many parts, and difficult to understand.",
+    "examples": ["This is a complex problem.", "The rules of the game are complex."]
+  },
+  {
+    "id": "text",
+    "rank": 1000,
+    "word": "text",
+    "ipa": "/tɛkst/",
+    "partOfSpeech": "noun",
+    "meaning": "The written words in a book or document; a message sent by phone.",
+    "examples": ["Read the text and answer the questions.", "She sent me a text."]
   }
 ]
