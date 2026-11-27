@@ -68,6 +68,7 @@ src/
 ├── app/         # App root
 ├── components/  # UI, grouped by feature (ui, layout, auth, flashcard, study, home, words, settings)
 ├── constants/   # Routes, ratings, default review settings and their limits
+├── data/        # Word list (words.json), loaded as a hashed URL
 ├── hooks/       # React hooks (auth, words, daily plan, study session, shortcuts)
 ├── lib/         # Neon client and pure logic: review scheduler, daily plan, word status, settings validation
 ├── pages/       # One component per route
@@ -75,7 +76,6 @@ src/
 ├── stores/      # Progress and settings state (zustand), saved to the database
 ├── types/       # Shared TypeScript types
 └── utils/       # Date helpers
-public/data/words.json  # Word list
 db/migrations/          # SQL to run once in the Neon SQL Editor
 ```
 
@@ -108,4 +108,4 @@ These answer the early open questions for now and are easy to change:
 - **Meanings**: English definitions.
 - **Accounts**: sign up and sign in with email and password through Neon Auth.
 - **Progress and settings**: saved per account in the `user_progress`, `study_days` and `user_settings` tables, through the Neon Data API. Row-level security limits each user to their own rows. Progress saved on a device by the earlier version moves into the account at the first sign-in.
-- **Word list**: 60 of the 1,000 words so far. Add the rest to `public/data/words.json` in the same format.
+- **Word list**: 60 of the 1,000 words so far. Add the rest to `src/data/words.json` in the same format; `src/data/words.test.ts` checks every entry.
