@@ -4183,5 +4183,917 @@
     "partOfSpeech": "verb",
     "meaning": "To go from one place to another, usually far.",
     "examples": ["I love to travel.", "We traveled across Asia by train."]
+  },
+  {
+    "id": "enjoy",
+    "rank": 461,
+    "word": "enjoy",
+    "ipa": "/ɪnˈdʒɔɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "To like doing or having something.",
+    "examples": ["I enjoy reading in the evening.", "Did you enjoy the party?"]
+  },
+  {
+    "id": "death",
+    "rank": 462,
+    "word": "death",
+    "ipa": "/dɛθ/",
+    "partOfSpeech": "noun",
+    "meaning": "The end of life.",
+    "examples": ["His death was a shock to everyone.", "Smoking can lead to early death."]
+  },
+  {
+    "id": "nice",
+    "rank": 463,
+    "word": "nice",
+    "ipa": "/naɪs/",
+    "partOfSpeech": "adjective",
+    "meaning": "Pleasant, kind or good.",
+    "examples": ["Have a nice day!", "She is a very nice person."]
+  },
+  {
+    "id": "amount",
+    "rank": 464,
+    "word": "amount",
+    "ipa": "/əˈmaʊnt/",
+    "partOfSpeech": "noun",
+    "meaning": "How much there is of something.",
+    "examples": ["He spent a large amount of money.", "Add a small amount of sugar."]
+  },
+  {
+    "id": "improve",
+    "rank": 465,
+    "word": "improve",
+    "ipa": "/ɪmˈpruv/",
+    "partOfSpeech": "verb",
+    "meaning": "To get better, or to make something better.",
+    "examples": ["My English is improving.", "Exercise can improve your sleep."]
+  },
+  {
+    "id": "picture",
+    "rank": 466,
+    "word": "picture",
+    "ipa": "/ˈpɪktʃɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A painting, drawing or photo.",
+    "examples": ["Can I take your picture?", "There is a picture of a ship on the wall."]
+  },
+  {
+    "id": "boy",
+    "rank": 467,
+    "word": "boy",
+    "ipa": "/bɔɪ/",
+    "partOfSpeech": "noun",
+    "meaning": "A male child or young man.",
+    "examples": ["The boy is playing football.", "They have two boys."]
+  },
+  {
+    "id": "regard",
+    "rank": 468,
+    "word": "regard",
+    "ipa": "/rɪˈɡɑrd/",
+    "partOfSpeech": "verb",
+    "meaning": "To think of someone or something in a particular way.",
+    "examples": ["I regard him as my best friend.", "She is highly regarded by her colleagues."]
+  },
+  {
+    "id": "organization",
+    "rank": 469,
+    "word": "organization",
+    "ipa": "/ˌɔrɡənəˈzeɪʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "A group of people who work together for a purpose, like a company or charity.",
+    "examples": ["She works for a health organization.", "The organization helps homeless people."]
+  },
+  {
+    "id": "happy",
+    "rank": 470,
+    "word": "happy",
+    "ipa": "/ˈhæpi/",
+    "partOfSpeech": "adjective",
+    "meaning": "Feeling pleased or glad.",
+    "examples": ["I am happy to see you.", "Happy birthday!"]
+  },
+  {
+    "id": "couple",
+    "rank": 471,
+    "word": "couple",
+    "ipa": "/ˈkʌpəl/",
+    "partOfSpeech": "noun",
+    "meaning": "Two people in a relationship; two or a few of something.",
+    "examples": ["They are a lovely couple.", "I will be there in a couple of minutes."]
+  },
+  {
+    "id": "act",
+    "rank": 472,
+    "word": "act",
+    "ipa": "/ækt/",
+    "partOfSpeech": "verb",
+    "meaning": "To do something; to play a part in a film or play.",
+    "examples": ["We must act quickly.", "She acts in many films."]
+  },
+  {
+    "id": "range",
+    "rank": 473,
+    "word": "range",
+    "ipa": "/reɪndʒ/",
+    "partOfSpeech": "noun",
+    "meaning": "A group of different things of the same kind; the limits between which something varies.",
+    "examples": ["The shop sells a wide range of shoes.", "The price range is 10 to 50 dollars."]
+  },
+  {
+    "id": "quality",
+    "rank": 474,
+    "word": "quality",
+    "ipa": "/ˈkwɑləti/",
+    "partOfSpeech": "noun",
+    "meaning": "How good or bad something is.",
+    "examples": ["The food here is of high quality.", "The quality of the photo is poor."]
+  },
+  {
+    "id": "project",
+    "rank": 475,
+    "word": "project",
+    "ipa": "/ˈprɑdʒɛkt/",
+    "partOfSpeech": "noun",
+    "meaning": "A piece of planned work.",
+    "examples": ["We are working on a school project.", "The project will take two years."]
+  },
+  {
+    "id": "round",
+    "rank": 476,
+    "word": "round",
+    "ipa": "/raʊnd/",
+    "partOfSpeech": "adjective",
+    "meaning": "Shaped like a circle or ball.",
+    "examples": ["We have a round table in the kitchen.", "The earth is round."]
+  },
+  {
+    "id": "opportunity",
+    "rank": 477,
+    "word": "opportunity",
+    "ipa": "/ˌɑpɚˈtunəti/",
+    "partOfSpeech": "noun",
+    "meaning": "A time when it is possible to do something you want to do; a chance.",
+    "examples": ["This job is a great opportunity.", "I had the opportunity to visit Japan."]
+  },
+  {
+    "id": "road",
+    "rank": 478,
+    "word": "road",
+    "ipa": "/roʊd/",
+    "partOfSpeech": "noun",
+    "meaning": "A hard surface for cars and other vehicles to travel on.",
+    "examples": ["Be careful when you cross the road.", "The road to the village is very narrow."]
+  },
+  {
+    "id": "list",
+    "rank": 479,
+    "word": "list",
+    "ipa": "/lɪst/",
+    "partOfSpeech": "noun",
+    "meaning": "A set of names or things written one after another.",
+    "examples": ["I made a shopping list.", "Is my name on the list?"]
+  },
+  {
+    "id": "wish",
+    "rank": 480,
+    "word": "wish",
+    "ipa": "/wɪʃ/",
+    "partOfSpeech": "verb",
+    "meaning": "To want something that may not happen or be possible.",
+    "examples": ["I wish I could fly.", "We wish you a happy new year."]
+  },
+  {
+    "id": "therefore",
+    "rank": 481,
+    "word": "therefore",
+    "ipa": "/ˈðɛrfɔr/",
+    "partOfSpeech": "adverb",
+    "meaning": "For that reason; so.",
+    "examples": [
+      "He was ill and therefore could not come.",
+      "The road is closed. Therefore, we must go another way."
+    ]
+  },
+  {
+    "id": "wear",
+    "rank": 482,
+    "word": "wear",
+    "ipa": "/wɛr/",
+    "partOfSpeech": "verb",
+    "meaning": "To have clothes, shoes or jewelry on your body.",
+    "examples": ["She is wearing a red dress.", "I wear glasses for reading."]
+  },
+  {
+    "id": "fund",
+    "rank": 483,
+    "word": "fund",
+    "ipa": "/fʌnd/",
+    "partOfSpeech": "noun",
+    "meaning": "An amount of money saved or collected for a purpose.",
+    "examples": [
+      "They started a fund to help the hospital.",
+      "The school does not have enough funds."
+    ]
+  },
+  {
+    "id": "rest",
+    "rank": 484,
+    "word": "rest",
+    "ipa": "/rɛst/",
+    "partOfSpeech": "noun",
+    "meaning": "A time when you relax or sleep; the part that is left.",
+    "examples": ["You need some rest.", "I will eat the rest of the cake later."]
+  },
+  {
+    "id": "kid",
+    "rank": 485,
+    "word": "kid",
+    "ipa": "/kɪd/",
+    "partOfSpeech": "noun",
+    "meaning": "A child (informal).",
+    "examples": ["The kids are playing outside.", "How many kids do you have?"]
+  },
+  {
+    "id": "industry",
+    "rank": 486,
+    "word": "industry",
+    "ipa": "/ˈɪndəstri/",
+    "partOfSpeech": "noun",
+    "meaning": "The work of making goods in factories; a particular type of business.",
+    "examples": ["The car industry is important here.", "She works in the music industry."]
+  },
+  {
+    "id": "education",
+    "rank": 487,
+    "word": "education",
+    "ipa": "/ˌɛdʒəˈkeɪʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "The process of teaching and learning, usually at school.",
+    "examples": ["Education is free in this country.", "She has a good education."]
+  },
+  {
+    "id": "measure",
+    "rank": 488,
+    "word": "measure",
+    "ipa": "/ˈmɛʒɚ/",
+    "partOfSpeech": "verb",
+    "meaning": "To find the size, weight or amount of something.",
+    "examples": ["Measure the room before you buy a carpet.", "The nurse measured my height."]
+  },
+  {
+    "id": "kill",
+    "rank": 489,
+    "word": "kill",
+    "ipa": "/kɪl/",
+    "partOfSpeech": "verb",
+    "meaning": "To make someone or something die.",
+    "examples": ["The cold weather killed the flowers.", "Smoking kills."]
+  },
+  {
+    "id": "serve",
+    "rank": 490,
+    "word": "serve",
+    "ipa": "/sɝv/",
+    "partOfSpeech": "verb",
+    "meaning": "To give someone food or drink; to work for someone or something.",
+    "examples": ["Dinner is served at eight.", "He served in the army for ten years."]
+  },
+  {
+    "id": "likely",
+    "rank": 491,
+    "word": "likely",
+    "ipa": "/ˈlaɪkli/",
+    "partOfSpeech": "adjective",
+    "meaning": "Probably going to happen or be true.",
+    "examples": ["It is likely to rain later.", "The most likely answer is B."]
+  },
+  {
+    "id": "certainly",
+    "rank": 492,
+    "word": "certainly",
+    "ipa": "/ˈsɝtənli/",
+    "partOfSpeech": "adverb",
+    "meaning": "Without any doubt; yes, of course.",
+    "examples": ["She will certainly win.", "\"Can you help me?\" \"Certainly.\""]
+  },
+  {
+    "id": "national",
+    "rank": 493,
+    "word": "national",
+    "ipa": "/ˈnæʃənəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "About a whole country.",
+    "examples": ["Today is a national holiday.", "The national team won the match."]
+  },
+  {
+    "id": "itself",
+    "rank": 494,
+    "word": "itself",
+    "ipa": "/ɪtˈsɛlf/",
+    "partOfSpeech": "pronoun",
+    "meaning": "The same thing or animal that is the subject of the sentence.",
+    "examples": ["The cat is cleaning itself.", "The door closed by itself."]
+  },
+  {
+    "id": "teach",
+    "rank": 495,
+    "word": "teach",
+    "ipa": "/titʃ/",
+    "partOfSpeech": "verb",
+    "meaning": "To help someone learn something; to give lessons.",
+    "examples": ["She teaches math at a high school.", "Can you teach me to swim?"]
+  },
+  {
+    "id": "field",
+    "rank": 496,
+    "word": "field",
+    "ipa": "/fild/",
+    "partOfSpeech": "noun",
+    "meaning": "An area of land with grass or crops; an area of study or work.",
+    "examples": ["Cows are eating grass in the field.", "He is an expert in his field."]
+  },
+  {
+    "id": "security",
+    "rank": 497,
+    "word": "security",
+    "ipa": "/sɪˈkjʊrəti/",
+    "partOfSpeech": "noun",
+    "meaning": "Protection from danger or crime; the people who give this.",
+    "examples": ["Airport security is very strict.", "Call security!"]
+  },
+  {
+    "id": "air",
+    "rank": 498,
+    "word": "air",
+    "ipa": "/ɛr/",
+    "partOfSpeech": "noun",
+    "meaning": "The gas around us that we breathe.",
+    "examples": ["Open the window to let in some fresh air.", "The air in the city is polluted."]
+  },
+  {
+    "id": "benefit",
+    "rank": 499,
+    "word": "benefit",
+    "ipa": "/ˈbɛnəfɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "A good effect or advantage of something.",
+    "examples": ["Exercise has many health benefits.", "The job has good benefits."]
+  },
+  {
+    "id": "trade",
+    "rank": 500,
+    "word": "trade",
+    "ipa": "/treɪd/",
+    "partOfSpeech": "noun",
+    "meaning": "The buying and selling of goods between people or countries.",
+    "examples": ["Trade between the two countries is growing.", "The city became rich from trade."]
+  },
+  {
+    "id": "risk",
+    "rank": 501,
+    "word": "risk",
+    "ipa": "/rɪsk/",
+    "partOfSpeech": "noun",
+    "meaning": "The chance that something bad will happen.",
+    "examples": ["Smoking increases the risk of cancer.", "It is a risk, but I will try."]
+  },
+  {
+    "id": "news",
+    "rank": 502,
+    "word": "news",
+    "ipa": "/nuz/",
+    "partOfSpeech": "noun",
+    "meaning": "New information about recent events.",
+    "examples": ["Did you watch the news tonight?", "I have some good news!"]
+  },
+  {
+    "id": "standard",
+    "rank": 503,
+    "word": "standard",
+    "ipa": "/ˈstændɚd/",
+    "partOfSpeech": "noun",
+    "meaning": "A level of quality that is expected or accepted.",
+    "examples": ["The hotel has high standards.", "Your work is not up to standard."]
+  },
+  {
+    "id": "vote",
+    "rank": 504,
+    "word": "vote",
+    "ipa": "/voʊt/",
+    "partOfSpeech": "verb",
+    "meaning": "To choose someone or something officially, for example in an election.",
+    "examples": ["Who did you vote for?", "You can vote at eighteen."]
+  },
+  {
+    "id": "percent",
+    "rank": 505,
+    "word": "percent",
+    "ipa": "/pɚˈsɛnt/",
+    "partOfSpeech": "noun",
+    "meaning": "One part in every hundred (%).",
+    "examples": ["Ninety percent of the students passed.", "Prices rose by five percent."]
+  },
+  {
+    "id": "focus",
+    "rank": 506,
+    "word": "focus",
+    "ipa": "/ˈfoʊkəs/",
+    "partOfSpeech": "verb",
+    "meaning": "To give all your attention to something.",
+    "examples": ["I cannot focus with this noise.", "Focus on your studies."]
+  },
+  {
+    "id": "stage",
+    "rank": 507,
+    "word": "stage",
+    "ipa": "/steɪdʒ/",
+    "partOfSpeech": "noun",
+    "meaning": "A part of a process; the raised area in a theater where people perform.",
+    "examples": ["The project is in its early stages.", "The band came on stage."]
+  },
+  {
+    "id": "space",
+    "rank": 508,
+    "word": "space",
+    "ipa": "/speɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "An empty area; the area outside the earth where the stars and planets are.",
+    "examples": ["There is no space for a sofa in my room.", "She wants to travel into space."]
+  },
+  {
+    "id": "instead",
+    "rank": 509,
+    "word": "instead",
+    "ipa": "/ɪnˈstɛd/",
+    "partOfSpeech": "adverb",
+    "meaning": "In place of someone or something else.",
+    "examples": [
+      "There was no coffee, so I had tea instead.",
+      "Let's walk instead of taking the bus."
+    ]
+  },
+  {
+    "id": "realize",
+    "rank": 510,
+    "word": "realize",
+    "ipa": "/ˈriəlaɪz/",
+    "partOfSpeech": "verb",
+    "meaning": "To understand or notice something that you did not know before.",
+    "examples": ["I realized I had left my phone at home.", "Do you realize how late it is?"]
+  },
+  {
+    "id": "usually",
+    "rank": 511,
+    "word": "usually",
+    "ipa": "/ˈjuʒuəli/",
+    "partOfSpeech": "adverb",
+    "meaning": "In the way that happens most often.",
+    "examples": ["I usually get up at seven.", "It is usually warm in May."]
+  },
+  {
+    "id": "data",
+    "rank": 512,
+    "word": "data",
+    "ipa": "/ˈdeɪtə/",
+    "partOfSpeech": "noun",
+    "meaning": "Facts or numbers collected to be studied or used by a computer.",
+    "examples": ["We collected data from 500 people.", "The app saves your data."]
+  },
+  {
+    "id": "single",
+    "rank": 513,
+    "word": "single",
+    "ipa": "/ˈsɪŋɡəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Only one; not married.",
+    "examples": ["I did not see a single person.", "Is she married or single?"]
+  },
+  {
+    "id": "address",
+    "rank": 514,
+    "word": "address",
+    "ipa": "/ˈædrɛs/",
+    "partOfSpeech": "noun",
+    "meaning": "The number of the house and name of the street and town where someone lives.",
+    "examples": ["What is your address?", "Please write your email address here."]
+  },
+  {
+    "id": "performance",
+    "rank": 515,
+    "word": "performance",
+    "ipa": "/pɚˈfɔrməns/",
+    "partOfSpeech": "noun",
+    "meaning": "Acting, singing or playing in front of people; how well someone does something.",
+    "examples": ["The band gave a great performance.", "His performance at work has improved."]
+  },
+  {
+    "id": "chance",
+    "rank": 516,
+    "word": "chance",
+    "ipa": "/tʃæns/",
+    "partOfSpeech": "noun",
+    "meaning": "An opportunity to do something; how possible it is that something will happen.",
+    "examples": ["Give me another chance.", "There is a good chance of rain."]
+  },
+  {
+    "id": "accept",
+    "rank": 517,
+    "word": "accept",
+    "ipa": "/əkˈsɛpt/",
+    "partOfSpeech": "verb",
+    "meaning": "To take something that someone offers; to agree that something is true.",
+    "examples": ["She accepted the job.", "I accept that I made a mistake."]
+  },
+  {
+    "id": "society",
+    "rank": 518,
+    "word": "society",
+    "ipa": "/səˈsaɪəti/",
+    "partOfSpeech": "noun",
+    "meaning": "People in general, living together in a community.",
+    "examples": ["Technology has changed society.", "We live in a modern society."]
+  },
+  {
+    "id": "technology",
+    "rank": 519,
+    "word": "technology",
+    "ipa": "/tɛkˈnɑlədʒi/",
+    "partOfSpeech": "noun",
+    "meaning": "Scientific knowledge used to make machines and tools.",
+    "examples": ["Technology is changing fast.", "The school uses new technology in class."]
+  },
+  {
+    "id": "mention",
+    "rank": 520,
+    "word": "mention",
+    "ipa": "/ˈmɛnʃən/",
+    "partOfSpeech": "verb",
+    "meaning": "To talk or write about something quickly, without many details.",
+    "examples": ["She mentioned that she was moving.", "Do not mention it to anyone."]
+  },
+  {
+    "id": "choice",
+    "rank": 521,
+    "word": "choice",
+    "ipa": "/tʃɔɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "The act of choosing; the things you can choose from.",
+    "examples": ["You made the right choice.", "There is a wide choice of food."]
+  },
+  {
+    "id": "save",
+    "rank": 522,
+    "word": "save",
+    "ipa": "/seɪv/",
+    "partOfSpeech": "verb",
+    "meaning": "To keep money to use later; to help someone get away from danger.",
+    "examples": ["I am saving money for a car.", "The doctor saved his life."]
+  },
+  {
+    "id": "common",
+    "rank": 523,
+    "word": "common",
+    "ipa": "/ˈkɑmən/",
+    "partOfSpeech": "adjective",
+    "meaning": "Happening often or found in many places.",
+    "examples": ["It is a common mistake.", "Smith is a common name in England."]
+  },
+  {
+    "id": "culture",
+    "rank": 524,
+    "word": "culture",
+    "ipa": "/ˈkʌltʃɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "The way of life, customs and beliefs of a group of people.",
+    "examples": [
+      "I want to learn about Japanese culture.",
+      "Music is an important part of their culture."
+    ]
+  },
+  {
+    "id": "total",
+    "rank": 525,
+    "word": "total",
+    "ipa": "/ˈtoʊtəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Complete; including everything.",
+    "examples": ["The total cost is 200 dollars.", "The party was a total success."]
+  },
+  {
+    "id": "demand",
+    "rank": 526,
+    "word": "demand",
+    "ipa": "/dɪˈmænd/",
+    "partOfSpeech": "noun",
+    "meaning": "A strong request; the need people have for goods or services.",
+    "examples": ["There is a high demand for nurses.", "The workers made several demands."]
+  },
+  {
+    "id": "material",
+    "rank": 527,
+    "word": "material",
+    "ipa": "/məˈtɪriəl/",
+    "partOfSpeech": "noun",
+    "meaning": "Cloth, or a substance used for making things.",
+    "examples": ["This dress is made of soft material.", "Wood is a strong building material."]
+  },
+  {
+    "id": "limit",
+    "rank": 528,
+    "word": "limit",
+    "ipa": "/ˈlɪmɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "The greatest amount or number that is allowed or possible.",
+    "examples": ["The speed limit here is 50.", "There is a limit to how much I can carry."]
+  },
+  {
+    "id": "listen",
+    "rank": 529,
+    "word": "listen",
+    "ipa": "/ˈlɪsən/",
+    "partOfSpeech": "verb",
+    "meaning": "To pay attention to sounds or to what someone says.",
+    "examples": ["Listen to me!", "I listen to the radio in the car."]
+  },
+  {
+    "id": "due",
+    "rank": 530,
+    "word": "due",
+    "ipa": "/du/",
+    "partOfSpeech": "adjective",
+    "meaning": "Expected to happen or arrive at a particular time; owed.",
+    "examples": ["The train is due at six.", "The rent is due on Friday."]
+  },
+  {
+    "id": "wrong",
+    "rank": 531,
+    "word": "wrong",
+    "ipa": "/rɔŋ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Not correct; not right.",
+    "examples": ["Your answer is wrong.", "What is wrong with you?"]
+  },
+  {
+    "id": "foot",
+    "rank": 532,
+    "word": "foot",
+    "ipa": "/fʊt/",
+    "partOfSpeech": "noun",
+    "meaning": "The part of your body at the end of your leg that you stand on.",
+    "examples": ["My feet hurt after the long walk.", "We went there on foot."]
+  },
+  {
+    "id": "effort",
+    "rank": 533,
+    "word": "effort",
+    "ipa": "/ˈɛfɚt/",
+    "partOfSpeech": "noun",
+    "meaning": "Hard work you do to try to achieve something.",
+    "examples": ["Learning a language takes a lot of effort.", "Thank you for your effort."]
+  },
+  {
+    "id": "attention",
+    "rank": 534,
+    "word": "attention",
+    "ipa": "/əˈtɛnʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "Watching, listening or thinking carefully about something.",
+    "examples": ["Pay attention in class.", "May I have your attention, please?"]
+  },
+  {
+    "id": "upon",
+    "rank": 535,
+    "word": "upon",
+    "ipa": "/əˈpɑn/",
+    "partOfSpeech": "preposition",
+    "meaning": "On (more formal).",
+    "examples": ["Once upon a time, there was a king.", "The decision depends upon the weather."]
+  },
+  {
+    "id": "check",
+    "rank": 536,
+    "word": "check",
+    "ipa": "/tʃɛk/",
+    "partOfSpeech": "verb",
+    "meaning": "To look at something to see if it is correct, safe or working.",
+    "examples": ["Check your answers before you finish.", "I check my email every morning."]
+  },
+  {
+    "id": "complete",
+    "rank": 537,
+    "word": "complete",
+    "ipa": "/kəmˈplit/",
+    "partOfSpeech": "verb",
+    "meaning": "To finish doing something; to fill in a form.",
+    "examples": ["I completed the course last year.", "Please complete this form."]
+  },
+  {
+    "id": "lie",
+    "rank": 538,
+    "word": "lie",
+    "ipa": "/laɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "To be in a flat position, for example on a bed; to say something that is not true.",
+    "examples": ["I lay on the sofa all afternoon.", "Do not lie to me."]
+  },
+  {
+    "id": "pick",
+    "rank": 539,
+    "word": "pick",
+    "ipa": "/pɪk/",
+    "partOfSpeech": "verb",
+    "meaning": "To choose something; to take flowers or fruit from a plant.",
+    "examples": ["Pick a card.", "We picked apples in the garden."]
+  },
+  {
+    "id": "reduce",
+    "rank": 540,
+    "word": "reduce",
+    "ipa": "/rɪˈdus/",
+    "partOfSpeech": "verb",
+    "meaning": "To make something smaller in size, number or amount.",
+    "examples": ["We need to reduce our costs.", "The shop has reduced its prices."]
+  },
+  {
+    "id": "personal",
+    "rank": 541,
+    "word": "personal",
+    "ipa": "/ˈpɝsənəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "About or belonging to one particular person.",
+    "examples": ["That is a personal question.", "Please take your personal things with you."]
+  },
+  {
+    "id": "ground",
+    "rank": 542,
+    "word": "ground",
+    "ipa": "/ɡraʊnd/",
+    "partOfSpeech": "noun",
+    "meaning": "The surface of the earth.",
+    "examples": ["She sat on the ground.", "The ground is wet after the rain."]
+  },
+  {
+    "id": "animal",
+    "rank": 543,
+    "word": "animal",
+    "ipa": "/ˈænəməl/",
+    "partOfSpeech": "noun",
+    "meaning": "A living thing that can move, like a dog, bird or fish.",
+    "examples": ["Elephants are big animals.", "Do you have any animals at home?"]
+  },
+  {
+    "id": "arrive",
+    "rank": 544,
+    "word": "arrive",
+    "ipa": "/əˈraɪv/",
+    "partOfSpeech": "verb",
+    "meaning": "To get to a place.",
+    "examples": ["What time does the plane arrive?", "We arrived home late."]
+  },
+  {
+    "id": "patient",
+    "rank": 545,
+    "word": "patient",
+    "ipa": "/ˈpeɪʃənt/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who is being treated by a doctor.",
+    "examples": ["The doctor sees thirty patients a day.", "The patient is getting better."]
+  },
+  {
+    "id": "current",
+    "rank": 546,
+    "word": "current",
+    "ipa": "/ˈkɝənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "Happening or existing now.",
+    "examples": ["What is your current address?", "The current situation is difficult."]
+  },
+  {
+    "id": "century",
+    "rank": 547,
+    "word": "century",
+    "ipa": "/ˈsɛntʃəri/",
+    "partOfSpeech": "noun",
+    "meaning": "A period of one hundred years.",
+    "examples": ["This church was built in the 15th century.", "We live in the 21st century."]
+  },
+  {
+    "id": "evidence",
+    "rank": 548,
+    "word": "evidence",
+    "ipa": "/ˈɛvədəns/",
+    "partOfSpeech": "noun",
+    "meaning": "Facts or signs that show something is true.",
+    "examples": ["There is no evidence that he did it.", "The police found new evidence."]
+  },
+  {
+    "id": "exist",
+    "rank": 549,
+    "word": "exist",
+    "ipa": "/ɪɡˈzɪst/",
+    "partOfSpeech": "verb",
+    "meaning": "To be real or to be present.",
+    "examples": ["Do ghosts exist?", "This problem has existed for years."]
+  },
+  {
+    "id": "similar",
+    "rank": 550,
+    "word": "similar",
+    "ipa": "/ˈsɪməlɚ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Almost the same as something else, but not exactly.",
+    "examples": ["Our houses are similar.", "I have a similar bag."]
+  },
+  {
+    "id": "fight",
+    "rank": 551,
+    "word": "fight",
+    "ipa": "/faɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "To use your body or weapons against someone; to argue.",
+    "examples": ["The two boys were fighting.", "They often fight about money."]
+  },
+  {
+    "id": "leader",
+    "rank": 552,
+    "word": "leader",
+    "ipa": "/ˈlidɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who is in charge of a group, country or team.",
+    "examples": ["She is the leader of the team.", "World leaders met in Paris."]
+  },
+  {
+    "id": "fine",
+    "rank": 553,
+    "word": "fine",
+    "ipa": "/faɪn/",
+    "partOfSpeech": "adjective",
+    "meaning": "Well or healthy; good or acceptable.",
+    "examples": ["\"How are you?\" \"I am fine, thanks.\"", "Everything is fine."]
+  },
+  {
+    "id": "street",
+    "rank": 554,
+    "word": "street",
+    "ipa": "/strit/",
+    "partOfSpeech": "noun",
+    "meaning": "A road in a town with houses or shops on it.",
+    "examples": ["I live on Main Street.", "The street was full of people."]
+  },
+  {
+    "id": "former",
+    "rank": 555,
+    "word": "former",
+    "ipa": "/ˈfɔrmɚ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Having been something in the past, but not now.",
+    "examples": ["He is a former teacher.", "I met my former boss at the station."]
+  },
+  {
+    "id": "contact",
+    "rank": 556,
+    "word": "contact",
+    "ipa": "/ˈkɑntækt/",
+    "partOfSpeech": "noun",
+    "meaning": "Communication with someone; the act of touching.",
+    "examples": ["We stayed in contact after school.", "Avoid contact with the skin."]
+  },
+  {
+    "id": "particularly",
+    "rank": 557,
+    "word": "particularly",
+    "ipa": "/pɚˈtɪkjəlɚli/",
+    "partOfSpeech": "adverb",
+    "meaning": "Especially; more than usual.",
+    "examples": ["I am not particularly hungry.", "It was particularly cold last night."]
+  },
+  {
+    "id": "wife",
+    "rank": 558,
+    "word": "wife",
+    "ipa": "/waɪf/",
+    "partOfSpeech": "noun",
+    "meaning": "The woman that a man is married to.",
+    "examples": ["This is my wife, Anna.", "His wife is a doctor."]
+  },
+  {
+    "id": "sport",
+    "rank": 559,
+    "word": "sport",
+    "ipa": "/spɔrt/",
+    "partOfSpeech": "noun",
+    "meaning": "A game or activity that needs physical effort and skill.",
+    "examples": ["Football is my favorite sport.", "Do you play any sports?"]
+  },
+  {
+    "id": "prepare",
+    "rank": 560,
+    "word": "prepare",
+    "ipa": "/prɪˈpɛr/",
+    "partOfSpeech": "verb",
+    "meaning": "To make something or someone ready.",
+    "examples": ["I am preparing dinner.", "She is preparing for her exams."]
   }
 ]
