@@ -1441,5 +1441,914 @@
     "partOfSpeech": "noun",
     "meaning": "Something you ask to get an answer.",
     "examples": ["Can I ask you a question?", "Answer all the questions on the test."]
+  },
+  {
+    "id": "during",
+    "rank": 161,
+    "word": "during",
+    "ipa": "/ˈdʊrɪŋ/",
+    "partOfSpeech": "preposition",
+    "meaning": "From the beginning to the end of a period of time; at some point in it.",
+    "examples": ["I fell asleep during the movie.", "It rained during the night."]
+  },
+  {
+    "id": "set",
+    "rank": 162,
+    "word": "set",
+    "ipa": "/sɛt/",
+    "partOfSpeech": "verb",
+    "meaning": "To put something in a place; to decide on a time or rule.",
+    "examples": ["She set the plates on the table.", "Let's set a date for the party."]
+  },
+  {
+    "id": "study",
+    "rank": 163,
+    "word": "study",
+    "ipa": "/ˈstʌdi/",
+    "partOfSpeech": "verb",
+    "meaning": "To spend time learning about a subject.",
+    "examples": ["I study English every evening.", "He is studying to be a lawyer."]
+  },
+  {
+    "id": "follow",
+    "rank": 164,
+    "word": "follow",
+    "ipa": "/ˈfɑloʊ/",
+    "partOfSpeech": "verb",
+    "meaning": "To go or come after someone or something.",
+    "examples": ["Follow me, please.", "The dog followed us home."]
+  },
+  {
+    "id": "begin",
+    "rank": 165,
+    "word": "begin",
+    "ipa": "/bɪˈɡɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "To start doing something, or to start happening.",
+    "examples": ["The meeting begins at ten.", "She began to cry."]
+  },
+  {
+    "id": "since",
+    "rank": 166,
+    "word": "since",
+    "ipa": "/sɪns/",
+    "partOfSpeech": "preposition",
+    "meaning": "From a time in the past until now.",
+    "examples": ["I have lived here since 2019.", "We have been friends since childhood."]
+  },
+  {
+    "id": "run",
+    "rank": 167,
+    "word": "run",
+    "ipa": "/rʌn/",
+    "partOfSpeech": "verb",
+    "meaning": "To move fast on your feet; to manage a business.",
+    "examples": ["I run in the park every morning.", "Her parents run a small hotel."]
+  },
+  {
+    "id": "under",
+    "rank": 168,
+    "word": "under",
+    "ipa": "/ˈʌndɚ/",
+    "partOfSpeech": "preposition",
+    "meaning": "Below something; less than an amount.",
+    "examples": ["The cat is under the bed.", "Children under five travel free."]
+  },
+  {
+    "id": "turn",
+    "rank": 169,
+    "word": "turn",
+    "ipa": "/tɝn/",
+    "partOfSpeech": "verb",
+    "meaning": "To move around, or to change direction.",
+    "examples": ["Turn left at the bank.", "She turned and smiled at me."]
+  },
+  {
+    "id": "bring",
+    "rank": 170,
+    "word": "bring",
+    "ipa": "/brɪŋ/",
+    "partOfSpeech": "verb",
+    "meaning": "To take someone or something with you to a place.",
+    "examples": ["Bring an umbrella with you.", "Can you bring me a glass of water?"]
+  },
+  {
+    "id": "early",
+    "rank": 171,
+    "word": "early",
+    "ipa": "/ˈɝli/",
+    "partOfSpeech": "adjective",
+    "meaning": "Near the beginning of a period of time; before the usual time.",
+    "examples": ["I take an early train to work.", "You are early today!"]
+  },
+  {
+    "id": "state",
+    "rank": 172,
+    "word": "state",
+    "ipa": "/steɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "The condition someone or something is in; a part of a country with its own government.",
+    "examples": ["The house was in a bad state.", "Texas is a large state."]
+  },
+  {
+    "id": "move",
+    "rank": 173,
+    "word": "move",
+    "ipa": "/muv/",
+    "partOfSpeech": "verb",
+    "meaning": "To change place or position; to go to live in a new place.",
+    "examples": ["Please move your car.", "We moved to a new apartment."]
+  },
+  {
+    "id": "money",
+    "rank": 174,
+    "word": "money",
+    "ipa": "/ˈmʌni/",
+    "partOfSpeech": "noun",
+    "meaning": "Coins and paper notes used to buy things.",
+    "examples": ["I need to save money.", "How much money do you have?"]
+  },
+  {
+    "id": "fact",
+    "rank": 175,
+    "word": "fact",
+    "ipa": "/fækt/",
+    "partOfSpeech": "noun",
+    "meaning": "Something that is known to be true.",
+    "examples": ["It is a fact that the earth goes around the sun.", "Tell me the facts."]
+  },
+  {
+    "id": "however",
+    "rank": 176,
+    "word": "however",
+    "ipa": "/haʊˈɛvɚ/",
+    "partOfSpeech": "adverb",
+    "meaning": "Used to add something that is different from what was just said.",
+    "examples": [
+      "The test was hard. However, I passed.",
+      "I like the city. It is very expensive, however."
+    ]
+  },
+  {
+    "id": "area",
+    "rank": 177,
+    "word": "area",
+    "ipa": "/ˈɛriə/",
+    "partOfSpeech": "noun",
+    "meaning": "A part of a place, town or country.",
+    "examples": ["We live in a quiet area.", "This is a no-smoking area."]
+  },
+  {
+    "id": "provide",
+    "rank": 178,
+    "word": "provide",
+    "ipa": "/prəˈvaɪd/",
+    "partOfSpeech": "verb",
+    "meaning": "To give someone something they need.",
+    "examples": ["The hotel provides free towels.", "Parents provide food for their children."]
+  },
+  {
+    "id": "name",
+    "rank": 179,
+    "word": "name",
+    "ipa": "/neɪm/",
+    "partOfSpeech": "noun",
+    "meaning": "The word that a person, place or thing is called.",
+    "examples": ["What is your name?", "I forgot the name of the song."]
+  },
+  {
+    "id": "read",
+    "rank": 180,
+    "word": "read",
+    "ipa": "/rid/",
+    "partOfSpeech": "verb",
+    "meaning": "To look at words and understand them.",
+    "examples": ["I read the news every morning.", "Can you read this sign?"]
+  },
+  {
+    "id": "month",
+    "rank": 181,
+    "word": "month",
+    "ipa": "/mʌnθ/",
+    "partOfSpeech": "noun",
+    "meaning": "One of the twelve parts of a year.",
+    "examples": ["My birthday is next month.", "I pay rent every month."]
+  },
+  {
+    "id": "large",
+    "rank": 182,
+    "word": "large",
+    "ipa": "/lɑrdʒ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Big in size or amount.",
+    "examples": ["They live in a large house.", "Can I have a large coffee?"]
+  },
+  {
+    "id": "business",
+    "rank": 183,
+    "word": "business",
+    "ipa": "/ˈbɪznəs/",
+    "partOfSpeech": "noun",
+    "meaning": "The work of buying and selling things; a company.",
+    "examples": ["She runs her own business.", "He is away on business."]
+  },
+  {
+    "id": "without",
+    "rank": 184,
+    "word": "without",
+    "ipa": "/wɪˈðaʊt/",
+    "partOfSpeech": "preposition",
+    "meaning": "Not having or using something.",
+    "examples": ["I drink coffee without sugar.", "She left without saying goodbye."]
+  },
+  {
+    "id": "information",
+    "rank": 185,
+    "word": "information",
+    "ipa": "/ˌɪnfɚˈmeɪʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "Facts about someone or something.",
+    "examples": [
+      "I need more information about the course.",
+      "You can find the information online."
+    ]
+  },
+  {
+    "id": "open",
+    "rank": 186,
+    "word": "open",
+    "ipa": "/ˈoʊpən/",
+    "partOfSpeech": "verb",
+    "meaning": "To move something so that people or things can go in or out.",
+    "examples": ["Can you open the window?", "The shop opens at nine."]
+  },
+  {
+    "id": "order",
+    "rank": 187,
+    "word": "order",
+    "ipa": "/ˈɔrdɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "The way things are arranged; a request for food or goods.",
+    "examples": ["Put the names in order.", "The waiter took our order."]
+  },
+  {
+    "id": "government",
+    "rank": 188,
+    "word": "government",
+    "ipa": "/ˈɡʌvɚnmənt/",
+    "partOfSpeech": "noun",
+    "meaning": "The group of people who control a country.",
+    "examples": ["The government plans to build new schools.", "He works for the government."]
+  },
+  {
+    "id": "word",
+    "rank": 189,
+    "word": "word",
+    "ipa": "/wɝd/",
+    "partOfSpeech": "noun",
+    "meaning": "A unit of language with a meaning, used in speaking or writing.",
+    "examples": ["What does this word mean?", "I learn five new words a day."]
+  },
+  {
+    "id": "issue",
+    "rank": 190,
+    "word": "issue",
+    "ipa": "/ˈɪʃu/",
+    "partOfSpeech": "noun",
+    "meaning": "An important subject or problem that people talk about.",
+    "examples": ["Money is a big issue for students.", "We need to talk about this issue."]
+  },
+  {
+    "id": "market",
+    "rank": 191,
+    "word": "market",
+    "ipa": "/ˈmɑrkɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "A place where people buy and sell things.",
+    "examples": ["I buy fruit at the market.", "The market is open on Sundays."]
+  },
+  {
+    "id": "pay",
+    "rank": 192,
+    "word": "pay",
+    "ipa": "/peɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "To give money for something.",
+    "examples": ["I paid ten dollars for this shirt.", "Can I pay by card?"]
+  },
+  {
+    "id": "build",
+    "rank": 193,
+    "word": "build",
+    "ipa": "/bɪld/",
+    "partOfSpeech": "verb",
+    "meaning": "To make something by putting parts together.",
+    "examples": ["They are building a new bridge.", "My grandfather built this house."]
+  },
+  {
+    "id": "hold",
+    "rank": 194,
+    "word": "hold",
+    "ipa": "/hoʊld/",
+    "partOfSpeech": "verb",
+    "meaning": "To have something in your hand or arms.",
+    "examples": ["Can you hold my bag?", "She held the baby carefully."]
+  },
+  {
+    "id": "service",
+    "rank": 195,
+    "word": "service",
+    "ipa": "/ˈsɝvɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "Work done for customers; a system that gives people something they need.",
+    "examples": ["The service in this restaurant is great.", "The city has a good bus service."]
+  },
+  {
+    "id": "against",
+    "rank": 196,
+    "word": "against",
+    "ipa": "/əˈɡɛnst/",
+    "partOfSpeech": "preposition",
+    "meaning": "Not agreeing with something; touching something for support.",
+    "examples": ["Many people are against the new law.", "He leaned against the wall."]
+  },
+  {
+    "id": "believe",
+    "rank": 197,
+    "word": "believe",
+    "ipa": "/bɪˈliv/",
+    "partOfSpeech": "verb",
+    "meaning": "To think that something is true.",
+    "examples": ["I believe you.", "Do you believe in luck?"]
+  },
+  {
+    "id": "second",
+    "rank": 198,
+    "word": "second",
+    "ipa": "/ˈsɛkənd/",
+    "partOfSpeech": "noun",
+    "meaning": "A very short unit of time; there are sixty in a minute.",
+    "examples": ["Wait a second, please.", "The race lasted ten seconds."]
+  },
+  {
+    "id": "love",
+    "rank": 199,
+    "word": "love",
+    "ipa": "/lʌv/",
+    "partOfSpeech": "verb",
+    "meaning": "To like someone or something very much.",
+    "examples": ["I love my family.", "She loves dancing."]
+  },
+  {
+    "id": "increase",
+    "rank": 200,
+    "word": "increase",
+    "ipa": "/ɪnˈkris/",
+    "partOfSpeech": "verb",
+    "meaning": "To become bigger in amount or number.",
+    "examples": ["Prices increased last year.", "The number of students has increased."]
+  },
+  {
+    "id": "job",
+    "rank": 201,
+    "word": "job",
+    "ipa": "/dʒɑb/",
+    "partOfSpeech": "noun",
+    "meaning": "The work that you do to earn money.",
+    "examples": ["She has a new job at a bank.", "I am looking for a job."]
+  },
+  {
+    "id": "plan",
+    "rank": 202,
+    "word": "plan",
+    "ipa": "/plæn/",
+    "partOfSpeech": "noun",
+    "meaning": "Something you have decided to do in the future, and how.",
+    "examples": ["What are your plans for the weekend?", "We need a better plan."]
+  },
+  {
+    "id": "result",
+    "rank": 203,
+    "word": "result",
+    "ipa": "/rɪˈzʌlt/",
+    "partOfSpeech": "noun",
+    "meaning": "Something that happens because of something else; the score of a test or game.",
+    "examples": ["I got my test results today.", "The flood was the result of heavy rain."]
+  },
+  {
+    "id": "away",
+    "rank": 204,
+    "word": "away",
+    "ipa": "/əˈweɪ/",
+    "partOfSpeech": "adverb",
+    "meaning": "To or at a distance from a place.",
+    "examples": ["Go away!", "The beach is two miles away."]
+  },
+  {
+    "id": "example",
+    "rank": 205,
+    "word": "example",
+    "ipa": "/ɪɡˈzæmpəl/",
+    "partOfSpeech": "noun",
+    "meaning": "One thing that shows what other things of the same kind are like.",
+    "examples": [
+      "Can you give me an example?",
+      "This church is a good example of old buildings here."
+    ]
+  },
+  {
+    "id": "happen",
+    "rank": 206,
+    "word": "happen",
+    "ipa": "/ˈhæpən/",
+    "partOfSpeech": "verb",
+    "meaning": "To take place, often without being planned.",
+    "examples": ["What happened to your arm?", "Accidents happen."]
+  },
+  {
+    "id": "offer",
+    "rank": 207,
+    "word": "offer",
+    "ipa": "/ˈɔfɚ/",
+    "partOfSpeech": "verb",
+    "meaning": "To ask someone if they would like something.",
+    "examples": ["She offered me a cup of tea.", "They offered him the job."]
+  },
+  {
+    "id": "young",
+    "rank": 208,
+    "word": "young",
+    "ipa": "/jʌŋ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Having lived for only a short time; not old.",
+    "examples": ["My brother is too young to drive.", "She looks young for her age."]
+  },
+  {
+    "id": "close",
+    "rank": 209,
+    "word": "close",
+    "ipa": "/kloʊz/",
+    "partOfSpeech": "verb",
+    "meaning": "To move something so that it is not open; to shut.",
+    "examples": ["Please close the door.", "The bank closes at five."]
+  },
+  {
+    "id": "program",
+    "rank": 210,
+    "word": "program",
+    "ipa": "/ˈproʊɡræm/",
+    "partOfSpeech": "noun",
+    "meaning": "A show on TV or radio; a set of instructions for a computer.",
+    "examples": ["This is my favorite TV program.", "He wrote a program to sort photos."]
+  },
+  {
+    "id": "lead",
+    "rank": 211,
+    "word": "lead",
+    "ipa": "/lid/",
+    "partOfSpeech": "verb",
+    "meaning": "To show someone the way by going first; to be in charge of a group.",
+    "examples": ["She led us to our seats.", "He leads a team of ten people."]
+  },
+  {
+    "id": "buy",
+    "rank": 212,
+    "word": "buy",
+    "ipa": "/baɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "To get something by paying money for it.",
+    "examples": ["I bought a new bike.", "Where can I buy tickets?"]
+  },
+  {
+    "id": "understand",
+    "rank": 213,
+    "word": "understand",
+    "ipa": "/ˌʌndɚˈstænd/",
+    "partOfSpeech": "verb",
+    "meaning": "To know the meaning of something; to know why something happens.",
+    "examples": ["I do not understand this question.", "She understands how you feel."]
+  },
+  {
+    "id": "thank",
+    "rank": 214,
+    "word": "thank",
+    "ipa": "/θæŋk/",
+    "partOfSpeech": "verb",
+    "meaning": "To tell someone that you are grateful for something.",
+    "examples": ["Thank you for your help.", "I want to thank my teachers."]
+  },
+  {
+    "id": "far",
+    "rank": 215,
+    "word": "far",
+    "ipa": "/fɑr/",
+    "partOfSpeech": "adverb",
+    "meaning": "At or to a great distance.",
+    "examples": ["Do you live far from here?", "We walked too far."]
+  },
+  {
+    "id": "today",
+    "rank": 216,
+    "word": "today",
+    "ipa": "/təˈdeɪ/",
+    "partOfSpeech": "adverb",
+    "meaning": "On this day.",
+    "examples": ["What are you doing today?", "It is very warm today."]
+  },
+  {
+    "id": "hour",
+    "rank": 217,
+    "word": "hour",
+    "ipa": "/ˈaʊɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A period of sixty minutes.",
+    "examples": ["The flight takes two hours.", "I will be back in an hour."]
+  },
+  {
+    "id": "student",
+    "rank": 218,
+    "word": "student",
+    "ipa": "/ˈstudənt/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who is studying at a school or university.",
+    "examples": ["She is a student at the university.", "There are thirty students in my class."]
+  },
+  {
+    "id": "face",
+    "rank": 219,
+    "word": "face",
+    "ipa": "/feɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "The front part of the head, with the eyes, nose and mouth.",
+    "examples": ["Wash your face.", "She had a big smile on her face."]
+  },
+  {
+    "id": "hope",
+    "rank": 220,
+    "word": "hope",
+    "ipa": "/hoʊp/",
+    "partOfSpeech": "verb",
+    "meaning": "To want something to happen and think it might.",
+    "examples": ["I hope you feel better soon.", "We hope to visit Japan next year."]
+  },
+  {
+    "id": "idea",
+    "rank": 221,
+    "word": "idea",
+    "ipa": "/aɪˈdiə/",
+    "partOfSpeech": "noun",
+    "meaning": "A thought or plan about what to do.",
+    "examples": ["That is a great idea!", "I have no idea where he is."]
+  },
+  {
+    "id": "cost",
+    "rank": 222,
+    "word": "cost",
+    "ipa": "/kɔst/",
+    "partOfSpeech": "noun",
+    "meaning": "The amount of money needed to buy or do something.",
+    "examples": ["The cost of living is high here.", "We shared the cost of the taxi."]
+  },
+  {
+    "id": "room",
+    "rank": 223,
+    "word": "room",
+    "ipa": "/rum/",
+    "partOfSpeech": "noun",
+    "meaning": "A part of a building with its own walls, floor and door.",
+    "examples": ["My room is on the second floor.", "The house has five rooms."]
+  },
+  {
+    "id": "until",
+    "rank": 224,
+    "word": "until",
+    "ipa": "/ənˈtɪl/",
+    "partOfSpeech": "preposition",
+    "meaning": "Up to a particular time.",
+    "examples": ["The shop is open until eight.", "I will wait until Friday."]
+  },
+  {
+    "id": "reason",
+    "rank": 225,
+    "word": "reason",
+    "ipa": "/ˈrizən/",
+    "partOfSpeech": "noun",
+    "meaning": "Why something happens or why someone does something.",
+    "examples": ["What is the reason for your visit?", "There is no reason to worry."]
+  },
+  {
+    "id": "form",
+    "rank": 226,
+    "word": "form",
+    "ipa": "/fɔrm/",
+    "partOfSpeech": "noun",
+    "meaning": "A type of something; a paper with spaces for you to write information.",
+    "examples": ["Please fill in this form.", "Ice is a form of water."]
+  },
+  {
+    "id": "spend",
+    "rank": 227,
+    "word": "spend",
+    "ipa": "/spɛnd/",
+    "partOfSpeech": "verb",
+    "meaning": "To use money to buy things; to use time doing something.",
+    "examples": ["I spent too much money this month.", "We spent the day at the beach."]
+  },
+  {
+    "id": "head",
+    "rank": 228,
+    "word": "head",
+    "ipa": "/hɛd/",
+    "partOfSpeech": "noun",
+    "meaning": "The top part of the body, with the eyes, mouth and brain.",
+    "examples": ["I have a pain in my head.", "She shook her head."]
+  },
+  {
+    "id": "car",
+    "rank": 229,
+    "word": "car",
+    "ipa": "/kɑr/",
+    "partOfSpeech": "noun",
+    "meaning": "A road vehicle with an engine and four wheels.",
+    "examples": ["I drive my car to work.", "Where did you park the car?"]
+  },
+  {
+    "id": "learn",
+    "rank": 230,
+    "word": "learn",
+    "ipa": "/lɝn/",
+    "partOfSpeech": "verb",
+    "meaning": "To get knowledge or a new skill.",
+    "examples": ["I am learning to swim.", "She learned French at school."]
+  },
+  {
+    "id": "level",
+    "rank": 231,
+    "word": "level",
+    "ipa": "/ˈlɛvəl/",
+    "partOfSpeech": "noun",
+    "meaning": "The height of something; how good or how much something is.",
+    "examples": ["My English is at a high level.", "The water level is rising."]
+  },
+  {
+    "id": "experience",
+    "rank": 232,
+    "word": "experience",
+    "ipa": "/ɪkˈspɪriəns/",
+    "partOfSpeech": "noun",
+    "meaning": "Knowledge or skill you get from doing something; something that happens to you.",
+    "examples": ["She has five years of experience as a nurse.", "The trip was a great experience."]
+  },
+  {
+    "id": "once",
+    "rank": 233,
+    "word": "once",
+    "ipa": "/wʌns/",
+    "partOfSpeech": "adverb",
+    "meaning": "One time; at some time in the past.",
+    "examples": ["I go to the gym once a week.", "I once met a famous singer."]
+  },
+  {
+    "id": "member",
+    "rank": 234,
+    "word": "member",
+    "ipa": "/ˈmɛmbɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who belongs to a group or club.",
+    "examples": ["She is a member of the tennis club.", "All family members came to the wedding."]
+  },
+  {
+    "id": "bad",
+    "rank": 235,
+    "word": "bad",
+    "ipa": "/bæd/",
+    "partOfSpeech": "adjective",
+    "meaning": "Not good or not pleasant.",
+    "examples": ["I had a bad day.", "Smoking is bad for your health."]
+  },
+  {
+    "id": "city",
+    "rank": 236,
+    "word": "city",
+    "ipa": "/ˈsɪti/",
+    "partOfSpeech": "noun",
+    "meaning": "A large and important town.",
+    "examples": ["Paris is a beautiful city.", "I live in the city center."]
+  },
+  {
+    "id": "night",
+    "rank": 237,
+    "word": "night",
+    "ipa": "/naɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "The time when it is dark and most people sleep.",
+    "examples": ["I could not sleep last night.", "The stars are bright at night."]
+  },
+  {
+    "id": "able",
+    "rank": 238,
+    "word": "able",
+    "ipa": "/ˈeɪbəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Having the skill or chance to do something (used as \"able to\").",
+    "examples": ["Will you be able to come?", "She is able to speak three languages."]
+  },
+  {
+    "id": "support",
+    "rank": 239,
+    "word": "support",
+    "ipa": "/səˈpɔrt/",
+    "partOfSpeech": "verb",
+    "meaning": "To help someone or agree with them; to hold up the weight of something.",
+    "examples": ["My parents always support me.", "These posts support the roof."]
+  },
+  {
+    "id": "line",
+    "rank": 240,
+    "word": "line",
+    "ipa": "/laɪn/",
+    "partOfSpeech": "noun",
+    "meaning": "A long thin mark; a row of people waiting.",
+    "examples": ["Draw a line under your name.", "There was a long line at the bank."]
+  },
+  {
+    "id": "present",
+    "rank": 241,
+    "word": "present",
+    "ipa": "/ˈprɛzənt/",
+    "partOfSpeech": "noun",
+    "meaning": "Something you give to someone, for example on their birthday; a gift.",
+    "examples": ["I bought a present for my mom.", "Thank you for the lovely present."]
+  },
+  {
+    "id": "side",
+    "rank": 242,
+    "word": "side",
+    "ipa": "/saɪd/",
+    "partOfSpeech": "noun",
+    "meaning": "The left or right part of something; one of the surfaces of an object.",
+    "examples": ["Park on the other side of the road.", "A box has six sides."]
+  },
+  {
+    "id": "quite",
+    "rank": 243,
+    "word": "quite",
+    "ipa": "/kwaɪt/",
+    "partOfSpeech": "adverb",
+    "meaning": "Fairly, but not very; completely.",
+    "examples": ["The film was quite good.", "I am not quite ready."]
+  },
+  {
+    "id": "sure",
+    "rank": 244,
+    "word": "sure",
+    "ipa": "/ʃʊr/",
+    "partOfSpeech": "adjective",
+    "meaning": "Certain that something is true.",
+    "examples": ["Are you sure?", "I am not sure where she lives."]
+  },
+  {
+    "id": "term",
+    "rank": 245,
+    "word": "term",
+    "ipa": "/tɝm/",
+    "partOfSpeech": "noun",
+    "meaning": "A word with a special meaning; one part of a school year.",
+    "examples": ["\"CPU\" is a computer term.", "The new term starts in September."]
+  },
+  {
+    "id": "age",
+    "rank": 246,
+    "word": "age",
+    "ipa": "/eɪdʒ/",
+    "partOfSpeech": "noun",
+    "meaning": "How old someone or something is.",
+    "examples": ["What is your age?", "She started school at the age of five."]
+  },
+  {
+    "id": "low",
+    "rank": 247,
+    "word": "low",
+    "ipa": "/loʊ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Not high; small in amount.",
+    "examples": ["The wall is very low.", "Prices are low this week."]
+  },
+  {
+    "id": "speak",
+    "rank": 248,
+    "word": "speak",
+    "ipa": "/spik/",
+    "partOfSpeech": "verb",
+    "meaning": "To say words; to know and use a language.",
+    "examples": ["Can I speak to the manager?", "He speaks English and Spanish."]
+  },
+  {
+    "id": "within",
+    "rank": 249,
+    "word": "within",
+    "ipa": "/wɪˈðɪn/",
+    "partOfSpeech": "preposition",
+    "meaning": "Inside a period of time or an area; not more than.",
+    "examples": ["I will reply within two days.", "The school is within walking distance."]
+  },
+  {
+    "id": "process",
+    "rank": 250,
+    "word": "process",
+    "ipa": "/ˈprɑsɛs/",
+    "partOfSpeech": "noun",
+    "meaning": "A set of steps you take to do or make something.",
+    "examples": ["Learning a language is a slow process.", "The process takes about a week."]
+  },
+  {
+    "id": "public",
+    "rank": 251,
+    "word": "public",
+    "ipa": "/ˈpʌblɪk/",
+    "partOfSpeech": "adjective",
+    "meaning": "For everyone to use; about people in general.",
+    "examples": ["This is a public park.", "Public transport is cheap here."]
+  },
+  {
+    "id": "train",
+    "rank": 252,
+    "word": "train",
+    "ipa": "/treɪn/",
+    "partOfSpeech": "noun",
+    "meaning": "A line of carriages pulled by an engine on a railway.",
+    "examples": ["I go to work by train.", "The train was late again."]
+  },
+  {
+    "id": "possible",
+    "rank": 253,
+    "word": "possible",
+    "ipa": "/ˈpɑsəbəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Able to be done or able to happen.",
+    "examples": ["Is it possible to change my ticket?", "Come as soon as possible."]
+  },
+  {
+    "id": "actually",
+    "rank": 254,
+    "word": "actually",
+    "ipa": "/ˈæktʃuəli/",
+    "partOfSpeech": "adverb",
+    "meaning": "In fact; really.",
+    "examples": ["I actually like rainy days.", "Actually, I am not hungry."]
+  },
+  {
+    "id": "rather",
+    "rank": 255,
+    "word": "rather",
+    "ipa": "/ˈræðɚ/",
+    "partOfSpeech": "adverb",
+    "meaning": "Fairly or quite; used with \"than\" to show what you prefer.",
+    "examples": ["It is rather cold today.", "I would rather walk than take the bus."]
+  },
+  {
+    "id": "view",
+    "rank": 256,
+    "word": "view",
+    "ipa": "/vju/",
+    "partOfSpeech": "noun",
+    "meaning": "What you can see from a place; an opinion.",
+    "examples": ["The view from the hill is amazing.", "What is your view on this?"]
+  },
+  {
+    "id": "consider",
+    "rank": 257,
+    "word": "consider",
+    "ipa": "/kənˈsɪdɚ/",
+    "partOfSpeech": "verb",
+    "meaning": "To think carefully about something before deciding.",
+    "examples": ["I am considering a new job.", "Please consider my idea."]
+  },
+  {
+    "id": "price",
+    "rank": 258,
+    "word": "price",
+    "ipa": "/praɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "The amount of money you need to pay for something.",
+    "examples": ["What is the price of this bag?", "House prices are going up."]
+  },
+  {
+    "id": "parent",
+    "rank": 259,
+    "word": "parent",
+    "ipa": "/ˈpɛrənt/",
+    "partOfSpeech": "noun",
+    "meaning": "A mother or father.",
+    "examples": ["My parents live in the country.", "Parents want the best for their children."]
+  },
+  {
+    "id": "hard",
+    "rank": 260,
+    "word": "hard",
+    "ipa": "/hɑrd/",
+    "partOfSpeech": "adjective",
+    "meaning": "Difficult; firm and not soft.",
+    "examples": ["The exam was very hard.", "This bed is too hard."]
   }
 ]
