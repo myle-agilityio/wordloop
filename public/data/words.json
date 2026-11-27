@@ -3,6 +3,7 @@
     "id": "time",
     "rank": 1,
     "word": "time",
+    "ipa": "/taɪm/",
     "partOfSpeech": "noun",
     "meaning": "The thing measured in minutes, hours, days and years; a particular moment.",
     "examples": ["What time is it?", "I don't have much time today."]
@@ -11,6 +12,7 @@
     "id": "person",
     "rank": 2,
     "word": "person",
+    "ipa": "/ˈpɝsən/",
     "partOfSpeech": "noun",
     "meaning": "A human being; one man, woman or child.",
     "examples": ["She is a very kind person.", "The ticket costs ten dollars per person."]
@@ -19,6 +21,7 @@
     "id": "year",
     "rank": 3,
     "word": "year",
+    "ipa": "/jɪr/",
     "partOfSpeech": "noun",
     "meaning": "A period of twelve months, or 365 days.",
     "examples": ["We moved here last year.", "My son is six years old."]
@@ -27,6 +30,7 @@
     "id": "way",
     "rank": 4,
     "word": "way",
+    "ipa": "/weɪ/",
     "partOfSpeech": "noun",
     "meaning": "A method of doing something; a road or path to a place.",
     "examples": ["This is the best way to learn.", "Can you tell me the way to the station?"]
@@ -35,6 +39,7 @@
     "id": "day",
     "rank": 5,
     "word": "day",
+    "ipa": "/deɪ/",
     "partOfSpeech": "noun",
     "meaning": "A period of 24 hours; the time when it is light outside.",
     "examples": ["I study English every day.", "It was a hot day."]
@@ -43,6 +48,7 @@
     "id": "thing",
     "rank": 6,
     "word": "thing",
+    "ipa": "/θɪŋ/",
     "partOfSpeech": "noun",
     "meaning": "An object, idea or event that you do not name exactly.",
     "examples": ["Put your things in the bag.", "That's a strange thing to say."]
@@ -51,6 +57,7 @@
     "id": "world",
     "rank": 7,
     "word": "world",
+    "ipa": "/wɝld/",
     "partOfSpeech": "noun",
     "meaning": "The earth and all the people and places on it.",
     "examples": [
@@ -62,6 +69,7 @@
     "id": "life",
     "rank": 8,
     "word": "life",
+    "ipa": "/laɪf/",
     "partOfSpeech": "noun",
     "meaning": "The time between being born and dying; the way someone lives.",
     "examples": ["He lived in the same town all his life.", "City life is very busy."]
@@ -70,6 +78,7 @@
     "id": "hand",
     "rank": 9,
     "word": "hand",
+    "ipa": "/hænd/",
     "partOfSpeech": "noun",
     "meaning": "The part of the body at the end of the arm, with fingers.",
     "examples": ["Wash your hands before dinner.", "She held the cup in her left hand."]
@@ -78,6 +87,7 @@
     "id": "part",
     "rank": 10,
     "word": "part",
+    "ipa": "/pɑrt/",
     "partOfSpeech": "noun",
     "meaning": "A piece or section of something larger.",
     "examples": ["The first part of the film was boring.", "Music is an important part of my life."]
@@ -86,6 +96,7 @@
     "id": "child",
     "rank": 11,
     "word": "child",
+    "ipa": "/tʃaɪld/",
     "partOfSpeech": "noun",
     "meaning": "A young person who is not yet an adult.",
     "examples": ["The child is playing in the garden.", "They have three children."]
@@ -94,6 +105,7 @@
     "id": "eye",
     "rank": 12,
     "word": "eye",
+    "ipa": "/aɪ/",
     "partOfSpeech": "noun",
     "meaning": "One of the two parts of the face that you see with.",
     "examples": ["She has blue eyes.", "Close your eyes and relax."]
@@ -102,6 +114,7 @@
     "id": "place",
     "rank": 13,
     "word": "place",
+    "ipa": "/pleɪs/",
     "partOfSpeech": "noun",
     "meaning": "A particular area, building or position.",
     "examples": ["This is a nice place to live.", "Put the book back in its place."]
@@ -110,6 +123,7 @@
     "id": "work",
     "rank": 14,
     "word": "work",
+    "ipa": "/wɝk/",
     "partOfSpeech": "verb",
     "meaning": "To do a job or activity, usually to earn money.",
     "examples": ["My father works in a hospital.", "I worked hard all week."]
@@ -118,6 +132,7 @@
     "id": "week",
     "rank": 15,
     "word": "week",
+    "ipa": "/wik/",
     "partOfSpeech": "noun",
     "meaning": "A period of seven days.",
     "examples": ["I see my grandmother once a week.", "The course lasts three weeks."]
@@ -126,6 +141,7 @@
     "id": "problem",
     "rank": 16,
     "word": "problem",
+    "ipa": "/ˈprɑbləm/",
     "partOfSpeech": "noun",
     "meaning": "Something that is difficult and needs to be dealt with or solved.",
     "examples": ["We have a problem with the car.", "Can you solve this math problem?"]
@@ -134,6 +150,7 @@
     "id": "number",
     "rank": 17,
     "word": "number",
+    "ipa": "/ˈnʌmbɚ/",
     "partOfSpeech": "noun",
     "meaning": "A word or symbol such as 1, 2 or 3 used for counting.",
     "examples": ["What is your phone number?", "A large number of people came."]
@@ -142,6 +159,7 @@
     "id": "group",
     "rank": 18,
     "word": "group",
+    "ipa": "/ɡrup/",
     "partOfSpeech": "noun",
     "meaning": "Several people or things that are together.",
     "examples": ["A group of students waited outside.", "We worked in groups of four."]
@@ -150,6 +168,7 @@
     "id": "make",
     "rank": 19,
     "word": "make",
+    "ipa": "/meɪk/",
     "partOfSpeech": "verb",
     "meaning": "To create or produce something.",
     "examples": ["She made a cake for my birthday.", "Don't make so much noise."]
@@ -158,6 +177,7 @@
     "id": "know",
     "rank": 20,
     "word": "know",
+    "ipa": "/noʊ/",
     "partOfSpeech": "verb",
     "meaning": "To have information in your mind; to be familiar with someone.",
     "examples": ["Do you know the answer?", "I have known her for ten years."]
@@ -166,6 +186,7 @@
     "id": "think",
     "rank": 21,
     "word": "think",
+    "ipa": "/θɪŋk/",
     "partOfSpeech": "verb",
     "meaning": "To use your mind; to have an opinion or belief.",
     "examples": ["I think it will rain tomorrow.", "Think carefully before you answer."]
@@ -174,6 +195,7 @@
     "id": "take",
     "rank": 22,
     "word": "take",
+    "ipa": "/teɪk/",
     "partOfSpeech": "verb",
     "meaning": "To get hold of something and carry or move it.",
     "examples": ["Take an umbrella with you.", "It takes an hour to get there."]
@@ -182,6 +204,7 @@
     "id": "see",
     "rank": 23,
     "word": "see",
+    "ipa": "/si/",
     "partOfSpeech": "verb",
     "meaning": "To notice something with your eyes.",
     "examples": ["I can see the sea from my window.", "Did you see that film?"]
@@ -190,6 +213,7 @@
     "id": "come",
     "rank": 24,
     "word": "come",
+    "ipa": "/kʌm/",
     "partOfSpeech": "verb",
     "meaning": "To move towards the speaker or a place.",
     "examples": ["Come here, please.", "She came to the party late."]
@@ -198,6 +222,7 @@
     "id": "want",
     "rank": 25,
     "word": "want",
+    "ipa": "/wɑnt/",
     "partOfSpeech": "verb",
     "meaning": "To wish to have or do something.",
     "examples": ["I want a cup of tea.", "Do you want to go for a walk?"]
@@ -206,6 +231,7 @@
     "id": "look",
     "rank": 26,
     "word": "look",
+    "ipa": "/lʊk/",
     "partOfSpeech": "verb",
     "meaning": "To turn your eyes towards something to see it.",
     "examples": ["Look at this photo.", "You look tired today."]
@@ -214,6 +240,7 @@
     "id": "use",
     "rank": 27,
     "word": "use",
+    "ipa": "/juz/",
     "partOfSpeech": "verb",
     "meaning": "To do something with an object for a purpose.",
     "examples": ["Can I use your phone?", "We use this room for meetings."]
@@ -222,6 +249,7 @@
     "id": "find",
     "rank": 28,
     "word": "find",
+    "ipa": "/faɪnd/",
     "partOfSpeech": "verb",
     "meaning": "To discover something you were looking for.",
     "examples": ["I can't find my keys.", "She found a job in London."]
@@ -230,6 +258,7 @@
     "id": "give",
     "rank": 29,
     "word": "give",
+    "ipa": "/ɡɪv/",
     "partOfSpeech": "verb",
     "meaning": "To hand something to someone so they have it.",
     "examples": ["He gave me a book.", "Please give me your address."]
@@ -238,6 +267,7 @@
     "id": "tell",
     "rank": 30,
     "word": "tell",
+    "ipa": "/tɛl/",
     "partOfSpeech": "verb",
     "meaning": "To say something to someone; to give information.",
     "examples": ["Tell me about your day.", "She told us a funny story."]
@@ -246,6 +276,7 @@
     "id": "ask",
     "rank": 31,
     "word": "ask",
+    "ipa": "/æsk/",
     "partOfSpeech": "verb",
     "meaning": "To say something as a question to get an answer.",
     "examples": ["Can I ask you a question?", "He asked me for help."]
@@ -254,6 +285,7 @@
     "id": "feel",
     "rank": 32,
     "word": "feel",
+    "ipa": "/fil/",
     "partOfSpeech": "verb",
     "meaning": "To experience an emotion or a physical sensation.",
     "examples": ["I feel happy today.", "The water feels cold."]
@@ -262,6 +294,7 @@
     "id": "try",
     "rank": 33,
     "word": "try",
+    "ipa": "/traɪ/",
     "partOfSpeech": "verb",
     "meaning": "To make an effort to do something.",
     "examples": ["Try to arrive on time.", "I tried the soup and it was good."]
@@ -270,6 +303,7 @@
     "id": "leave",
     "rank": 34,
     "word": "leave",
+    "ipa": "/liv/",
     "partOfSpeech": "verb",
     "meaning": "To go away from a place or person.",
     "examples": ["The train leaves at six.", "I left my bag at home."]
@@ -278,6 +312,7 @@
     "id": "call",
     "rank": 35,
     "word": "call",
+    "ipa": "/kɔl/",
     "partOfSpeech": "verb",
     "meaning": "To phone someone; to give someone or something a name.",
     "examples": ["I'll call you tonight.", "We called the dog Max."]
@@ -286,6 +321,7 @@
     "id": "good",
     "rank": 36,
     "word": "good",
+    "ipa": "/ɡʊd/",
     "partOfSpeech": "adjective",
     "meaning": "Of high quality; pleasant or helpful.",
     "examples": ["This is a good book.", "She is good at drawing."]
@@ -294,6 +330,7 @@
     "id": "new",
     "rank": 37,
     "word": "new",
+    "ipa": "/nu/",
     "partOfSpeech": "adjective",
     "meaning": "Recently made, bought or started; not old.",
     "examples": ["I bought a new phone.", "We have a new teacher this year."]
@@ -302,6 +339,7 @@
     "id": "first",
     "rank": 38,
     "word": "first",
+    "ipa": "/fɝst/",
     "partOfSpeech": "adjective",
     "meaning": "Coming before all others in time or order.",
     "examples": ["January is the first month of the year.", "Was this your first visit to Paris?"]
@@ -310,6 +348,7 @@
     "id": "long",
     "rank": 39,
     "word": "long",
+    "ipa": "/lɔŋ/",
     "partOfSpeech": "adjective",
     "meaning": "Having a great length or lasting a lot of time.",
     "examples": ["She has long hair.", "It was a long meeting."]
@@ -318,6 +357,7 @@
     "id": "great",
     "rank": 40,
     "word": "great",
+    "ipa": "/ɡreɪt/",
     "partOfSpeech": "adjective",
     "meaning": "Very good; very large or important.",
     "examples": ["We had a great time.", "He was a great leader."]
@@ -326,6 +366,7 @@
     "id": "little",
     "rank": 41,
     "word": "little",
+    "ipa": "/ˈlɪtəl/",
     "partOfSpeech": "adjective",
     "meaning": "Small in size or amount.",
     "examples": ["They live in a little house.", "I have a little money left."]
@@ -334,6 +375,7 @@
     "id": "old",
     "rank": 42,
     "word": "old",
+    "ipa": "/oʊld/",
     "partOfSpeech": "adjective",
     "meaning": "Having lived or existed for a long time.",
     "examples": ["My grandfather is very old.", "This is an old church."]
@@ -342,6 +384,7 @@
     "id": "big",
     "rank": 43,
     "word": "big",
+    "ipa": "/bɪɡ/",
     "partOfSpeech": "adjective",
     "meaning": "Large in size or amount.",
     "examples": ["They have a big garden.", "That's a big problem."]
@@ -350,6 +393,7 @@
     "id": "high",
     "rank": 44,
     "word": "high",
+    "ipa": "/haɪ/",
     "partOfSpeech": "adjective",
     "meaning": "Far above the ground; above the usual level.",
     "examples": ["The mountain is very high.", "Prices are high in this city."]
@@ -358,6 +402,7 @@
     "id": "different",
     "rank": 45,
     "word": "different",
+    "ipa": "/ˈdɪfrənt/",
     "partOfSpeech": "adjective",
     "meaning": "Not the same as another person or thing.",
     "examples": ["The two sisters are very different.", "Let's try a different way."]
@@ -366,6 +411,7 @@
     "id": "small",
     "rank": 46,
     "word": "small",
+    "ipa": "/smɔl/",
     "partOfSpeech": "adjective",
     "meaning": "Little in size or amount.",
     "examples": ["The shirt is too small for me.", "She lives in a small village."]
@@ -374,6 +420,7 @@
     "id": "important",
     "rank": 47,
     "word": "important",
+    "ipa": "/ɪmˈpɔrtənt/",
     "partOfSpeech": "adjective",
     "meaning": "Having great value or effect; mattering a lot.",
     "examples": ["Sleep is important for your health.", "I have an important meeting today."]
@@ -382,6 +429,7 @@
     "id": "water",
     "rank": 48,
     "word": "water",
+    "ipa": "/ˈwɔtɚ/",
     "partOfSpeech": "noun",
     "meaning": "The clear liquid that falls as rain and that people drink.",
     "examples": ["Can I have a glass of water?", "The water in the lake is cold."]
@@ -390,6 +438,7 @@
     "id": "always",
     "rank": 49,
     "word": "always",
+    "ipa": "/ˈɔlweɪz/",
     "partOfSpeech": "adverb",
     "meaning": "At all times; every time.",
     "examples": ["She always drinks coffee in the morning.", "I will always remember this day."]
@@ -398,6 +447,7 @@
     "id": "often",
     "rank": 50,
     "word": "often",
+    "ipa": "/ˈɔfən/",
     "partOfSpeech": "adverb",
     "meaning": "Many times; frequently.",
     "examples": ["We often go to the beach in summer.", "How often do you exercise?"]
@@ -406,6 +456,7 @@
     "id": "never",
     "rank": 51,
     "word": "never",
+    "ipa": "/ˈnɛvɚ/",
     "partOfSpeech": "adverb",
     "meaning": "At no time; not ever.",
     "examples": ["I never drink coffee at night.", "She has never been to Japan."]
@@ -414,6 +465,7 @@
     "id": "house",
     "rank": 52,
     "word": "house",
+    "ipa": "/haʊs/",
     "partOfSpeech": "noun",
     "meaning": "A building where people live, usually one family.",
     "examples": ["They live in a big house near the park.", "Come to my house after school."]
@@ -422,6 +474,7 @@
     "id": "friend",
     "rank": 53,
     "word": "friend",
+    "ipa": "/frɛnd/",
     "partOfSpeech": "noun",
     "meaning": "A person you know well and like.",
     "examples": ["He is my best friend.", "I met a friend for lunch."]
@@ -430,6 +483,7 @@
     "id": "school",
     "rank": 54,
     "word": "school",
+    "ipa": "/skul/",
     "partOfSpeech": "noun",
     "meaning": "A place where children go to learn.",
     "examples": ["My daughter walks to school.", "What did you learn at school today?"]
@@ -438,6 +492,7 @@
     "id": "family",
     "rank": 55,
     "word": "family",
+    "ipa": "/ˈfæməli/",
     "partOfSpeech": "noun",
     "meaning": "A group of people who are related, such as parents and children.",
     "examples": ["I have a big family.", "We spend Sundays with my family."]
@@ -446,6 +501,7 @@
     "id": "help",
     "rank": 56,
     "word": "help",
+    "ipa": "/hɛlp/",
     "partOfSpeech": "verb",
     "meaning": "To make it easier for someone to do something.",
     "examples": ["Can you help me with this box?", "She helped her brother with his homework."]
@@ -454,6 +510,7 @@
     "id": "start",
     "rank": 57,
     "word": "start",
+    "ipa": "/stɑrt/",
     "partOfSpeech": "verb",
     "meaning": "To begin doing something; to begin happening.",
     "examples": ["The film starts at eight.", "I started learning English last year."]
@@ -462,6 +519,7 @@
     "id": "play",
     "rank": 58,
     "word": "play",
+    "ipa": "/pleɪ/",
     "partOfSpeech": "verb",
     "meaning": "To take part in a game or sport; to make music with an instrument.",
     "examples": ["The children play football after school.", "He plays the guitar very well."]
@@ -470,6 +528,7 @@
     "id": "easy",
     "rank": 59,
     "word": "easy",
+    "ipa": "/ˈizi/",
     "partOfSpeech": "adjective",
     "meaning": "Not difficult; simple to do or understand.",
     "examples": ["The test was easy.", "This recipe is quick and easy."]
@@ -478,6 +537,7 @@
     "id": "together",
     "rank": 60,
     "word": "together",
+    "ipa": "/təˈɡɛðɚ/",
     "partOfSpeech": "adverb",
     "meaning": "With each other; in one place or group.",
     "examples": ["We work together in the same office.", "Let's have dinner together."]

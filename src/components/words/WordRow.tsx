@@ -16,7 +16,9 @@ export function WordRow({ word, status }: WordRowProps) {
       <div className="min-w-0 flex-1">
         <p className="font-semibold text-slate-900 dark:text-slate-100">
           {word.word}{' '}
-          <span className="text-sm font-normal text-slate-400 italic">{word.partOfSpeech}</span>
+          <span className="text-sm font-normal text-slate-400">
+            {word.ipa} · <span className="italic">{word.partOfSpeech}</span>
+          </span>
         </p>
         <p className="truncate text-sm text-slate-500 dark:text-slate-400">{word.meaning}</p>
       </div>

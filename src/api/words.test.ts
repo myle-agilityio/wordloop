@@ -2,11 +2,14 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 import type { Word } from '@/types'
 
+import wordList from '../../public/data/words.json'
+
 const words: Word[] = [
   {
     id: 'w1',
     rank: 1,
     word: 'time',
+    ipa: '/taɪm/',
     partOfSpeech: 'noun',
     meaning: 'what is measured in minutes, hours and days',
     examples: ['We had a great time.'],
@@ -61,4 +64,13 @@ describe('getWords', () => {
     await expect(getWords()).resolves.toEqual(words)
     expect(fetchMock).toHaveBeenCalledTimes(2)
   })
+})
+
+describe('words.json', () => {
+  it.each(wordList.map((entry) => [entry.word, entry.ipa]))(
+    '%s has an IPA transcription wrapped in slashes',
+    (_word, ipa) => {
+      expect(ipa).toMatch(/^\/[^/\s]+(?: [^/\s]+)*\/$/)
+    },
+  )
 })
