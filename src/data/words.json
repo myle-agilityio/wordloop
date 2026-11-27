@@ -541,5 +541,905 @@
     "partOfSpeech": "adverb",
     "meaning": "With each other; in one place or group.",
     "examples": ["We work together in the same office.", "Let's have dinner together."]
+  },
+  {
+    "id": "be",
+    "rank": 61,
+    "word": "be",
+    "ipa": "/bi/",
+    "partOfSpeech": "verb",
+    "meaning": "To exist, or to have a quality, job or place.",
+    "examples": ["I want to be a doctor.", "The weather is cold today."]
+  },
+  {
+    "id": "of",
+    "rank": 62,
+    "word": "of",
+    "ipa": "/ʌv/",
+    "partOfSpeech": "preposition",
+    "meaning": "Belonging to, part of, or about something.",
+    "examples": ["She is a friend of mine.", "I drank a cup of tea."]
+  },
+  {
+    "id": "to",
+    "rank": 63,
+    "word": "to",
+    "ipa": "/tu/",
+    "partOfSpeech": "preposition",
+    "meaning": "In the direction of a place, person or time.",
+    "examples": ["I walk to school every day.", "Give the book to your sister."]
+  },
+  {
+    "id": "in",
+    "rank": 64,
+    "word": "in",
+    "ipa": "/ɪn/",
+    "partOfSpeech": "preposition",
+    "meaning": "Inside a place, or during a period of time.",
+    "examples": ["The keys are in my bag.", "We met in 2020."]
+  },
+  {
+    "id": "have",
+    "rank": 65,
+    "word": "have",
+    "ipa": "/hæv/",
+    "partOfSpeech": "verb",
+    "meaning": "To own, hold or include something.",
+    "examples": ["I have two brothers.", "Do you have a pen?"]
+  },
+  {
+    "id": "it",
+    "rank": 66,
+    "word": "it",
+    "ipa": "/ɪt/",
+    "partOfSpeech": "pronoun",
+    "meaning": "The thing or animal you have already talked about.",
+    "examples": ["I lost my phone, but I found it later.", "It is raining outside."]
+  },
+  {
+    "id": "you",
+    "rank": 67,
+    "word": "you",
+    "ipa": "/ju/",
+    "partOfSpeech": "pronoun",
+    "meaning": "The person or people someone is speaking to.",
+    "examples": ["Are you hungry?", "I will call you tomorrow."]
+  },
+  {
+    "id": "he",
+    "rank": 68,
+    "word": "he",
+    "ipa": "/hi/",
+    "partOfSpeech": "pronoun",
+    "meaning": "A man, boy or male animal already talked about.",
+    "examples": ["My dad is tired because he works late.", "He lives next door."]
+  },
+  {
+    "id": "for",
+    "rank": 69,
+    "word": "for",
+    "ipa": "/fɔr/",
+    "partOfSpeech": "preposition",
+    "meaning": "Meant to be given to or used by someone; because of a purpose.",
+    "examples": ["This gift is for you.", "We waited for an hour."]
+  },
+  {
+    "id": "they",
+    "rank": 70,
+    "word": "they",
+    "ipa": "/ðeɪ/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Two or more people or things already talked about.",
+    "examples": ["My friends are late because they missed the bus.", "They live in London."]
+  },
+  {
+    "id": "not",
+    "rank": 71,
+    "word": "not",
+    "ipa": "/nɑt/",
+    "partOfSpeech": "adverb",
+    "meaning": "Used to make a sentence negative.",
+    "examples": ["I am not tired.", "Please do not touch that."]
+  },
+  {
+    "id": "we",
+    "rank": 72,
+    "word": "we",
+    "ipa": "/wi/",
+    "partOfSpeech": "pronoun",
+    "meaning": "The speaker and one or more other people.",
+    "examples": ["We are going to the beach.", "We had dinner together."]
+  },
+  {
+    "id": "on",
+    "rank": 73,
+    "word": "on",
+    "ipa": "/ɑn/",
+    "partOfSpeech": "preposition",
+    "meaning": "Touching the top surface of something; on a day.",
+    "examples": ["The cup is on the table.", "See you on Monday."]
+  },
+  {
+    "id": "with",
+    "rank": 74,
+    "word": "with",
+    "ipa": "/wɪθ/",
+    "partOfSpeech": "preposition",
+    "meaning": "Together with someone or something; using something.",
+    "examples": ["I went to the park with my dog.", "Cut the paper with scissors."]
+  },
+  {
+    "id": "I",
+    "rank": 75,
+    "word": "I",
+    "ipa": "/aɪ/",
+    "partOfSpeech": "pronoun",
+    "meaning": "The person who is speaking or writing.",
+    "examples": ["I like coffee.", "Can I help you?"]
+  },
+  {
+    "id": "do",
+    "rank": 76,
+    "word": "do",
+    "ipa": "/du/",
+    "partOfSpeech": "verb",
+    "meaning": "To carry out an action or a piece of work.",
+    "examples": ["I do my homework after dinner.", "What are you doing?"]
+  },
+  {
+    "id": "as",
+    "rank": 77,
+    "word": "as",
+    "ipa": "/æz/",
+    "partOfSpeech": "preposition",
+    "meaning": "In the role of; like.",
+    "examples": ["She works as a teacher.", "He used the box as a table."]
+  },
+  {
+    "id": "at",
+    "rank": 78,
+    "word": "at",
+    "ipa": "/æt/",
+    "partOfSpeech": "preposition",
+    "meaning": "In a particular place or at a particular time.",
+    "examples": ["I am at home.", "The class starts at nine."]
+  },
+  {
+    "id": "she",
+    "rank": 79,
+    "word": "she",
+    "ipa": "/ʃi/",
+    "partOfSpeech": "pronoun",
+    "meaning": "A woman, girl or female animal already talked about.",
+    "examples": ["My sister is a nurse, and she loves her job.", "She is reading a book."]
+  },
+  {
+    "id": "from",
+    "rank": 80,
+    "word": "from",
+    "ipa": "/frʌm/",
+    "partOfSpeech": "preposition",
+    "meaning": "Starting at a place, person or time.",
+    "examples": ["I am from Vietnam.", "I got a letter from my aunt."]
+  },
+  {
+    "id": "by",
+    "rank": 81,
+    "word": "by",
+    "ipa": "/baɪ/",
+    "partOfSpeech": "preposition",
+    "meaning": "Near something; showing who did something or how.",
+    "examples": ["Sit by the window.", "We went to work by bus."]
+  },
+  {
+    "id": "say",
+    "rank": 82,
+    "word": "say",
+    "ipa": "/seɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "To speak words.",
+    "examples": ["What did you say?", "She said hello to me."]
+  },
+  {
+    "id": "go",
+    "rank": 83,
+    "word": "go",
+    "ipa": "/ɡoʊ/",
+    "partOfSpeech": "verb",
+    "meaning": "To move or travel to another place.",
+    "examples": ["I go to bed at ten.", "Let's go to the cinema."]
+  },
+  {
+    "id": "so",
+    "rank": 84,
+    "word": "so",
+    "ipa": "/soʊ/",
+    "partOfSpeech": "adverb",
+    "meaning": "Very, or to such a great degree.",
+    "examples": ["I am so happy to see you.", "The test was so hard."]
+  },
+  {
+    "id": "about",
+    "rank": 85,
+    "word": "about",
+    "ipa": "/əˈbaʊt/",
+    "partOfSpeech": "preposition",
+    "meaning": "On the subject of something.",
+    "examples": ["This book is about a young wizard.", "We talked about our plans."]
+  },
+  {
+    "id": "which",
+    "rank": 86,
+    "word": "which",
+    "ipa": "/wɪtʃ/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Used to ask about one thing from a group.",
+    "examples": ["Which do you want, tea or coffee?", "Which is your car?"]
+  },
+  {
+    "id": "there",
+    "rank": 87,
+    "word": "there",
+    "ipa": "/ðɛr/",
+    "partOfSpeech": "adverb",
+    "meaning": "In or to that place.",
+    "examples": ["Put your bag over there.", "I have never been there."]
+  },
+  {
+    "id": "get",
+    "rank": 88,
+    "word": "get",
+    "ipa": "/ɡɛt/",
+    "partOfSpeech": "verb",
+    "meaning": "To receive or buy something; to become.",
+    "examples": ["I got a new phone.", "It is getting cold."]
+  },
+  {
+    "id": "who",
+    "rank": 89,
+    "word": "who",
+    "ipa": "/hu/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Used to ask which person.",
+    "examples": ["Who is that man?", "Who called you last night?"]
+  },
+  {
+    "id": "like",
+    "rank": 90,
+    "word": "like",
+    "ipa": "/laɪk/",
+    "partOfSpeech": "verb",
+    "meaning": "To enjoy something or think it is nice.",
+    "examples": ["I like pizza.", "Do you like your new job?"]
+  },
+  {
+    "id": "when",
+    "rank": 91,
+    "word": "when",
+    "ipa": "/wɛn/",
+    "partOfSpeech": "adverb",
+    "meaning": "At what time.",
+    "examples": ["When is your birthday?", "When does the train leave?"]
+  },
+  {
+    "id": "what",
+    "rank": 92,
+    "word": "what",
+    "ipa": "/wʌt/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Used to ask about a thing or information.",
+    "examples": ["What is your name?", "What did you buy?"]
+  },
+  {
+    "id": "up",
+    "rank": 93,
+    "word": "up",
+    "ipa": "/ʌp/",
+    "partOfSpeech": "adverb",
+    "meaning": "Toward a higher place or position.",
+    "examples": ["Stand up, please.", "The price went up."]
+  },
+  {
+    "id": "other",
+    "rank": 94,
+    "word": "other",
+    "ipa": "/ˈʌðɚ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Different from the one already mentioned; the rest.",
+    "examples": ["Do you have any other colors?", "The other students went home."]
+  },
+  {
+    "id": "out",
+    "rank": 95,
+    "word": "out",
+    "ipa": "/aʊt/",
+    "partOfSpeech": "adverb",
+    "meaning": "Away from the inside of a place.",
+    "examples": ["She went out for a walk.", "Take the milk out of the fridge."]
+  },
+  {
+    "id": "people",
+    "rank": 96,
+    "word": "people",
+    "ipa": "/ˈpipəl/",
+    "partOfSpeech": "noun",
+    "meaning": "Men, women and children; more than one person.",
+    "examples": ["Many people came to the party.", "People here are very friendly."]
+  },
+  {
+    "id": "well",
+    "rank": 97,
+    "word": "well",
+    "ipa": "/wɛl/",
+    "partOfSpeech": "adverb",
+    "meaning": "In a good or right way.",
+    "examples": ["She speaks English well.", "Did you sleep well?"]
+  },
+  {
+    "id": "very",
+    "rank": 98,
+    "word": "very",
+    "ipa": "/ˈvɛri/",
+    "partOfSpeech": "adverb",
+    "meaning": "To a high degree; really.",
+    "examples": ["It is very hot today.", "Thank you very much."]
+  },
+  {
+    "id": "just",
+    "rank": 99,
+    "word": "just",
+    "ipa": "/dʒʌst/",
+    "partOfSpeech": "adverb",
+    "meaning": "A very short time ago; only.",
+    "examples": ["I just got home.", "It costs just five dollars."]
+  },
+  {
+    "id": "now",
+    "rank": 100,
+    "word": "now",
+    "ipa": "/naʊ/",
+    "partOfSpeech": "adverb",
+    "meaning": "At this moment.",
+    "examples": ["I am busy now.", "You can go home now."]
+  },
+  {
+    "id": "then",
+    "rank": 101,
+    "word": "then",
+    "ipa": "/ðɛn/",
+    "partOfSpeech": "adverb",
+    "meaning": "At that time; next, after that.",
+    "examples": ["I was a child then.", "Wash your hands, then eat."]
+  },
+  {
+    "id": "also",
+    "rank": 102,
+    "word": "also",
+    "ipa": "/ˈɔlsoʊ/",
+    "partOfSpeech": "adverb",
+    "meaning": "In addition; too.",
+    "examples": ["She plays the piano and also sings.", "I also want a coffee."]
+  },
+  {
+    "id": "into",
+    "rank": 103,
+    "word": "into",
+    "ipa": "/ˈɪntu/",
+    "partOfSpeech": "preposition",
+    "meaning": "To the inside of something.",
+    "examples": ["She walked into the room.", "Put the food into the box."]
+  },
+  {
+    "id": "only",
+    "rank": 104,
+    "word": "only",
+    "ipa": "/ˈoʊnli/",
+    "partOfSpeech": "adverb",
+    "meaning": "No more than; nobody or nothing else.",
+    "examples": ["I only have ten minutes.", "Only Tom knows the answer."]
+  },
+  {
+    "id": "over",
+    "rank": 105,
+    "word": "over",
+    "ipa": "/ˈoʊvɚ/",
+    "partOfSpeech": "preposition",
+    "meaning": "Above something; more than an amount.",
+    "examples": ["A plane flew over the house.", "It costs over a hundred dollars."]
+  },
+  {
+    "id": "after",
+    "rank": 106,
+    "word": "after",
+    "ipa": "/ˈæftɚ/",
+    "partOfSpeech": "preposition",
+    "meaning": "Later than a time or event.",
+    "examples": ["Let's meet after lunch.", "I go running after work."]
+  },
+  {
+    "id": "where",
+    "rank": 107,
+    "word": "where",
+    "ipa": "/wɛr/",
+    "partOfSpeech": "adverb",
+    "meaning": "In or to what place.",
+    "examples": ["Where do you live?", "Where are my glasses?"]
+  },
+  {
+    "id": "need",
+    "rank": 108,
+    "word": "need",
+    "ipa": "/nid/",
+    "partOfSpeech": "verb",
+    "meaning": "To have to have something; to have to do something.",
+    "examples": ["I need a new coat.", "You need to rest."]
+  },
+  {
+    "id": "right",
+    "rank": 109,
+    "word": "right",
+    "ipa": "/raɪt/",
+    "partOfSpeech": "adjective",
+    "meaning": "Correct or true; on the side of the body that most people write with.",
+    "examples": ["That is the right answer.", "Raise your right hand."]
+  },
+  {
+    "id": "how",
+    "rank": 110,
+    "word": "how",
+    "ipa": "/haʊ/",
+    "partOfSpeech": "adverb",
+    "meaning": "In what way; used to ask about health or amount.",
+    "examples": ["How do you make this cake?", "How are you?"]
+  },
+  {
+    "id": "back",
+    "rank": 111,
+    "word": "back",
+    "ipa": "/bæk/",
+    "partOfSpeech": "adverb",
+    "meaning": "To the place where someone or something was before.",
+    "examples": ["I will be back in five minutes.", "Please give me my pen back."]
+  },
+  {
+    "id": "mean",
+    "rank": 112,
+    "word": "mean",
+    "ipa": "/min/",
+    "partOfSpeech": "verb",
+    "meaning": "To have a meaning; to want to say something.",
+    "examples": ["What does this word mean?", "I did not mean to hurt you."]
+  },
+  {
+    "id": "even",
+    "rank": 113,
+    "word": "even",
+    "ipa": "/ˈivən/",
+    "partOfSpeech": "adverb",
+    "meaning": "Used to show that something is surprising.",
+    "examples": ["Even my grandmother uses a smartphone.", "He did not even say goodbye."]
+  },
+  {
+    "id": "here",
+    "rank": 114,
+    "word": "here",
+    "ipa": "/hɪr/",
+    "partOfSpeech": "adverb",
+    "meaning": "In or to this place.",
+    "examples": ["Come here, please.", "I have lived here for two years."]
+  },
+  {
+    "id": "last",
+    "rank": 115,
+    "word": "last",
+    "ipa": "/læst/",
+    "partOfSpeech": "adjective",
+    "meaning": "Coming after all others; the one before this.",
+    "examples": ["December is the last month of the year.", "I saw her last week."]
+  },
+  {
+    "id": "really",
+    "rank": 116,
+    "word": "really",
+    "ipa": "/ˈriəli/",
+    "partOfSpeech": "adverb",
+    "meaning": "Very; in fact.",
+    "examples": ["The movie was really good.", "Do you really want to leave?"]
+  },
+  {
+    "id": "before",
+    "rank": 117,
+    "word": "before",
+    "ipa": "/bɪˈfɔr/",
+    "partOfSpeech": "preposition",
+    "meaning": "Earlier than a time or event.",
+    "examples": ["Wash your hands before dinner.", "I got up before six."]
+  },
+  {
+    "id": "company",
+    "rank": 118,
+    "word": "company",
+    "ipa": "/ˈkʌmpəni/",
+    "partOfSpeech": "noun",
+    "meaning": "A business that makes or sells things or services.",
+    "examples": ["She works for a big company.", "The company has 50 workers."]
+  },
+  {
+    "id": "through",
+    "rank": 119,
+    "word": "through",
+    "ipa": "/θru/",
+    "partOfSpeech": "preposition",
+    "meaning": "From one side or end of something to the other.",
+    "examples": ["We drove through the city.", "The train goes through a tunnel."]
+  },
+  {
+    "id": "down",
+    "rank": 120,
+    "word": "down",
+    "ipa": "/daʊn/",
+    "partOfSpeech": "adverb",
+    "meaning": "Toward a lower place or position.",
+    "examples": ["Please sit down.", "Prices went down this year."]
+  },
+  {
+    "id": "show",
+    "rank": 121,
+    "word": "show",
+    "ipa": "/ʃoʊ/",
+    "partOfSpeech": "verb",
+    "meaning": "To let someone see something.",
+    "examples": ["Can you show me your photos?", "He showed me the way to the station."]
+  },
+  {
+    "id": "man",
+    "rank": 122,
+    "word": "man",
+    "ipa": "/mæn/",
+    "partOfSpeech": "noun",
+    "meaning": "An adult male person.",
+    "examples": ["A man is waiting outside.", "He is a kind man."]
+  },
+  {
+    "id": "change",
+    "rank": 123,
+    "word": "change",
+    "ipa": "/tʃeɪndʒ/",
+    "partOfSpeech": "verb",
+    "meaning": "To become different, or to make something different.",
+    "examples": ["The town has changed a lot.", "I want to change my hair."]
+  },
+  {
+    "id": "between",
+    "rank": 124,
+    "word": "between",
+    "ipa": "/bɪˈtwin/",
+    "partOfSpeech": "preposition",
+    "meaning": "In the space or time from one thing to another.",
+    "examples": ["The bank is between the shop and the school.", "Call me between two and four."]
+  },
+  {
+    "id": "too",
+    "rank": 125,
+    "word": "too",
+    "ipa": "/tu/",
+    "partOfSpeech": "adverb",
+    "meaning": "More than is good or needed; also.",
+    "examples": ["This coffee is too hot.", "I like jazz, too."]
+  },
+  {
+    "id": "still",
+    "rank": 126,
+    "word": "still",
+    "ipa": "/stɪl/",
+    "partOfSpeech": "adverb",
+    "meaning": "Continuing until now.",
+    "examples": ["Are you still at work?", "It is still raining."]
+  },
+  {
+    "id": "write",
+    "rank": 127,
+    "word": "write",
+    "ipa": "/raɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "To make letters or words with a pen or keyboard.",
+    "examples": ["Please write your name here.", "I write in my diary every night."]
+  },
+  {
+    "id": "same",
+    "rank": 128,
+    "word": "same",
+    "ipa": "/seɪm/",
+    "partOfSpeech": "adjective",
+    "meaning": "Not different; exactly like another.",
+    "examples": ["We go to the same school.", "You say the same thing every day."]
+  },
+  {
+    "id": "lot",
+    "rank": 129,
+    "word": "lot",
+    "ipa": "/lɑt/",
+    "partOfSpeech": "noun",
+    "meaning": "A large amount or number (used as \"a lot\" or \"lots\").",
+    "examples": ["I have a lot of homework.", "Thanks a lot!"]
+  },
+  {
+    "id": "own",
+    "rank": 130,
+    "word": "own",
+    "ipa": "/oʊn/",
+    "partOfSpeech": "adjective",
+    "meaning": "Belonging to a particular person.",
+    "examples": ["I want my own room.", "She started her own business."]
+  },
+  {
+    "id": "point",
+    "rank": 131,
+    "word": "point",
+    "ipa": "/pɔɪnt/",
+    "partOfSpeech": "noun",
+    "meaning": "An idea or opinion; a mark in a game or test.",
+    "examples": ["That is a good point.", "Our team won by two points."]
+  },
+  {
+    "id": "meet",
+    "rank": 132,
+    "word": "meet",
+    "ipa": "/mit/",
+    "partOfSpeech": "verb",
+    "meaning": "To see and talk to someone, by plan or by chance.",
+    "examples": ["Let's meet at the cafe.", "Nice to meet you."]
+  },
+  {
+    "id": "talk",
+    "rank": 133,
+    "word": "talk",
+    "ipa": "/tɔk/",
+    "partOfSpeech": "verb",
+    "meaning": "To speak with someone.",
+    "examples": ["We talked for hours.", "Can I talk to you for a minute?"]
+  },
+  {
+    "id": "something",
+    "rank": 134,
+    "word": "something",
+    "ipa": "/ˈsʌmθɪŋ/",
+    "partOfSpeech": "pronoun",
+    "meaning": "A thing that is not named or not known.",
+    "examples": ["I want something to drink.", "There is something in my shoe."]
+  },
+  {
+    "id": "put",
+    "rank": 135,
+    "word": "put",
+    "ipa": "/pʊt/",
+    "partOfSpeech": "verb",
+    "meaning": "To move something to a place.",
+    "examples": ["Put your coat on the chair.", "Where did you put the keys?"]
+  },
+  {
+    "id": "become",
+    "rank": 136,
+    "word": "become",
+    "ipa": "/bɪˈkʌm/",
+    "partOfSpeech": "verb",
+    "meaning": "To start to be something.",
+    "examples": ["She wants to become a pilot.", "It became dark."]
+  },
+  {
+    "id": "interest",
+    "rank": 137,
+    "word": "interest",
+    "ipa": "/ˈɪntrəst/",
+    "partOfSpeech": "noun",
+    "meaning": "A feeling of wanting to know more about something.",
+    "examples": ["He has a strong interest in history.", "Music is one of my interests."]
+  },
+  {
+    "id": "country",
+    "rank": 138,
+    "word": "country",
+    "ipa": "/ˈkʌntri/",
+    "partOfSpeech": "noun",
+    "meaning": "An area of land with its own government.",
+    "examples": ["Japan is a beautiful country.", "Which country are you from?"]
+  },
+  {
+    "id": "late",
+    "rank": 139,
+    "word": "late",
+    "ipa": "/leɪt/",
+    "partOfSpeech": "adjective",
+    "meaning": "After the expected or usual time.",
+    "examples": ["Sorry, I am late.", "The bus was ten minutes late."]
+  },
+  {
+    "id": "off",
+    "rank": 140,
+    "word": "off",
+    "ipa": "/ɔf/",
+    "partOfSpeech": "adverb",
+    "meaning": "Away from a place or surface; not working.",
+    "examples": ["Turn off the light.", "She took off her shoes."]
+  },
+  {
+    "id": "next",
+    "rank": 141,
+    "word": "next",
+    "ipa": "/nɛkst/",
+    "partOfSpeech": "adjective",
+    "meaning": "Coming right after this one.",
+    "examples": ["See you next week.", "Who is next?"]
+  },
+  {
+    "id": "end",
+    "rank": 142,
+    "word": "end",
+    "ipa": "/ɛnd/",
+    "partOfSpeech": "noun",
+    "meaning": "The last part of something.",
+    "examples": ["I paid at the end of the month.", "The end of the movie was sad."]
+  },
+  {
+    "id": "live",
+    "rank": 143,
+    "word": "live",
+    "ipa": "/lɪv/",
+    "partOfSpeech": "verb",
+    "meaning": "To have your home in a place; to be alive.",
+    "examples": ["I live in a small town.", "Cats can live for 15 years."]
+  },
+  {
+    "id": "why",
+    "rank": 144,
+    "word": "why",
+    "ipa": "/waɪ/",
+    "partOfSpeech": "adverb",
+    "meaning": "For what reason.",
+    "examples": ["Why are you sad?", "Why did you leave early?"]
+  },
+  {
+    "id": "home",
+    "rank": 145,
+    "word": "home",
+    "ipa": "/hoʊm/",
+    "partOfSpeech": "noun",
+    "meaning": "The place where you live.",
+    "examples": ["I stayed at home all day.", "Their home is near the sea."]
+  },
+  {
+    "id": "include",
+    "rank": 146,
+    "word": "include",
+    "ipa": "/ɪnˈklud/",
+    "partOfSpeech": "verb",
+    "meaning": "To have something as one part of the whole.",
+    "examples": ["The price includes breakfast.", "The team includes three new players."]
+  },
+  {
+    "id": "course",
+    "rank": 147,
+    "word": "course",
+    "ipa": "/kɔrs/",
+    "partOfSpeech": "noun",
+    "meaning": "A set of lessons on a subject.",
+    "examples": ["I am taking an English course.", "The course lasts six weeks."]
+  },
+  {
+    "id": "report",
+    "rank": 148,
+    "word": "report",
+    "ipa": "/rɪˈpɔrt/",
+    "partOfSpeech": "noun",
+    "meaning": "A spoken or written description of an event or situation.",
+    "examples": ["I read the report this morning.", "She wrote a report on the meeting."]
+  },
+  {
+    "id": "case",
+    "rank": 149,
+    "word": "case",
+    "ipa": "/keɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "A situation or example of something; a box for keeping things.",
+    "examples": ["In that case, I will stay home.", "Put your glasses in their case."]
+  },
+  {
+    "id": "woman",
+    "rank": 150,
+    "word": "woman",
+    "ipa": "/ˈwʊmən/",
+    "partOfSpeech": "noun",
+    "meaning": "An adult female person.",
+    "examples": ["A woman asked me for directions.", "She is a strong woman."]
+  },
+  {
+    "id": "around",
+    "rank": 151,
+    "word": "around",
+    "ipa": "/əˈraʊnd/",
+    "partOfSpeech": "preposition",
+    "meaning": "On every side of something; in many parts of a place.",
+    "examples": ["We sat around the table.", "They traveled around Europe."]
+  },
+  {
+    "id": "book",
+    "rank": 152,
+    "word": "book",
+    "ipa": "/bʊk/",
+    "partOfSpeech": "noun",
+    "meaning": "A set of printed pages with a cover, for reading.",
+    "examples": ["I am reading a good book.", "Open your books to page ten."]
+  },
+  {
+    "id": "seem",
+    "rank": 153,
+    "word": "seem",
+    "ipa": "/sim/",
+    "partOfSpeech": "verb",
+    "meaning": "To appear to be.",
+    "examples": ["You seem tired.", "It seems like a good idea."]
+  },
+  {
+    "id": "let",
+    "rank": 154,
+    "word": "let",
+    "ipa": "/lɛt/",
+    "partOfSpeech": "verb",
+    "meaning": "To allow someone to do something.",
+    "examples": ["Let me help you.", "My parents let me stay up late."]
+  },
+  {
+    "id": "again",
+    "rank": 155,
+    "word": "again",
+    "ipa": "/əˈɡɛn/",
+    "partOfSpeech": "adverb",
+    "meaning": "One more time.",
+    "examples": ["Please say that again.", "I hope to see you again."]
+  },
+  {
+    "id": "kind",
+    "rank": 156,
+    "word": "kind",
+    "ipa": "/kaɪnd/",
+    "partOfSpeech": "noun",
+    "meaning": "A type or sort of person or thing.",
+    "examples": ["What kind of music do you like?", "There are many kinds of birds here."]
+  },
+  {
+    "id": "keep",
+    "rank": 157,
+    "word": "keep",
+    "ipa": "/kip/",
+    "partOfSpeech": "verb",
+    "meaning": "To have something and not give it back; to continue.",
+    "examples": ["You can keep the book.", "Keep walking straight."]
+  },
+  {
+    "id": "hear",
+    "rank": 158,
+    "word": "hear",
+    "ipa": "/hɪr/",
+    "partOfSpeech": "verb",
+    "meaning": "To notice sounds with your ears.",
+    "examples": ["Can you hear me?", "I heard a noise outside."]
+  },
+  {
+    "id": "system",
+    "rank": 159,
+    "word": "system",
+    "ipa": "/ˈsɪstəm/",
+    "partOfSpeech": "noun",
+    "meaning": "A set of connected parts or a way of doing things.",
+    "examples": ["The school has a new computer system.", "The city needs a better bus system."]
+  },
+  {
+    "id": "question",
+    "rank": 160,
+    "word": "question",
+    "ipa": "/ˈkwɛstʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "Something you ask to get an answer.",
+    "examples": ["Can I ask you a question?", "Answer all the questions on the test."]
   }
 ]
