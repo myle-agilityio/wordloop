@@ -40,7 +40,11 @@ After flipping a card, rate how well you remembered the word:
 
 ## Word list
 
-WordLoop includes **1,000 common English words**. Each word has a meaning and example sentences.
+WordLoop includes **1,000 common English words**. Each word has a meaning, a US IPA transcription and example sentences.
+
+The words and their order come from the [New General Service List (NGSL) 1.2](https://www.newgeneralservicelist.com) by Browne, C., Culligan, B., and Phillips, J., licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). WordLoop keeps the NGSL frequency order, leaves out words whose part of speech the app does not use (articles, determiners, conjunctions, modal verbs, numbers, interjections) and `accord`, which is almost only used in "according to", and adds its own meanings, examples and IPA. The first 60 words were picked before the NGSL was adopted and keep their place.
+
+Because of this, the word list (`src/data/words.json`) is shared under the same **CC BY-SA 4.0** license. This license covers the word list only, not the app's code.
 
 ## Status
 
@@ -53,7 +57,6 @@ First working version: a web app you can use today. Done so far:
 
 Still to do:
 
-- Add the remaining 940 words (60 of 1,000 so far).
 - Decide whether to add translations next to the English definitions.
 
 The choices made for this version are listed under [Choices made for this first version](#choices-made-for-this-first-version).
@@ -68,6 +71,7 @@ src/
 ├── app/         # App root
 ├── components/  # UI, grouped by feature (ui, layout, auth, flashcard, study, home, words, settings)
 ├── constants/   # Routes, ratings, default review settings and their limits
+├── data/        # Word list (words.json), loaded as a hashed URL
 ├── hooks/       # React hooks (auth, words, daily plan, study session, shortcuts)
 ├── lib/         # Neon client and pure logic: review scheduler, daily plan, word status, settings validation
 ├── pages/       # One component per route
@@ -75,7 +79,6 @@ src/
 ├── stores/      # Progress and settings state (zustand), saved to the database
 ├── types/       # Shared TypeScript types
 └── utils/       # Date helpers
-public/data/words.json  # Word list
 db/migrations/          # SQL to run once in the Neon SQL Editor
 ```
 
@@ -108,4 +111,4 @@ These answer the early open questions for now and are easy to change:
 - **Meanings**: English definitions.
 - **Accounts**: sign up and sign in with email and password through Neon Auth.
 - **Progress and settings**: saved per account in the `user_progress`, `study_days` and `user_settings` tables, through the Neon Data API. Row-level security limits each user to their own rows. Progress saved on a device by the earlier version moves into the account at the first sign-in.
-- **Word list**: 60 of the 1,000 words so far. Add the rest to `public/data/words.json` in the same format.
+- **Word list**: all 1,000 words are in `src/data/words.json`; `src/data/words.test.ts` checks every entry.

@@ -9,6 +9,7 @@ const makeWord = (rank: number): Word => ({
   id: `w${rank}`,
   rank,
   word: `word${rank}`,
+  ipa: '',
   partOfSpeech: 'noun',
   meaning: '',
   examples: [],

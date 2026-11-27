@@ -1,11 +1,10 @@
+import { wordsUrl } from '@/data'
 import type { Word } from '@/types'
-
-const WORDS_URL = '/data/words.json'
 
 let wordsPromise: Promise<Word[]> | undefined
 
 async function fetchWords(): Promise<Word[]> {
-  const response = await fetch(WORDS_URL)
+  const response = await fetch(wordsUrl)
   if (!response.ok) throw new Error(`Could not load the word list (${response.status}).`)
   return response.json()
 }

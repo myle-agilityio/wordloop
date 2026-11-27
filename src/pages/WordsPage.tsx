@@ -2,7 +2,7 @@ import { useDeferredValue, useMemo, useState } from 'react'
 
 import { Card } from '@/components/ui'
 import { WordFilters, type WordFilter } from '@/components/words/WordFilters'
-import { WordRow } from '@/components/words/WordRow'
+import { WordList } from '@/components/words/WordList'
 import { useWords } from '@/hooks'
 import { getWordStatus } from '@/lib'
 import { useProgressStore } from '@/stores'
@@ -53,11 +53,7 @@ export function WordsPage() {
 
       <Card className="overflow-hidden p-0">
         {rows.length > 0 ? (
-          <ul className="divide-y divide-slate-100 dark:divide-slate-800">
-            {rows.map(({ word, status }) => (
-              <WordRow key={word.id} word={word} status={status} />
-            ))}
-          </ul>
+          <WordList rows={rows} />
         ) : (
           <p className="px-5 py-12 text-center text-sm text-slate-500 dark:text-slate-400">
             {filter === 'due' ? 'Nothing due today.' : 'No words match.'}

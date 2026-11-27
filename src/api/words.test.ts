@@ -7,6 +7,7 @@ const words: Word[] = [
     id: 'w1',
     rank: 1,
     word: 'time',
+    ipa: '/taɪm/',
     partOfSpeech: 'noun',
     meaning: 'what is measured in minutes, hours and days',
     examples: ['We had a great time.'],

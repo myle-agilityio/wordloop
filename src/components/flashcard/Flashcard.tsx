@@ -55,8 +55,8 @@ export function Flashcard({ word, kind, isRepeat, isFlipped, onFlip }: Flashcard
               </span>
               <SpeakButton text={word.word} label={`Play pronunciation of ${word.word}`} />
             </span>
-            <span className="text-sm text-slate-500 italic dark:text-slate-400">
-              {word.partOfSpeech}
+            <span className="text-sm text-slate-500 dark:text-slate-400">
+              {word.ipa} · <span className="italic">{word.partOfSpeech}</span>
             </span>
           </span>
           <span className="flex items-center justify-center gap-2 text-xs text-slate-400">
