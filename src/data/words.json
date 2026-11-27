@@ -7852,5 +7852,929 @@
     "partOfSpeech": "noun",
     "meaning": "The study of the natural world through tests and observation.",
     "examples": ["Science is my favorite subject.", "She works in computer science."]
+  },
+  {
+    "id": "disease",
+    "rank": 861,
+    "word": "disease",
+    "ipa": "/dɪˈziz/",
+    "partOfSpeech": "noun",
+    "meaning": "An illness of people, animals or plants.",
+    "examples": ["Heart disease is very common.", "The disease spread quickly."]
+  },
+  {
+    "id": "balance",
+    "rank": 862,
+    "word": "balance",
+    "ipa": "/ˈbæləns/",
+    "partOfSpeech": "noun",
+    "meaning": "Being able to stay steady without falling; a state where things are equal.",
+    "examples": ["I lost my balance and fell.", "Try to keep a balance between work and rest."]
+  },
+  {
+    "id": "damage",
+    "rank": 863,
+    "word": "damage",
+    "ipa": "/ˈdæmɪdʒ/",
+    "partOfSpeech": "noun",
+    "meaning": "Physical harm that makes something less useful or valuable.",
+    "examples": ["The storm caused a lot of damage.", "There was no damage to the car."]
+  },
+  {
+    "id": "basis",
+    "rank": 864,
+    "word": "basis",
+    "ipa": "/ˈbeɪsɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "The main idea or fact that something is built on; the way something is done regularly.",
+    "examples": ["Trust is the basis of a good friendship.", "We meet on a weekly basis."]
+  },
+  {
+    "id": "author",
+    "rank": 865,
+    "word": "author",
+    "ipa": "/ˈɔθɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who writes books or articles.",
+    "examples": ["Who is the author of this book?", "She is a famous author."]
+  },
+  {
+    "id": "basic",
+    "rank": 866,
+    "word": "basic",
+    "ipa": "/ˈbeɪsɪk/",
+    "partOfSpeech": "adjective",
+    "meaning": "Simple, and the most important or necessary.",
+    "examples": ["I know some basic Spanish.", "Food and water are basic needs."]
+  },
+  {
+    "id": "encourage",
+    "rank": 867,
+    "word": "encourage",
+    "ipa": "/ɪnˈkɝɪdʒ/",
+    "partOfSpeech": "verb",
+    "meaning": "To give someone hope or confidence to do something.",
+    "examples": [
+      "My parents encouraged me to study music.",
+      "The teacher encourages us to ask questions."
+    ]
+  },
+  {
+    "id": "hair",
+    "rank": 868,
+    "word": "hair",
+    "ipa": "/hɛr/",
+    "partOfSpeech": "noun",
+    "meaning": "The thin threads that grow on your head and body.",
+    "examples": ["She has long brown hair.", "I need to wash my hair."]
+  },
+  {
+    "id": "male",
+    "rank": 869,
+    "word": "male",
+    "ipa": "/meɪl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Belonging to the sex that cannot have babies.",
+    "examples": ["The male bird has bright colors.", "Most of the workers are male."]
+  },
+  {
+    "id": "operate",
+    "rank": 870,
+    "word": "operate",
+    "ipa": "/ˈɑpəreɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "To make a machine work; to cut open someone's body to treat them.",
+    "examples": ["Can you operate this machine?", "The doctor will operate on her leg."]
+  },
+  {
+    "id": "reflect",
+    "rank": 871,
+    "word": "reflect",
+    "ipa": "/rɪˈflɛkt/",
+    "partOfSpeech": "verb",
+    "meaning": "To show an image, like a mirror does; to think carefully about something.",
+    "examples": [
+      "The trees were reflected in the lake.",
+      "Take some time to reflect on your choices."
+    ]
+  },
+  {
+    "id": "exercise",
+    "rank": 872,
+    "word": "exercise",
+    "ipa": "/ˈɛksɚsaɪz/",
+    "partOfSpeech": "noun",
+    "meaning": "Physical activity to stay healthy; a task to practice something.",
+    "examples": ["Swimming is good exercise.", "Do exercise 3 on page 10."]
+  },
+  {
+    "id": "useful",
+    "rank": 873,
+    "word": "useful",
+    "ipa": "/ˈjusfəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Helping you do something.",
+    "examples": ["This app is very useful.", "Thanks for the useful advice."]
+  },
+  {
+    "id": "restaurant",
+    "rank": 874,
+    "word": "restaurant",
+    "ipa": "/ˈrɛstərɑnt/",
+    "partOfSpeech": "noun",
+    "meaning": "A place where you buy and eat meals.",
+    "examples": ["Let's go to an Italian restaurant.", "The restaurant was full."]
+  },
+  {
+    "id": "income",
+    "rank": 875,
+    "word": "income",
+    "ipa": "/ˈɪnkʌm/",
+    "partOfSpeech": "noun",
+    "meaning": "Money that you get from work or investments.",
+    "examples": ["Her income is higher than mine.", "Many families live on a low income."]
+  },
+  {
+    "id": "property",
+    "rank": 876,
+    "word": "property",
+    "ipa": "/ˈprɑpɚti/",
+    "partOfSpeech": "noun",
+    "meaning": "Things that someone owns; a building and the land around it.",
+    "examples": ["This bag is my property.", "They bought a property by the sea."]
+  },
+  {
+    "id": "previous",
+    "rank": 877,
+    "word": "previous",
+    "ipa": "/ˈpriviəs/",
+    "partOfSpeech": "adjective",
+    "meaning": "Happening or existing before.",
+    "examples": ["I met him on a previous visit.", "Her previous job was in a bank."]
+  },
+  {
+    "id": "dark",
+    "rank": 878,
+    "word": "dark",
+    "ipa": "/dɑrk/",
+    "partOfSpeech": "adjective",
+    "meaning": "With little or no light; nearly black in color.",
+    "examples": ["It gets dark early in winter.", "He has dark hair."]
+  },
+  {
+    "id": "imagine",
+    "rank": 879,
+    "word": "imagine",
+    "ipa": "/ɪˈmædʒɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "To make a picture or idea of something in your mind.",
+    "examples": ["Imagine you are on a beach.", "I cannot imagine life without music."]
+  },
+  {
+    "id": "okay",
+    "rank": 880,
+    "word": "okay",
+    "ipa": "/oʊˈkeɪ/",
+    "partOfSpeech": "adjective",
+    "meaning": "Good enough, or not hurt; all right (informal).",
+    "examples": ["Are you okay?", "The food was okay, but not great."]
+  },
+  {
+    "id": "earn",
+    "rank": 881,
+    "word": "earn",
+    "ipa": "/ɝn/",
+    "partOfSpeech": "verb",
+    "meaning": "To get money for the work you do.",
+    "examples": ["How much do you earn?", "She earns money by teaching piano."]
+  },
+  {
+    "id": "daughter",
+    "rank": 882,
+    "word": "daughter",
+    "ipa": "/ˈdɔtɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A female child of a parent.",
+    "examples": ["Their daughter is a doctor.", "I have two daughters."]
+  },
+  {
+    "id": "post",
+    "rank": 883,
+    "word": "post",
+    "ipa": "/poʊst/",
+    "partOfSpeech": "noun",
+    "meaning": "Letters and packages sent by mail; a message on social media; a job.",
+    "examples": ["Has the post arrived yet?", "She wrote a funny post about her cat."]
+  },
+  {
+    "id": "newspaper",
+    "rank": 884,
+    "word": "newspaper",
+    "ipa": "/ˈnuzpeɪpɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "Large printed sheets of paper with news, printed every day or week.",
+    "examples": ["My dad reads the newspaper every morning.", "I saw it in the newspaper."]
+  },
+  {
+    "id": "define",
+    "rank": 885,
+    "word": "define",
+    "ipa": "/dɪˈfaɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "To say exactly what a word or idea means.",
+    "examples": ["How do you define success?", "The dictionary defines this word clearly."]
+  },
+  {
+    "id": "conclusion",
+    "rank": 886,
+    "word": "conclusion",
+    "ipa": "/kənˈkluʒən/",
+    "partOfSpeech": "noun",
+    "meaning": "A decision you make after thinking about the facts; the end of something.",
+    "examples": ["What conclusion did you reach?", "In conclusion, the plan worked."]
+  },
+  {
+    "id": "clock",
+    "rank": 887,
+    "word": "clock",
+    "ipa": "/klɑk/",
+    "partOfSpeech": "noun",
+    "meaning": "A machine that shows the time.",
+    "examples": ["The clock on the wall is slow.", "I looked at the clock. It was midnight."]
+  },
+  {
+    "id": "everybody",
+    "rank": 888,
+    "word": "everybody",
+    "ipa": "/ˈɛvribɑdi/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Every person; everyone.",
+    "examples": ["Everybody loves her cooking.", "Hello, everybody!"]
+  },
+  {
+    "id": "weekend",
+    "rank": 889,
+    "word": "weekend",
+    "ipa": "/ˈwikɛnd/",
+    "partOfSpeech": "noun",
+    "meaning": "Saturday and Sunday.",
+    "examples": ["What are you doing this weekend?", "I relax at the weekend."]
+  },
+  {
+    "id": "perform",
+    "rank": 890,
+    "word": "perform",
+    "ipa": "/pɚˈfɔrm/",
+    "partOfSpeech": "verb",
+    "meaning": "To do something, such as a task; to act, sing or play for people.",
+    "examples": ["The band performed in the park.", "The doctor performed a test."]
+  },
+  {
+    "id": "professional",
+    "rank": 891,
+    "word": "professional",
+    "ipa": "/prəˈfɛʃənəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Doing something as a paid job; showing skill and good behavior at work.",
+    "examples": ["He is a professional footballer.", "She was very professional in the meeting."]
+  },
+  {
+    "id": "mine",
+    "rank": 892,
+    "word": "mine",
+    "ipa": "/maɪn/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Something that belongs to the person speaking.",
+    "examples": ["That pen is mine.", "Is this your bag or mine?"]
+  },
+  {
+    "id": "debate",
+    "rank": 893,
+    "word": "debate",
+    "ipa": "/dɪˈbeɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "A discussion where people give different opinions about a subject.",
+    "examples": ["There was a debate about school uniforms.", "We watched the TV debate."]
+  },
+  {
+    "id": "memory",
+    "rank": 894,
+    "word": "memory",
+    "ipa": "/ˈmɛməri/",
+    "partOfSpeech": "noun",
+    "meaning": "The ability to remember things; something you remember.",
+    "examples": ["I have a bad memory for names.", "I have happy memories of that summer."]
+  },
+  {
+    "id": "green",
+    "rank": 895,
+    "word": "green",
+    "ipa": "/ɡrin/",
+    "partOfSpeech": "adjective",
+    "meaning": "Having the color of grass.",
+    "examples": ["She has green eyes.", "The trees are green in spring."]
+  },
+  {
+    "id": "song",
+    "rank": 896,
+    "word": "song",
+    "ipa": "/sɔŋ/",
+    "partOfSpeech": "noun",
+    "meaning": "A short piece of music with words that you sing.",
+    "examples": ["This is my favorite song.", "She wrote a song for her mother."]
+  },
+  {
+    "id": "object",
+    "rank": 897,
+    "word": "object",
+    "ipa": "/ˈɑbdʒɪkt/",
+    "partOfSpeech": "noun",
+    "meaning": "A thing that you can see or touch.",
+    "examples": [
+      "There is a strange object in the sky.",
+      "The baby puts every object in her mouth."
+    ]
+  },
+  {
+    "id": "maintain",
+    "rank": 898,
+    "word": "maintain",
+    "ipa": "/meɪnˈteɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "To keep something in the same state or in good condition.",
+    "examples": ["It is hard to maintain an old house.", "Try to maintain a healthy weight."]
+  },
+  {
+    "id": "credit",
+    "rank": 899,
+    "word": "credit",
+    "ipa": "/ˈkrɛdɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "A way of buying something now and paying for it later; praise for something you did.",
+    "examples": ["I bought the TV on credit.", "She deserves credit for her hard work."]
+  },
+  {
+    "id": "ring",
+    "rank": 900,
+    "word": "ring",
+    "ipa": "/rɪŋ/",
+    "partOfSpeech": "noun",
+    "meaning": "A piece of jewelry worn on a finger; the sound of a bell.",
+    "examples": ["He gave her a gold ring.", "I heard a ring at the door."]
+  },
+  {
+    "id": "discover",
+    "rank": 901,
+    "word": "discover",
+    "ipa": "/dɪˈskʌvɚ/",
+    "partOfSpeech": "verb",
+    "meaning": "To find or learn something for the first time.",
+    "examples": ["Who discovered America?", "I discovered a great café near my house."]
+  },
+  {
+    "id": "dead",
+    "rank": 902,
+    "word": "dead",
+    "ipa": "/dɛd/",
+    "partOfSpeech": "adjective",
+    "meaning": "Not alive any more.",
+    "examples": ["The plant is dead.", "My phone battery is dead."]
+  },
+  {
+    "id": "afternoon",
+    "rank": 903,
+    "word": "afternoon",
+    "ipa": "/ˌæftɚˈnun/",
+    "partOfSpeech": "noun",
+    "meaning": "The part of the day between midday and the evening.",
+    "examples": ["I have a meeting this afternoon.", "Good afternoon!"]
+  },
+  {
+    "id": "prefer",
+    "rank": 904,
+    "word": "prefer",
+    "ipa": "/prɪˈfɝ/",
+    "partOfSpeech": "verb",
+    "meaning": "To like one thing more than another.",
+    "examples": ["I prefer tea to coffee.", "Do you prefer the red one or the blue one?"]
+  },
+  {
+    "id": "extend",
+    "rank": 905,
+    "word": "extend",
+    "ipa": "/ɪkˈstɛnd/",
+    "partOfSpeech": "verb",
+    "meaning": "To make something longer or bigger.",
+    "examples": ["We extended our holiday by a week.", "They are extending the kitchen."]
+  },
+  {
+    "id": "possibility",
+    "rank": 906,
+    "word": "possibility",
+    "ipa": "/ˌpɑsəˈbɪləti/",
+    "partOfSpeech": "noun",
+    "meaning": "Something that might happen or be true.",
+    "examples": ["There is a possibility of rain.", "We discussed all the possibilities."]
+  },
+  {
+    "id": "direction",
+    "rank": 907,
+    "word": "direction",
+    "ipa": "/dəˈrɛkʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "The way something is going or facing; instructions for how to get somewhere.",
+    "examples": ["Which direction is the station?", "Can you give me directions to the museum?"]
+  },
+  {
+    "id": "facility",
+    "rank": 908,
+    "word": "facility",
+    "ipa": "/fəˈsɪləti/",
+    "partOfSpeech": "noun",
+    "meaning": "A place, building or equipment for a particular use.",
+    "examples": ["The hotel has great sports facilities.", "It is a new medical facility."]
+  },
+  {
+    "id": "variety",
+    "rank": 909,
+    "word": "variety",
+    "ipa": "/vəˈraɪəti/",
+    "partOfSpeech": "noun",
+    "meaning": "Many different types of things; a type of something.",
+    "examples": ["The shop sells a variety of fruit.", "This is a new variety of rose."]
+  },
+  {
+    "id": "daily",
+    "rank": 910,
+    "word": "daily",
+    "ipa": "/ˈdeɪli/",
+    "partOfSpeech": "adjective",
+    "meaning": "Happening every day.",
+    "examples": ["Exercise is part of my daily routine.", "She reads a daily newspaper."]
+  },
+  {
+    "id": "clothes",
+    "rank": 911,
+    "word": "clothes",
+    "ipa": "/kloʊðz/",
+    "partOfSpeech": "noun",
+    "meaning": "Things you wear, like shirts, trousers and dresses.",
+    "examples": ["I need to buy some new clothes.", "Put your clothes in the washing machine."]
+  },
+  {
+    "id": "screen",
+    "rank": 912,
+    "word": "screen",
+    "ipa": "/skrin/",
+    "partOfSpeech": "noun",
+    "meaning": "The flat part of a TV, computer or phone where you see pictures or words.",
+    "examples": ["My phone screen is broken.", "Do not sit too close to the screen."]
+  },
+  {
+    "id": "track",
+    "rank": 913,
+    "word": "track",
+    "ipa": "/træk/",
+    "partOfSpeech": "noun",
+    "meaning": "A rough path; a song on an album; the rails a train runs on.",
+    "examples": ["We walked along a forest track.", "The second track is my favorite."]
+  },
+  {
+    "id": "dance",
+    "rank": 914,
+    "word": "dance",
+    "ipa": "/dæns/",
+    "partOfSpeech": "verb",
+    "meaning": "To move your body to music.",
+    "examples": ["Do you want to dance?", "They danced all night."]
+  },
+  {
+    "id": "completely",
+    "rank": 915,
+    "word": "completely",
+    "ipa": "/kəmˈplitli/",
+    "partOfSpeech": "adverb",
+    "meaning": "Totally; in every way.",
+    "examples": ["I completely forgot your birthday.", "The room was completely empty."]
+  },
+  {
+    "id": "female",
+    "rank": 916,
+    "word": "female",
+    "ipa": "/ˈfimeɪl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Belonging to the sex that can have babies.",
+    "examples": [
+      "The female lion hunts for food.",
+      "She is the first female president of the club."
+    ]
+  },
+  {
+    "id": "responsibility",
+    "rank": 917,
+    "word": "responsibility",
+    "ipa": "/rɪˌspɑnsəˈbɪləti/",
+    "partOfSpeech": "noun",
+    "meaning": "Something that is your job or duty to deal with.",
+    "examples": [
+      "Taking care of the dog is my responsibility.",
+      "She has a lot of responsibility at work."
+    ]
+  },
+  {
+    "id": "original",
+    "rank": 918,
+    "word": "original",
+    "ipa": "/əˈrɪdʒənəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Existing first, before any changes; new and different.",
+    "examples": ["The original plan was to go by train.", "She has very original ideas."]
+  },
+  {
+    "id": "sister",
+    "rank": 919,
+    "word": "sister",
+    "ipa": "/ˈsɪstɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "A girl or woman who has the same parents as you.",
+    "examples": ["My sister lives in Canada.", "Do you have any sisters?"]
+  },
+  {
+    "id": "rock",
+    "rank": 920,
+    "word": "rock",
+    "ipa": "/rɑk/",
+    "partOfSpeech": "noun",
+    "meaning": "The hard material that mountains are made of; a large stone; a type of loud music.",
+    "examples": ["We sat on a big rock.", "I like listening to rock music."]
+  },
+  {
+    "id": "dream",
+    "rank": 921,
+    "word": "dream",
+    "ipa": "/drim/",
+    "partOfSpeech": "noun",
+    "meaning": "Pictures and events in your mind while you sleep; something you hope for.",
+    "examples": ["I had a strange dream last night.", "Her dream is to become a doctor."]
+  },
+  {
+    "id": "university",
+    "rank": 922,
+    "word": "university",
+    "ipa": "/ˌjunəˈvɝsəti/",
+    "partOfSpeech": "noun",
+    "meaning": "A place where people study for a degree after school.",
+    "examples": ["She studies law at university.", "He went to university in Boston."]
+  },
+  {
+    "id": "easily",
+    "rank": 923,
+    "word": "easily",
+    "ipa": "/ˈizəli/",
+    "partOfSpeech": "adverb",
+    "meaning": "Without difficulty.",
+    "examples": ["I can easily walk there.", "She won the race easily."]
+  },
+  {
+    "id": "agency",
+    "rank": 924,
+    "word": "agency",
+    "ipa": "/ˈeɪdʒənsi/",
+    "partOfSpeech": "noun",
+    "meaning": "A business that provides a service; a government department.",
+    "examples": ["We booked our trip through a travel agency.", "She works for a news agency."]
+  },
+  {
+    "id": "dollar",
+    "rank": 925,
+    "word": "dollar",
+    "ipa": "/ˈdɑlɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "The money used in the US and some other countries; there are 100 cents in a dollar.",
+    "examples": ["This book costs ten dollars.", "Can I pay in dollars?"]
+  },
+  {
+    "id": "garden",
+    "rank": 926,
+    "word": "garden",
+    "ipa": "/ˈɡɑrdən/",
+    "partOfSpeech": "noun",
+    "meaning": "An area of land next to a house where people grow flowers or vegetables.",
+    "examples": ["We have a small garden behind the house.", "She is working in the garden."]
+  },
+  {
+    "id": "fix",
+    "rank": 927,
+    "word": "fix",
+    "ipa": "/fɪks/",
+    "partOfSpeech": "verb",
+    "meaning": "To repair something; to decide on a date or price.",
+    "examples": ["Can you fix my bike?", "Let's fix a time to meet."]
+  },
+  {
+    "id": "ahead",
+    "rank": 928,
+    "word": "ahead",
+    "ipa": "/əˈhɛd/",
+    "partOfSpeech": "adverb",
+    "meaning": "In front; in the future.",
+    "examples": ["Go straight ahead.", "We have a busy week ahead."]
+  },
+  {
+    "id": "cross",
+    "rank": 929,
+    "word": "cross",
+    "ipa": "/krɔs/",
+    "partOfSpeech": "verb",
+    "meaning": "To go from one side of something to the other.",
+    "examples": ["Look both ways before you cross the road.", "We crossed the river by boat."]
+  },
+  {
+    "id": "candidate",
+    "rank": 930,
+    "word": "candidate",
+    "ipa": "/ˈkændɪdeɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who wants to be chosen for a job or in an election.",
+    "examples": ["There are three candidates for the job.", "Which candidate will you vote for?"]
+  },
+  {
+    "id": "weight",
+    "rank": 931,
+    "word": "weight",
+    "ipa": "/weɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "How heavy someone or something is.",
+    "examples": ["What is your weight?", "He has lost weight."]
+  },
+  {
+    "id": "legal",
+    "rank": 932,
+    "word": "legal",
+    "ipa": "/ˈliɡəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Allowed by the law; about the law.",
+    "examples": ["Is it legal to park here?", "She needs legal advice."]
+  },
+  {
+    "id": "proposal",
+    "rank": 933,
+    "word": "proposal",
+    "ipa": "/prəˈpoʊzəl/",
+    "partOfSpeech": "noun",
+    "meaning": "A plan or suggestion; asking someone to marry you.",
+    "examples": ["They rejected our proposal.", "She said yes to his proposal."]
+  },
+  {
+    "id": "version",
+    "rank": 934,
+    "word": "version",
+    "ipa": "/ˈvɝʒən/",
+    "partOfSpeech": "noun",
+    "meaning": "A form of something that is a little different from other forms.",
+    "examples": ["Download the latest version of the app.", "I prefer the old version of the song."]
+  },
+  {
+    "id": "conversation",
+    "rank": 935,
+    "word": "conversation",
+    "ipa": "/ˌkɑnvɚˈseɪʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "A talk between two or more people.",
+    "examples": [
+      "We had a long conversation on the phone.",
+      "I practice English conversation every week."
+    ]
+  },
+  {
+    "id": "somebody",
+    "rank": 936,
+    "word": "somebody",
+    "ipa": "/ˈsʌmbɑdi/",
+    "partOfSpeech": "pronoun",
+    "meaning": "Someone; a person who is not named.",
+    "examples": ["Somebody took my pen.", "I need somebody to help me."]
+  },
+  {
+    "id": "pound",
+    "rank": 937,
+    "word": "pound",
+    "ipa": "/paʊnd/",
+    "partOfSpeech": "noun",
+    "meaning": "The money used in the UK; a unit of weight, about 450 grams.",
+    "examples": ["The ticket costs twenty pounds.", "I bought two pounds of apples."]
+  },
+  {
+    "id": "magazine",
+    "rank": 938,
+    "word": "magazine",
+    "ipa": "/ˈmæɡəzin/",
+    "partOfSpeech": "noun",
+    "meaning": "A thin book with stories and pictures that comes out every week or month.",
+    "examples": ["I read a fashion magazine on the train.", "She writes for a sports magazine."]
+  },
+  {
+    "id": "shape",
+    "rank": 939,
+    "word": "shape",
+    "ipa": "/ʃeɪp/",
+    "partOfSpeech": "noun",
+    "meaning": "The form of the outside of something, like round or square.",
+    "examples": ["The table is round in shape.", "Draw a star shape."]
+  },
+  {
+    "id": "sea",
+    "rank": 940,
+    "word": "sea",
+    "ipa": "/si/",
+    "partOfSpeech": "noun",
+    "meaning": "The large area of salt water that covers much of the earth.",
+    "examples": ["We swam in the sea.", "The house is near the sea."]
+  },
+  {
+    "id": "immediately",
+    "rank": 941,
+    "word": "immediately",
+    "ipa": "/ɪˈmidiətli/",
+    "partOfSpeech": "adverb",
+    "meaning": "Now, without waiting.",
+    "examples": ["Come here immediately!", "She answered the phone immediately."]
+  },
+  {
+    "id": "welcome",
+    "rank": 942,
+    "word": "welcome",
+    "ipa": "/ˈwɛlkəm/",
+    "partOfSpeech": "verb",
+    "meaning": "To greet someone in a friendly way when they arrive.",
+    "examples": ["They welcomed us with a big smile.", "Welcome to our home!"]
+  },
+  {
+    "id": "smile",
+    "rank": 943,
+    "word": "smile",
+    "ipa": "/smaɪl/",
+    "partOfSpeech": "verb",
+    "meaning": "To make your mouth curve up because you are happy or friendly.",
+    "examples": ["She smiled at me.", "Smile for the photo!"]
+  },
+  {
+    "id": "communication",
+    "rank": 944,
+    "word": "communication",
+    "ipa": "/kəˌmjunɪˈkeɪʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "Sharing information with other people by speaking, writing or other ways.",
+    "examples": [
+      "Good communication is important in a team.",
+      "Email is a fast form of communication."
+    ]
+  },
+  {
+    "id": "agent",
+    "rank": 945,
+    "word": "agent",
+    "ipa": "/ˈeɪdʒənt/",
+    "partOfSpeech": "noun",
+    "meaning": "A person whose job is to act for another person or a company; a secret spy.",
+    "examples": ["Our travel agent booked the hotel.", "He is a secret agent in the film."]
+  },
+  {
+    "id": "traditional",
+    "rank": 946,
+    "word": "traditional",
+    "ipa": "/trəˈdɪʃənəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "Following customs or ways of doing things that have existed for a long time.",
+    "examples": ["We ate traditional food at the festival.", "She wore a traditional dress."]
+  },
+  {
+    "id": "replace",
+    "rank": 947,
+    "word": "replace",
+    "ipa": "/rɪˈpleɪs/",
+    "partOfSpeech": "verb",
+    "meaning": "To put something new in the place of something old or broken.",
+    "examples": ["I need to replace my phone battery.", "Computers have replaced typewriters."]
+  },
+  {
+    "id": "judge",
+    "rank": 948,
+    "word": "judge",
+    "ipa": "/dʒʌdʒ/",
+    "partOfSpeech": "noun",
+    "meaning": "A person who decides cases in a court of law; a person who decides who wins a competition.",
+    "examples": ["The judge sent him to prison.", "She is a judge on a TV cooking show."]
+  },
+  {
+    "id": "herself",
+    "rank": 949,
+    "word": "herself",
+    "ipa": "/hɚˈsɛlf/",
+    "partOfSpeech": "pronoun",
+    "meaning": "The same woman or girl who is the subject of the sentence.",
+    "examples": ["She made the dress herself.", "She looked at herself in the mirror."]
+  },
+  {
+    "id": "suddenly",
+    "rank": 950,
+    "word": "suddenly",
+    "ipa": "/ˈsʌdənli/",
+    "partOfSpeech": "adverb",
+    "meaning": "Quickly and without warning.",
+    "examples": ["Suddenly, the lights went out.", "The car suddenly stopped."]
+  },
+  {
+    "id": "generation",
+    "rank": 951,
+    "word": "generation",
+    "ipa": "/ˌdʒɛnəˈreɪʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "All the people of about the same age; one stage in a family.",
+    "examples": [
+      "The young generation uses social media a lot.",
+      "Three generations live in this house."
+    ]
+  },
+  {
+    "id": "estimate",
+    "rank": 952,
+    "word": "estimate",
+    "ipa": "/ˈɛstəmeɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "To guess the size, cost or amount of something.",
+    "examples": ["I estimate the trip will take three hours.", "Can you estimate the cost?"]
+  },
+  {
+    "id": "favorite",
+    "rank": 953,
+    "word": "favorite",
+    "ipa": "/ˈfeɪvərɪt/",
+    "partOfSpeech": "adjective",
+    "meaning": "Liked more than all others.",
+    "examples": ["What is your favorite color?", "Pizza is my favorite food."]
+  },
+  {
+    "id": "difficulty",
+    "rank": 954,
+    "word": "difficulty",
+    "ipa": "/ˈdɪfəkəlti/",
+    "partOfSpeech": "noun",
+    "meaning": "A problem; the quality of being hard to do.",
+    "examples": ["I had difficulty finding the hotel.", "The company is in financial difficulty."]
+  },
+  {
+    "id": "purchase",
+    "rank": 955,
+    "word": "purchase",
+    "ipa": "/ˈpɝtʃəs/",
+    "partOfSpeech": "verb",
+    "meaning": "To buy something (formal).",
+    "examples": ["You can purchase tickets online.", "They purchased a new car."]
+  },
+  {
+    "id": "shoot",
+    "rank": 956,
+    "word": "shoot",
+    "ipa": "/ʃut/",
+    "partOfSpeech": "verb",
+    "meaning": "To fire a gun; to kick or throw a ball at a goal; to make a film or photo.",
+    "examples": ["He shot at the target.", "They are shooting a film in our street."]
+  },
+  {
+    "id": "announce",
+    "rank": 957,
+    "word": "announce",
+    "ipa": "/əˈnaʊns/",
+    "partOfSpeech": "verb",
+    "meaning": "To tell people something officially.",
+    "examples": ["They announced their wedding.", "The pilot announced that we would land soon."]
+  },
+  {
+    "id": "independent",
+    "rank": 958,
+    "word": "independent",
+    "ipa": "/ˌɪndɪˈpɛndənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "Not controlled by or needing help from other people.",
+    "examples": ["She is very independent.", "The country became independent in 1960."]
+  },
+  {
+    "id": "recommend",
+    "rank": 959,
+    "word": "recommend",
+    "ipa": "/ˌrɛkəˈmɛnd/",
+    "partOfSpeech": "verb",
+    "meaning": "To say that someone or something is good and worth trying.",
+    "examples": ["Can you recommend a good restaurant?", "I recommend this book."]
+  },
+  {
+    "id": "survey",
+    "rank": 960,
+    "word": "survey",
+    "ipa": "/ˈsɝveɪ/",
+    "partOfSpeech": "noun",
+    "meaning": "A set of questions you ask many people to find out what they think or do.",
+    "examples": ["We did a survey of 1,000 students.", "Please fill in our short survey."]
   }
 ]
